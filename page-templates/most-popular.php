@@ -21,7 +21,7 @@ get_header(); // Loads the header.php template. ?>
 			
 			<?php
 			
-			/* Loop for most viewed articles. entry-views extension is used */
+			/* Loop for most viewed articles. entry-views extension is used. */
 						
 			$args = array (
 				'ignore_sticky_posts' => true,
