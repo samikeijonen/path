@@ -16,6 +16,8 @@
 		<div id="menu-primary-mobile" class="menu-container">
 
 			<div class="wrap">
+			
+				<div id="search-primary-mobile"><?php get_search_form(); // Loads the searchform.php template. ?></div>
 				
 				<?php do_atomic( 'open_menu_primary_mobile' ); // path_open_menu_primary_mobile ?>
 				

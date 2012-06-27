@@ -19,6 +19,8 @@
 				
 			<a id="menu-primary-anchor" class="menu-primary-anchor" title="<?php _e( 'Primary Mobile Menu', 'path' ); ?>" href="#menu-primary-mobile"><?php _e( 'Primary Menu', 'path' ); ?></a>
 			
+			<a id="search-primary-anchor" class="search-primary-anchor" title="<?php _e( 'Search', 'path' ); ?>" href="#search-primary-mobile"><?php _e( 'Search', 'path' ); ?></a>
+			
 		</div><!-- .wrap -->
 	
 	</div><!-- #menu-primary-title -->
@@ -32,6 +34,8 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu', 'menu_class' => '', 'menu_id' => 'menu-primary-items', 'fallback_cb' => '' ) ); ?>
 				
 				<?php do_atomic( 'close_menu_primary' ); // path_close_menu_primary ?>
+				
+				<?php if ( !is_admin_bar_showing() ) get_search_form(); // Loads the searchform.php template. ?>
 						
 			</div><!-- .wrap -->
 
