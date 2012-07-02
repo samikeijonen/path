@@ -22,8 +22,6 @@ get_header(); // Loads the header.php template. ?>
 			<?php
 			
 			/* Loop for most viewed articles. entry-views extension is used. */
-			
-			//global $query_string; // required
 						
 			$args = array (
 				'ignore_sticky_posts' => true,
@@ -33,13 +31,22 @@ get_header(); // Loads the header.php template. ?>
 				'paged' => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 )
 			);
 			
-			$wp_query = new WP_Query( $args );
+			$popular_query = new WP_Query( $args );
+			
+			/* @link http://wordpress.stackexchange.com/questions/54509/query-with-pre-get-posts-to-get-pagination */
+			global $wp_query;
+			// Put default query object in a temp variable
+			$tmp_query = $wp_query;
+			// Now wipe it out completely
+			$wp_query = null;
+			// Re-populate the global with our custom query
+			$wp_query = $popular_query;
 			
 			?>
 			
-			<?php if ( $wp_query->have_posts() ) : ?>
+			<?php if ( $popular_query->have_posts() ) : ?>
 
-				<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+				<?php while ( $popular_query->have_posts() ) : $popular_query->the_post(); ?>
 
 					<?php do_atomic( 'before_entry' ); // path_before_entry ?>
 
@@ -47,8 +54,8 @@ get_header(); // Loads the header.php template. ?>
 
 						<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) );?>
 
-						<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
+						<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+						
 						<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
 
 						<div class="entry-summary">
@@ -77,6 +84,8 @@ get_header(); // Loads the header.php template. ?>
 		<?php do_atomic( 'close_content' ); // path_close_content ?>
 
 		<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
+		
+		<?php $wp_query = $tmp_query; // Restore original query object ?>
 		
 		<?php wp_reset_postdata(); // Reset Query ?>
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Most Popular
+ * Template Name: Most Popular last 30 days
  *
- * Displays most popular posts in all time.
+ * Displays most popular posts in last 30 days.
  *
  * @package Path
  * @subpackage Template
@@ -33,7 +33,10 @@ get_header(); // Loads the header.php template. ?>
 				'paged' => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 )
 			);
 			
+			/* Gets post from last 30 days and filter posts_where. @link http://codex.wordpress.org/Class_Reference/WP_Query#Time_Parameters */
+			add_filter( 'posts_where', 'path_filter_where' );
 			$wp_query = new WP_Query( $args );
+			remove_filter( 'posts_where', 'path_filter_where' );
 			
 			?>
 			

@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Most Popular
+ * Template Name: Most Popular by comments
  *
- * Displays most popular posts in all time.
+ * Displays most popular posts by comments.
  *
  * @package Path
  * @subpackage Template
@@ -23,12 +23,11 @@ get_header(); // Loads the header.php template. ?>
 			
 			<?php
 			
-			/* Loop for most viewed articles. entry-views extension is used. */
+			/* Loop for most commented articles. entry-views extension is used. */
 						
 			$args = array (
 				'ignore_sticky_posts' => true,
-				'meta_key' => 'Views',
-				'orderby' => 'meta_value_num',
+				'orderby' => 'comment_count',
 				'posts_per_page' => get_option( 'posts_per_page' ),
 				'paged' => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 )
 			);

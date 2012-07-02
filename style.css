@@ -413,8 +413,11 @@ h3.menu-secondary-mobile-title {
 	color: #70a0b2;
 	font: italic 1em/1.25em Georgia,serif;
 	margin: 0;
-	padding-top: 0.625em;
+	padding-top: 0.5em;
 	text-transform: none;
+}
+.custom-header #site-title span {
+	display: none;
 }
 
 /* Sidebar before content and subsidiary. */
@@ -1280,6 +1283,10 @@ img {
 	box-sizing: border-box;
 	border: 1px solid #e9edf1;
 	padding: .25em; /* 4px / 16px = 0.25 */
+}
+#site-title img {
+	border: none;
+	padding: 0;
 }
 
 #content {

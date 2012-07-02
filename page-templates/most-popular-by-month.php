@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Most Popular
+ * Template Name: Most Popular by month
  *
- * Displays most popular posts in all time.
+ * Displays most popular posts in current month.
  *
  * @package Path
  * @subpackage Template
@@ -23,12 +23,14 @@ get_header(); // Loads the header.php template. ?>
 			
 			<?php
 			
-			/* Loop for most viewed articles. entry-views extension is used. */
+			/* Loop for most viewed articles in current month. entry-views extension is used. */
 						
 			$args = array (
 				'ignore_sticky_posts' => true,
 				'meta_key' => 'Views',
 				'orderby' => 'meta_value_num',
+				'monthnum' => date( 'm' ),
+				'year' => date( 'Y' ),
 				'posts_per_page' => get_option( 'posts_per_page' ),
 				'paged' => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 )
 			);

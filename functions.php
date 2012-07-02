@@ -75,15 +75,15 @@ function path_theme_setup() {
 	'default-image' => get_template_directory_uri() . '/images/path_bg.png' 
 	) );
 	
-	/* Add support for flexible headers. This means logo in this theme, not header image. */
+	/* Add support for flexible headers. This means logo in this theme, not header image. @link http://make.wordpress.org/themes/2012/04/06/updating-custom-backgrounds-and-custom-headers-for-wordpress-3-4/ */
 	$path_header_args = array(
 	'flex-height' => true,
 	'height' => 99,
 	'flex-width' => true,
 	'width' => 300,
-	'default-image' => '%s/images/logo.png',
+	'default-image' => get_template_directory_uri() . '/images/logo.png',
 	'header-text' => false,
-	//'admin-head-callback' => 'path_admin_header_style',
+	//'wp-head-callback' => 'path_head_logo_style',
 	);
  
 	add_theme_support( 'custom-header', $path_header_args );
@@ -123,6 +123,41 @@ function path_theme_setup() {
 	//add_filter( 'pre_get_posts', 'path_most_popular' );
 	
 }
+
+/**
+ * Add logo styles if logo is added.
+ * @link http://css-tricks.com/examples/ImageReplacement/
+ * @since 0.1.0
+ */
+function path_head_logo_style() {
+
+	/* Get header image url, width and height. */
+	$path_logo_image_url = get_header_image();
+	$path_header_image_width  = get_custom_header()->width;
+	$path_header_image_height = get_custom_header()->height;
+	
+	?>
+	
+	<style type="text/css">
+		.custom-header #site-title {
+		max-width: <?php echo $path_header_image_width; ?>px;
+		height: auto;
+	}
+	.custom-header #site-title a {
+		background: url(<?php echo $path_logo_image_url; ?>) 50% 50%;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		background-size: auto;
+		display: block;
+		overflow: hidden;
+		text-indent: -9999em;
+		white-space: nowrap;
+		max-width: <?php echo $path_header_image_width; ?>px;
+		height: <?php echo $path_header_image_height; ?>px;
+	}
+	</style>
+	
+	<?php }
 
 /**
  * Function for help to unsupported browsers understand mediaqueries.
@@ -285,7 +320,7 @@ function path_site_title( $title ) {
 	if ( !empty( $path_logo_image_url ) ) {
 	
 		if ( $title = get_bloginfo( 'name' ) )
-			$title = sprintf( '<%1$s id="site-title"><a href="%2$s" title="%3$s" rel="home"><span>%4$s</span></a></%1$s>', tag_escape( $tag ), home_url(), esc_attr( $title ), $path_logo_image );
+			$title = sprintf( '<%1$s id="site-title"><a href="%2$s" title="%3$s" rel="home">%4$s<span>%5$s</span></a></%1$s>', tag_escape( $tag ), home_url(), esc_attr( $title ), $path_logo_image, $title );
 	
 	} 
 	else { 
@@ -344,6 +379,18 @@ function path_most_popular( $query ) {
 	
 	return $query;
 	
+}
+
+/**
+ * Gets posts from last 30 days.
+ * @link http://codex.wordpress.org/Class_Reference/WP_Query#Time_Parameters
+ * @since 0.1.0
+ */
+function path_filter_where( $where = '' ) {
+	
+	$where .= " AND post_date > '" . date('Y-m-d', strtotime('-30 days')) . "'";
+		return $where;
+		
 }
 
 ?>
