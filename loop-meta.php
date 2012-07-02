@@ -66,6 +66,8 @@
 		<div id="hcard-<?php echo esc_attr( get_the_author_meta( 'user_nicename', $user_id ) ); ?>" class="loop-meta vcard">
 
 			<h1 class="loop-title fn n"><?php the_author_meta( 'display_name', $user_id ); ?></h1>
+			
+			<?php echo get_avatar( get_the_author_meta( 'user_email', $user_id ), '66' ); ?>
 
 			<div class="loop-description">
 				<?php echo wpautop( get_the_author_meta( 'description', $user_id ) ); ?>
@@ -123,6 +125,76 @@
 			<div class="loop-description">
 				<p>
 				<?php _e( 'You are browsing the site archives.', 'path' ); ?>
+				</p>
+			</div><!-- .loop-description -->
+
+		</div><!-- .loop-meta -->
+		
+	<?php elseif ( is_page_template( 'page-templates/most-popular.php' ) ) : ?>
+
+		<div class="loop-meta">
+
+			<h1 class="loop-title"><?php _e( 'Most popular', 'path' ); ?></h1>
+
+			<div class="loop-description">
+				<p>
+				<?php _e( 'You are browsing all time most viewed articles.', 'path' ); ?>
+				</p>
+			</div><!-- .loop-description -->
+
+		</div><!-- .loop-meta -->
+		
+	<?php elseif ( is_page_template( 'page-templates/most-popular-by-year.php' ) ) : ?>
+
+		<div class="loop-meta">
+
+			<h1 class="loop-title"><?php _e( 'Most popular by year', 'path' ); ?></h1>
+
+			<div class="loop-description">
+				<p>
+				<?php printf( __( 'You are browsing most viewed articles in the current year %d.', 'path' ), date( 'Y' ) ); ?>
+				</p>
+			</div><!-- .loop-description -->
+
+		</div><!-- .loop-meta -->
+		
+	<?php elseif ( is_page_template( 'page-templates/most-popular-by-month.php' ) ) : ?>
+
+		<div class="loop-meta">
+
+			<h1 class="loop-title"><?php _e( 'Most popular by month', 'path' ); ?></h1>
+
+			<div class="loop-description">
+				<p>
+				<?php printf( __( 'You are browsing most viewed articles in current month (%1$s) and year (%2$s).', 'path' ), date( 'm' ), date( 'Y' ) ); ?>
+				</p>
+			</div><!-- .loop-description -->
+
+		</div><!-- .loop-meta -->
+		
+	<?php elseif ( is_page_template( 'page-templates/most-popular-by-comments.php' ) ) : ?>
+
+		<div class="loop-meta">
+
+			<h1 class="loop-title"><?php _e( 'Most popular by comments', 'path' ); ?></h1>
+
+			<div class="loop-description">
+				<p>
+				<?php _e( 'You are browsing most viewed articles by comments.', 'path' ) ; ?>
+				</p>
+			</div><!-- .loop-description -->
+
+		</div><!-- .loop-meta -->
+		
+	<?php elseif ( is_page_template( 'page-templates/most-popular-last-30-days.php' ) ) : ?>
+
+		<div class="loop-meta">
+
+			<h1 class="loop-title"><?php _e( 'Most popular articles in the last 30 days', 'path' ); ?></h1>
+
+			<div class="loop-description">
+				<p>
+				<?php _e( 'You are browsing most viewed articles in the last 30 days.', 'path' ) ; ?>
 				</p>
 			</div><!-- .loop-description -->
 

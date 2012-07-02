@@ -564,6 +564,8 @@ a.more-link:hover {
 
 /* Loop meta */
 .loop-meta {
+	border-bottom: 1px solid #e9edf1;
+	margin-bottom: 1em;
 	overflow: hidden;
 }
 .loop-meta .loop-title {
@@ -1258,7 +1260,7 @@ ol.comment-list {
 	width: 64%;
 }
 .custom-header #site-description {
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 /* Before content sidebar. */
@@ -1421,10 +1423,10 @@ img {
 /* =Layout for somewhere in the middle version 
 -------------------------------------------------------------- */
 
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 60em) {
 
 .custom-header #site-description {
-	padding-top: 2.5em;
+	padding-top: 2em;
 }
 
 }
@@ -1433,10 +1435,6 @@ img {
 -------------------------------------------------------------- */
 
 @media only screen and (min-width: 70em) {
-
-.custom-header #site-description {
-	padding-top: 3em;
-}
 
 /* Comments for desktop. */
 .comment-list ol.children {
