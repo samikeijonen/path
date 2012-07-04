@@ -71,6 +71,8 @@
 
 		<div id="main">
 		
+		<?php if ( is_page_template( 'page-templates/path-slider.php' ) ) get_template_part( 'slider-content' ); // Loads the slider-content.php template. ?>
+		
 		<?php get_sidebar( 'before-content' ); // Loads the sidebar-before-content.php template. ?>
 
 			<div class="wrap">

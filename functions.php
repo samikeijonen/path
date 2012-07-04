@@ -119,8 +119,14 @@ function path_theme_setup() {
 	/* Set global layout. */
 	add_filter( 'get_theme_layout', 'path_theme_layout' );
 	
-	/* Get most popular post. It uses entry-views extension. */
-	//add_filter( 'pre_get_posts', 'path_most_popular' );
+	/* Add after comments note for good mannners. */
+	add_action( 'comment_form_before', 'path_comment_note' );
+	
+	/* Create twitter contact method. */
+	add_filter( 'user_contactmethods', 'path_twitter_method' );
+	
+	/* Add an author box after singular posts. */
+	add_action( "{$prefix}_singular-post_after_singular", 'path_author_box', 11 );
 	
 }
 
@@ -228,6 +234,7 @@ function path_add_image_sizes() {
 
 	add_image_size( 'path-thumbnail', 194, 120, true );
 	add_image_size( 'path-smaller-thumbnail', 80, 80, true );
+	add_image_size( 'path-slider-thumbnail', 660, 300, true );
 	
 }
 
@@ -252,20 +259,27 @@ function path_quote_content( $content ) {
 }
 
 /**
- * Live Wire uses FitVids for responsive videos and TinyNav for dropdown navigation menu.
- *
- * @since 0.1.0
- * @note These are taken from fitvidsjs.com and tinynav.viljamis.com.
+ * Path uses FitVids for responsive videos.
  * @link http://fitvidsjs.com/
- * @link http://tinynav.viljamis.com/
+ * @since 0.1.0
  */
 function path_scripts() {
 	
 	if ( !is_admin() ) {
 		
 		/* Enqueue FitVids */
-		wp_enqueue_script( 'path-fitvids', trailingslashit ( THEME_URI ) . 'js/jquery.fitvids.js', array( 'jquery' ), '20120625', true );
-		wp_enqueue_script( 'path-fitvids-settings', trailingslashit ( THEME_URI ) . 'js/fitvids.js', '', '20120625', true );
+		wp_enqueue_script( 'path-fitvids', get_template_directory_uri() . '/js/fitvids/jquery.fitvids.js', array( 'jquery' ), '20120625', true );
+		wp_enqueue_script( 'path-fitvids-settings', get_template_directory_uri() . '/js/fitvids/fitvids.js', array( 'path-fitvids' ), '20120625', true );
+		
+		/* Enqueue Flexslider */
+		if ( is_page_template( 'page-templates/path-slider.php' ) ) {
+			wp_enqueue_script( 'path-flexslider', get_template_directory_uri() . '/js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120703', true );
+			wp_enqueue_script( 'path-flexslider-settings', get_template_directory_uri() . '/js/flexslider/settings.flexslider.js', array( 'path-flexslider' ), '20120703', true );
+		}
+		
+		/* Enqueue Styles */
+		if ( is_page_template( 'page-templates/path-slider.php' ) )
+			wp_enqueue_style( 'path-flexslider-stylesheet', get_template_directory_uri() . '/css/flexslider/flexslider.css', false, 1.0, 'screen' );
 		
 	}
 }
@@ -364,21 +378,98 @@ function path_theme_layout( $layout ) {
 }
 
 /**
- * Get most popular post. It uses entry-views extension.
- * @link http://codex.wordpress.org/Plugin_API/Action_Reference/pre_get_posts
+ * Comment note for good manners.
  * @since 0.1.0
  */
-function path_most_popular( $query ) {
+function path_comment_note() { ?>
 
-	if ( is_page_template( 'most-popular-test.php' ) && $query->is_main_query() ) {
-		$query->set( 'post_type', 'post' );
-		$query->set( 'meta_key', 'Views' );
-		$query->set( 'orderby', 'meta_value_num' );
-		$query->set( 'posts_per_page', get_option( 'posts_per_page' ) );
-	}
+	<p class="comment-text comment-note"><?php _e( 'Please comment with your real name using good manners.', 'path' ); ?></p>
+
+<?php
+}
+
+/**
+ * Adds twitter on the edit user screen.
+ * @since 0.1.0
+ */
+function path_twitter_method( $meta ) {
+
+	$meta['twitter'] = __( 'Twitter Username', 'path' );
+	return $meta;
 	
-	return $query;
+}
+
+/**
+ * Adds an author box at the end of single posts.
+ * @note if Co Author Plus plugin is found, use multiple Co Authors loop. Else use normal info.
+ * @since 0.1.0
+ */
+function path_author_box() { ?>
+
+	<div class="author-profile vcard">
 	
+		<?php
+		
+		if( function_exists( 'coauthors_posts_links' ) ) {
+			
+			$i = new CoAuthorsIterator();
+			print $i->count() == 1 ? '<h4>' . __( 'Author of the article', 'path' ) . '</h4> ' : '<h4>' . __( 'Authors of the article', 'path' ) . '</h4> ';
+			
+			$i->iterate();
+			the_author_posts_link();
+			echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
+			
+		?>
+			
+			<div class="author-description author-bio clear">
+				<?php the_author_meta( 'description' ); ?>
+			</div>
+			
+			<?php if ( get_the_author_meta( 'Twitter' ) ) { ?>
+				<p class="twitter clear">
+					<a href="http://twitter.com/<?php the_author_meta( 'twitter' ); ?>" title="<?php printf( esc_attr__( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?>"><?php printf( __( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?></a>
+				</p>
+			<?php } // End check for twitter 
+			
+			while( $i->iterate() ) {
+			
+				the_author_posts_link();
+				echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
+				
+				?>
+				
+				<div class="author-description author-bio clear">
+					<?php the_author_meta( 'description' ); ?>
+				</div>
+				
+				<?php if ( get_the_author_meta( 'Twitter' ) ) { ?>
+					<p class="twitter clear">
+						<a href="http://twitter.com/<?php the_author_meta( 'twitter' ); ?>" title="<?php printf( esc_attr__( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?>"><?php printf( __( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?></a>
+					</p>
+				<?php } // End check for twitter 
+				
+				} // end while
+		}
+		else {
+		?>
+
+			<h4 class="author-name fn n"><?php echo do_shortcode( __( 'Article written by [entry-author]', 'path' ) ); ?></h4>
+
+			<?php echo get_avatar( get_the_author_meta( 'user_email' ), '96' ); ?>
+
+			<div class="author-description author-bio">
+				<?php the_author_meta( 'description' ); ?>
+			</div>
+
+			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+				<p class="twitter clear">
+					<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
+				</p>
+			<?php } // End check for twitter 
+		} // End else
+		?>
+	</div>
+	<?php
 }
 
 /**

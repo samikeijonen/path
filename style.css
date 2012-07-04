@@ -420,7 +420,15 @@ h3.menu-secondary-mobile-title {
 	display: none;
 }
 
-/* Sidebar before content and subsidiary. */
+/* Sidebars. */
+#sidebar-primary .widget,
+#sidebar-secondary .widget,
+#sidebar-before-content .widget,
+#sidebar-subsidiary .widget {
+	color: #777;
+	font-size: 0.9375em;
+	margin: 0 0 1em 0;
+}
 #sidebar-before-content {
 	margin: 0 0 0.825em 0;
 }
@@ -429,7 +437,7 @@ h3.menu-secondary-mobile-title {
 }
 #sidebar-before-content .widget,
 #sidebar-subsidiary .widget {
-	padding: 1em 0;
+	padding: 1em 0 0 0;
 }
 	
 /* Main */
@@ -527,14 +535,14 @@ h3.menu-secondary-mobile-title {
 	margin-bottom: 1em;
 }
 
-/* Bylines */
+/* Bylines. */
 .byline {
 	color: #555;
 	font: normal normal normal .875em/1.5 Georgia, serif;
 	margin-bottom: 1em;
 }
 	
-/* Entry meta */
+/* Entry meta. */
 .entry-meta {
 	clear: both;
 	color: #555;
@@ -545,7 +553,7 @@ h3.menu-secondary-mobile-title {
 	display: block;
 }
 
-/* More link */
+/* More link. */
 a.more-link  {
 	background: #ca4842;
 	-webkit-border-radius: 3px;
@@ -567,6 +575,10 @@ a.more-link:hover {
 	border-bottom: 1px solid #e9edf1;
 	margin-bottom: 1em;
 	overflow: hidden;
+}
+.blog .loop-meta {
+	border-bottom: none;
+	margin-bottom: 0;
 }
 .loop-meta .loop-title {
 	color: #555;
@@ -742,7 +754,7 @@ input[type="submit"]:hover {
 	padding: 0 1.5em;
 }
 
-/* Comment pagination */
+/* Comment pagination. */
 .comments-nav {
 	float: right;
 	line-height: 2em;
@@ -750,7 +762,7 @@ input[type="submit"]:hover {
 	position: relative;
 }
 
-/* Comment list */
+/* Comment list. */
 .comment-list,
 .comment-list ol.children {
 	list-style: none;
@@ -779,7 +791,7 @@ ol.comment-list {
 	overflow: hidden; /* IE7 */
 }
 
-/* Avatars */
+/* Avatars. */
 .comment-list .avatar {
 	float: none;
 	margin: 0 1.5em 1.5em 0;
@@ -793,7 +805,7 @@ ol.comment-list {
 	height: 60px;
 }
 
-/* Comment meta */
+/* Comment meta. */
 .comment-meta {
 	color: #555;
 	font: normal normal normal 0.875em/1.2 "Helvetica Neue", Helvetica, sans-serif;
@@ -819,7 +831,7 @@ ol.comment-list {
 .comment-reply-link {
 }
 
-/* Comment text */
+/* Comment text. */
 .comment-text {
 	overflow: hidden;
 }
@@ -834,7 +846,12 @@ ol.comment-list {
 	color: #555;
 }
 
-/* After singular sidebar */
+/* Comment note. */
+.comment-note {
+	font-weight: bold;
+}
+
+/* After singular sidebar. */
 #sidebar-after-singular {
 	border-top: 1px solid #e9edf1;
 	margin-bottom: 1em;
@@ -964,6 +981,19 @@ ol.comment-list {
 #menu-subsidiary li.current-menu-item a {
 	color: #ca4842; 
 }
+
+/* Author profile. */
+.singular-post .author-profile {
+	border: 1px dotted #e9edf1;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 4%;
+	padding: 4%;
+}
+p.twitter {
+	margin: 1em 0 0 0;
+}
+
 
 /* =Layout for tablets version 
 -------------------------------------------------------------- */
@@ -1234,7 +1264,7 @@ ol.comment-list {
 	padding: 1em 0;
 }
 
-/* Header */
+/* Header. */
 #header {
 	padding: 1em 2%;
 }
@@ -1304,13 +1334,6 @@ img {
 }
 
 /* Sidebars. */
-#sidebar-primary .widget,
-#sidebar-secondary .widget,
-#sidebar-subsidiary .widget {
-	color: #777;
-	font-size: 0.9375em;
-}
-
 #sidebar-primary {
 	float: right;
 	margin: 0;
