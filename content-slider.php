@@ -2,7 +2,7 @@
 /**
  * Slider content
  *
- * Displays sticky posts or newest posts in slider.
+ * Displays sticky posts in slider and newest posts after that in page template Slider.
  *
  * @package Path
  * @subpackage Template
@@ -12,9 +12,11 @@
 
 /* Get the sticky posts. */
 $sticky = get_option( 'sticky_posts' );
+
+if ( ! empty( $sticky ) ) :
  
-/* If more than zero sticky post, use them for the slider.  Else, just get the 3 latest posts. */
-$args = ( ( !empty( $sticky ) && 0 < count( $sticky ) ) ? array( 'post__in' => $sticky, 'ignore_sticky_posts' => 1 ) : array( 'posts_per_page' => 3 ) );
+/* Show sticky posts in the slider. */
+$args = array( 'post__in' => $sticky );
 	
 	$loop = new WP_Query( $args );
 
@@ -59,3 +61,5 @@ $args = ( ( !empty( $sticky ) && 0 < count( $sticky ) ) ? array( 'post__in' => $
 	</div><!-- .wrap -->
 	
 	<?php endif; ?>
+	
+<?php endif; ?>

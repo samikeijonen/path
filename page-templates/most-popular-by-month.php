@@ -46,6 +46,8 @@ get_header(); // Loads the header.php template. ?>
 					<?php do_atomic( 'before_entry' ); // path_before_entry ?>
 
 					<div id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
+					
+						<?php do_atomic( 'open_entry' ); // path_open_entry ?>
 
 						<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) );?>
 

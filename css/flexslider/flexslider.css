@@ -72,6 +72,10 @@ html[xmlns] .slides {display: block;}
 /* =My slider styles 
 -------------------------------------------------------------- */
 
+.singular-page-956 #main .wrap {
+	margin-bottom: 1em;
+}
+
 #slider-content.flexslider {
 	background: none;
 	border: none;
@@ -81,10 +85,9 @@ html[xmlns] .slides {display: block;}
 #slider-content .slider-images {
 }
 #slider-content .slider-title {
-	padding: 1em 0;
 }
 .flexslider .flex-control-nav {
-	bottom: -1em;
+	bottom: -1.15em;
 }
 #slider-content .entry-title a {
 
@@ -123,18 +126,24 @@ html[xmlns] .slides {display: block;}
 
 @media only screen and (min-width: 49em) {
 
+/* Remember to change this to page template css. */
+.singular-page-956 #main .wrap {
+	margin-bottom: 2em;
+}
+
 #slider-content .slider-images {
 	float: left;
 	width: 46%;
 }
 #slider-content .slider-title {
 	float: right;
+	padding: 1em 0;
 	width: 50%;
 }
 	
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 60em) {
 
 #slider-content .slider-images {
 	width: 64%;

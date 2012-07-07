@@ -24,11 +24,10 @@ get_header(); // Loads the header.php template. ?>
 			<?php
 			
 			/* Loop for most viewed articles. entry-views extension is used. */
+			$sticky = get_option('sticky_posts');
 						
 			$args = array (
-				'ignore_sticky_posts' => true,
-				'meta_key' => 'Views',
-				'orderby' => 'meta_value_num',
+				'post__not_in' => $sticky,
 				'posts_per_page' => get_option( 'posts_per_page' ),
 				'paged' => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 )
 			);
@@ -41,28 +40,7 @@ get_header(); // Loads the header.php template. ?>
 
 				<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
-					<?php do_atomic( 'before_entry' ); // path_before_entry ?>
-
-					<div id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
-
-						<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) );?>
-
-						<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-						<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
-
-						<div class="entry-summary">
-							<?php the_excerpt(); ?>
-							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'path' ), 'after' => '</p>' ) ); ?>
-						</div><!-- .entry-summary -->
-						
-						<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( 'Views [entry-views] [entry-terms taxonomy="category" before="Posted in "] [entry-terms before="Tagged "]', 'path' ) . '</div>' ); ?>
-						
-						<?php do_atomic( 'close_entry' ); // path_close_entry ?>
-
-					</div><!-- .hentry -->
-
-					<?php do_atomic( 'after_entry' ); // path_after_entry ?>
+					<?php get_template_part( 'content', ( post_type_supports( get_post_type(), 'post-formats' ) ? get_post_format() : get_post_type() ) ); ?>
 
 				<?php endwhile; ?>
 

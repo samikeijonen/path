@@ -555,6 +555,7 @@ h3.menu-secondary-mobile-title {
 
 /* More link. */
 a.more-link  {
+/*
 	background: #ca4842;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -564,10 +565,11 @@ a.more-link  {
 	font: normal normal bold 0.875em/1.2 "Helvetica Neue", Helvetica, sans-serif;
 	margin: 0 0.714285714em 0 0;
 	padding: 0.857142857em 1.07142857em;
+	*/
 }
 a.more-link:hover {
-	background: #b7322c;
-	text-decoration: none;
+	/*background: #b7322c;
+	text-decoration: none;*/
 }
 
 /* Loop meta */

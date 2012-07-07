@@ -122,6 +122,12 @@ function path_theme_setup() {
 	/* Add after comments note for good mannners. */
 	add_action( 'comment_form_before', 'path_comment_note' );
 	
+	/* Change [...] to ... Read more. */
+	add_filter( 'excerpt_more', 'path_excerpt_more' );
+	
+	/* Modify excerpt lenght in front page template. */
+	add_filter( 'excerpt_length', 'path_excerpt_length', 999 );
+	
 	/* Create twitter contact method. */
 	add_filter( 'user_contactmethods', 'path_twitter_method' );
 	
@@ -129,41 +135,6 @@ function path_theme_setup() {
 	add_action( "{$prefix}_singular-post_after_singular", 'path_author_box', 11 );
 	
 }
-
-/**
- * Add logo styles if logo is added.
- * @link http://css-tricks.com/examples/ImageReplacement/
- * @since 0.1.0
- */
-function path_head_logo_style() {
-
-	/* Get header image url, width and height. */
-	$path_logo_image_url = get_header_image();
-	$path_header_image_width  = get_custom_header()->width;
-	$path_header_image_height = get_custom_header()->height;
-	
-	?>
-	
-	<style type="text/css">
-		.custom-header #site-title {
-		max-width: <?php echo $path_header_image_width; ?>px;
-		height: auto;
-	}
-	.custom-header #site-title a {
-		background: url(<?php echo $path_logo_image_url; ?>) 50% 50%;
-		-webkit-background-size: auto;
-		-moz-background-size: auto;
-		background-size: auto;
-		display: block;
-		overflow: hidden;
-		text-indent: -9999em;
-		white-space: nowrap;
-		max-width: <?php echo $path_header_image_width; ?>px;
-		height: <?php echo $path_header_image_height; ?>px;
-	}
-	</style>
-	
-	<?php }
 
 /**
  * Function for help to unsupported browsers understand mediaqueries.
@@ -188,7 +159,7 @@ function path_respond_mediaqueries() {
  */
 function path_one_column() {
 
-	if ( !is_active_sidebar( 'primary' ) || ( is_attachment() && 'layout-default' == theme_layouts_get_layout() ) )
+	if ( ! ( is_active_sidebar( 'primary' ) || is_active_sidebar( 'secondary' ) )  || ( is_attachment() && 'layout-default' == theme_layouts_get_layout() ) )
 		add_filter( 'get_theme_layout', 'path_theme_layout_one_column' );
 
 }
@@ -268,18 +239,18 @@ function path_scripts() {
 	if ( !is_admin() ) {
 		
 		/* Enqueue FitVids */
-		wp_enqueue_script( 'path-fitvids', get_template_directory_uri() . '/js/fitvids/jquery.fitvids.js', array( 'jquery' ), '20120625', true );
-		wp_enqueue_script( 'path-fitvids-settings', get_template_directory_uri() . '/js/fitvids/fitvids.js', array( 'path-fitvids' ), '20120625', true );
+		wp_enqueue_script( 'path-fitvids', trailingslashit( get_template_directory_uri() ) . 'js/fitvids/jquery.fitvids.js', array( 'jquery' ), '20120625', true );
+		wp_enqueue_script( 'path-fitvids-settings', trailingslashit( get_template_directory_uri() ) . 'js/fitvids/fitvids.js', array( 'path-fitvids' ), '20120625', true );
 		
 		/* Enqueue Flexslider */
 		if ( is_page_template( 'page-templates/path-slider.php' ) ) {
-			wp_enqueue_script( 'path-flexslider', get_template_directory_uri() . '/js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120703', true );
-			wp_enqueue_script( 'path-flexslider-settings', get_template_directory_uri() . '/js/flexslider/settings.flexslider.js', array( 'path-flexslider' ), '20120703', true );
+			wp_enqueue_script( 'path-flexslider', trailingslashit( get_template_directory_uri() ) . 'js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120703', true );
+			wp_enqueue_script( 'path-flexslider-settings', trailingslashit( get_template_directory_uri() ) . 'js/flexslider/settings.flexslider.js', array( 'path-flexslider' ), '20120703', true );
 		}
 		
 		/* Enqueue Styles */
 		if ( is_page_template( 'page-templates/path-slider.php' ) )
-			wp_enqueue_style( 'path-flexslider-stylesheet', get_template_directory_uri() . '/css/flexslider/flexslider.css', false, 1.0, 'screen' );
+			wp_enqueue_style( 'path-flexslider-stylesheet', trailingslashit( get_template_directory_uri() ) . 'css/flexslider/flexslider.css', false, 1.0, 'screen' );
 		
 	}
 }
@@ -387,6 +358,30 @@ function path_comment_note() { ?>
 
 <?php
 }
+
+/**
+ * Change [...] to ... Read more.
+ * @since 0.1.0
+ */
+function path_excerpt_more() {
+
+	return '...<p><a class="more-link" href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '">  ' . __( 'Read more &rarr;', 'path' ) . ' </a></p>';
+	 
+}
+
+/**
+ * Change excerpt length in slider template. 
+ * @since 0.1.0
+ */
+function path_excerpt_length( $length ) {
+
+	if ( is_page_template( 'page-templates/path-slider.php' ) )
+		return 40;
+	else
+		return 60;
+	
+}
+
 
 /**
  * Adds twitter on the edit user screen.
