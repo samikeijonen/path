@@ -134,6 +134,12 @@ function path_theme_setup() {
 	/* Add an author box after singular posts. */
 	add_action( "{$prefix}_singular-post_after_singular", 'path_author_box', 11 );
 	
+	/* Filter byline. Use Coauthors list if exist. */
+	add_filter( "{$prefix}_byline", 'path_byline' );
+	
+	/* Add social media buttons after singular post entry. Facebook like, twitter tweet and google+. This uses Social Path Plugin. */
+	add_action( "{$prefix}_singular-post_after_singular", 'path_add_social_media' );
+	
 }
 
 /**
@@ -404,7 +410,7 @@ function path_author_box() { ?>
 	<div class="author-profile vcard">
 	
 		<?php
-		
+		/* If Co-Authors Plus Plugin is activated, use it. Else use normal author box. */
 		if( function_exists( 'coauthors_posts_links' ) ) {
 			
 			$i = new CoAuthorsIterator();
@@ -416,13 +422,13 @@ function path_author_box() { ?>
 			
 		?>
 			
-			<div class="author-description author-bio clear">
+			<p class="author-description author-bio">
 				<?php the_author_meta( 'description' ); ?>
-			</div>
+			</p>
 			
-			<?php if ( get_the_author_meta( 'Twitter' ) ) { ?>
-				<p class="twitter clear">
-					<a href="http://twitter.com/<?php the_author_meta( 'twitter' ); ?>" title="<?php printf( esc_attr__( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?>"><?php printf( __( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?></a>
+			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+				<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
+					<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 				</p>
 			<?php } // End check for twitter 
 			
@@ -433,39 +439,74 @@ function path_author_box() { ?>
 				
 				?>
 				
-				<div class="author-description author-bio clear">
+				<p class="author-description author-bio">
 					<?php the_author_meta( 'description' ); ?>
-				</div>
+				</p>
 				
-				<?php if ( get_the_author_meta( 'Twitter' ) ) { ?>
-					<p class="twitter clear">
-						<a href="http://twitter.com/<?php the_author_meta( 'twitter' ); ?>" title="<?php printf( esc_attr__( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?>"><?php printf( __( 'Follow %1$s on Twitter', 'path' ), get_the_author_meta( 'display_name' ) ); ?></a>
+				<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+					<p class="twitter <?php if ( $i->count() > 2 ) echo 'multi-author'; ?>">
+						<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 					</p>
 				<?php } // End check for twitter 
 				
 				} // end while
 		}
-		else {
-		?>
+		else { ?>
 
 			<h4 class="author-name fn n"><?php echo do_shortcode( __( 'Article written by [entry-author]', 'path' ) ); ?></h4>
 
 			<?php echo get_avatar( get_the_author_meta( 'user_email' ), '96' ); ?>
 
-			<div class="author-description author-bio">
+			<p class="author-description author-bio">
 				<?php the_author_meta( 'description' ); ?>
-			</div>
+			</p>
 
 			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
-				<p class="twitter clear">
+				<p class="twitter">
 					<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 				</p>
 			<?php } // End check for twitter 
-		} // End else
-		?>
+		} // End else ?>
+		
 	</div>
 	<?php
 }
+
+/**
+ * Filter byline. If Co author plus plugin exists, use coauthors_posts_links()-function in byline. Else use basic stuff.
+ * @since 0.1.0
+ */
+function path_byline( $byline ) {
+	
+	if( function_exists( 'coauthors_posts_links' ) ) {
+	
+		$byline = '<div class="byline">';
+		$byline.= coauthors_posts_links( $between = ', ', $betweenLast = ' ' . __( 'and', 'path' ) . ' ', $before = null, $after = null, $echo = false );
+		$byline.=  __( ' [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' );
+		$byline.= '</div>';
+		
+	}
+	else {
+		$byline = '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>';
+	}
+	
+	return $byline;
+	
+}
+
+/**
+ * Add social media buttons after singular post entry. Facebook like, twitter tweet and google+. This uses Social Path Plugin.
+ *
+ * @since 0.1.0
+ */
+function path_add_social_media() {
+
+	if ( function_exists( 'social_path_media' ) )
+		social_path_media();
+	
+}
+
+
 
 /**
  * Gets posts from last 30 days.
@@ -473,10 +514,12 @@ function path_author_box() { ?>
  * @since 0.1.0
  */
 function path_filter_where( $where = '' ) {
-	
-	$where .= " AND post_date > '" . date('Y-m-d', strtotime('-30 days')) . "'";
+
+	if ( is_page_template( 'page-templates/most-popular-last-30-days.php' ) ) {	
+		$where .= " AND post_date > '" . date('Y-m-d', strtotime('-30 days')) . "'";
 		return $where;
-		
+	}
+	
 }
 
 ?>

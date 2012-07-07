@@ -500,18 +500,32 @@ h3.menu-secondary-mobile-title {
 	margin-bottom: 2em;
 	padding-bottom: 0;
 }
+.page-template-path-slider .hentry,
+.page-template-most-popular .hentry,
+.page-template-most-popular-last-30-days .hentry,
+.page-template-most-popular-by-comments .hentry,
+.page-template-most-popular-by-year .hentry,
+.page-template-most-popular-by-month .hentry {
+	border-bottom: 1px solid #e9edf1;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
 .taxonomy-post_format-video .hentry {
 	background: #e9edf1;
-	border-bottom: 1px solid #ccc;
-	padding: 1.5em 0.5em;
+	padding: 3%;
 }
-.sticky {
+.sticky,
+.page-template-most-popular .sticky,
+.page-template-most-popular-last-30-days .sticky,
+.page-template-most-popular-by-comments .sticky,
+.page-template-most-popular-by-year .sticky,
+.page-template-most-popular-by-month .sticky {
 	background: #e9edf1;
 	border: 1px solid #e5e5e5;
 	padding: 3%;
 }
 
-/* Post titles */
+/* Post titles. */
 .entry-title {
 	margin-bottom: 1em;
 }
@@ -523,12 +537,10 @@ h3.menu-secondary-mobile-title {
 .singular-post .entry-title,
 .format-standard .entry-title,
 .singular.attachment-image .entry-title {
-	border-bottom: none;
 	margin-bottom: .5em;
 	padding-bottom: 0;
 }
 .singular .entry-title a {
-	color: #555;
 }
 .home .format-link .entry-title,
 .archive .format-link .entry-title {
@@ -990,10 +1002,12 @@ ol.comment-list {
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 4%;
-	padding: 4%;
 }
 p.twitter {
 	margin: 1em 0 0 0;
+}
+p.multi-author {
+	margin: 1em 0;
 }
 
 
@@ -1104,6 +1118,21 @@ body .ui-datepicker-div,
 body .ui-datepicker-inline,
 body #ui-datepicker-div {
 	font: normal normal bold 0.875em/1.2 "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/* =Social Path Plugin CSS 
+-------------------------------------------------------------- */
+
+#social-media {
+	margin: 0.625em 0;
+}
+.fb-like, .tweet, .google {
+	display: inline;
+	padding-right: 0.625em;
+}
+body .fb_edge_widget_with_comment{
+	bottom: 2px;
 }
 
 

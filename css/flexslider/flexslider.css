@@ -72,7 +72,7 @@ html[xmlns] .slides {display: block;}
 /* =My slider styles 
 -------------------------------------------------------------- */
 
-.singular-page-956 #main .wrap {
+.page-template-path-slider #main .wrap {
 	margin-bottom: 1em;
 }
 
@@ -81,6 +81,9 @@ html[xmlns] .slides {display: block;}
 	border: none;
 	margin: 0 0 1em;
 	-webkit-box-shadow: none;
+}
+#slider-content .hentry {
+	border-bottom: none;
 }
 #slider-content .slider-images {
 }
@@ -126,8 +129,7 @@ html[xmlns] .slides {display: block;}
 
 @media only screen and (min-width: 49em) {
 
-/* Remember to change this to page template css. */
-.singular-page-956 #main .wrap {
+.page-template-path-slider #main .wrap {
 	margin-bottom: 2em;
 }
 
