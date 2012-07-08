@@ -18,9 +18,9 @@ if ( ! empty( $sticky ) ) :
 /* Show sticky posts in the slider. */
 $args = array( 'post__in' => $sticky );
 	
-	$loop = new WP_Query( $args );
+	$path_slider = new WP_Query( $args );
 
-	if ( $loop->have_posts() ) : ?>
+	if ( $path_slider->have_posts() ) : ?>
 	
 	<div class="wrap">
 		
@@ -28,7 +28,7 @@ $args = array( 'post__in' => $sticky );
 		
 			<ul class="slides">
 				
-			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<?php while ( $path_slider->have_posts() ) : $path_slider->the_post(); ?>
 			
 				<li>
 				   
@@ -53,6 +53,8 @@ $args = array( 'post__in' => $sticky );
 				</li>
 				
 			<?php endwhile; ?>
+			
+			<?php wp_reset_postdata(); // Reset Query ?>
 			
 			</ul>
 			
