@@ -72,7 +72,9 @@ html[xmlns] .slides {display: block;}
 /* =My slider styles 
 -------------------------------------------------------------- */
 
-.page-template-path-slider #main .wrap {
+.page-template-path-slider #main .wrap,
+.home #main .wrap,
+.blog #main .wrap {
 	margin-bottom: 1em;
 }
 
@@ -84,6 +86,7 @@ html[xmlns] .slides {display: block;}
 }
 #slider-content .hentry {
 	border-bottom: none;
+	padding-bottom: 0;
 }
 #slider-content .slider-images {
 }
@@ -129,7 +132,9 @@ html[xmlns] .slides {display: block;}
 
 @media only screen and (min-width: 49em) {
 
-.page-template-path-slider #main .wrap {
+.page-template-path-slider #main .wrap,
+.home #main .wrap,
+.blog #main .wrap {
 	margin-bottom: 2em;
 }
 

@@ -520,9 +520,9 @@ h3.menu-secondary-mobile-title {
 .page-template-most-popular-by-comments .sticky,
 .page-template-most-popular-by-year .sticky,
 .page-template-most-popular-by-month .sticky {
-	background: #e9edf1;
+	/*background: #e9edf1;
 	border: 1px solid #e5e5e5;
-	padding: 3%;
+	padding: 3%;*/
 }
 
 /* Post titles. */
@@ -552,6 +552,9 @@ h3.menu-secondary-mobile-title {
 	color: #555;
 	font: normal normal normal .875em/1.5 Georgia, serif;
 	margin-bottom: 1em;
+}
+.hfeed-more-articles .byline {
+	margin-bottom: 0;
 }
 	
 /* Entry meta. */
@@ -1002,6 +1005,9 @@ ol.comment-list {
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 4%;
+}
+.singular-post .author-co-profile {
+	overflow: hidden;
 }
 p.twitter {
 	margin: 1em 0 0 0;

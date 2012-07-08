@@ -2,7 +2,7 @@
 /**
  * Template Name: Slider
  *
- * Displays sticky posts or newest posts in slider.
+ * Displays sticky posts in slider.
  *
  * @package Path
  * @subpackage Template
@@ -23,13 +23,12 @@ get_header(); // Loads the header.php template. ?>
 			
 			<?php
 			
-			/* Loop for most viewed articles. entry-views extension is used. */
+			/* Loop posts but not sticky ones. Sticky posts are displayd in the slider. That is called in header.php (content-slider.php). */
 			$sticky = get_option('sticky_posts');
 						
 			$args = array (
 				'post__not_in' => $sticky,
-				'posts_per_page' => get_option( 'posts_per_page' ),
-				'paged' => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 )
+				'posts_per_page' => 10
 			);
 			
 			$wp_query = new WP_Query( $args );
@@ -49,14 +48,52 @@ get_header(); // Loads the header.php template. ?>
 				<?php get_template_part( 'loop-error' ); // Loads the loop-error.php template. ?>
 
 			<?php endif; ?>
+			
+			<?php wp_reset_postdata(); // Reset Query ?>
+			
+			<h3 class="section-title"><?php _e( 'More Articles', 'path' ); ?></h3>
+				
+				<div class="hfeed-more-articles">				
+					
+					<?php
+
+					$args = array (
+					'post__not_in' => $sticky, 
+					'posts_per_page' => 20,
+					'offset' => 10
+					);
+					
+					$loop = new WP_Query( $args );
+
+					?>
+					
+					<?php if ( $loop->have_posts() ) : ?>
+					
+						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+							<div id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
+										
+								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+									
+								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
+	
+							</div><!-- .hentry -->
+		
+						<?php endwhile; ?>			
+		
+					<?php else : ?>
+		
+						<?php get_template_part( 'loop-error' ); // Loads the loop-error.php template. ?>
+		
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); // Reset Query ?>
+		
+				</div><!-- .hfeed-more -->
 						
 		</div><!-- .hfeed -->
 		
 		<?php do_atomic( 'close_content' ); // path_close_content ?>
-
-		<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
-		
-		<?php wp_reset_postdata(); // Reset Query ?>
 
 	</div><!-- #content -->
 

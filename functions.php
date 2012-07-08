@@ -128,6 +128,9 @@ function path_theme_setup() {
 	/* Modify excerpt lenght in front page template. */
 	add_filter( 'excerpt_length', 'path_excerpt_length', 999 );
 	
+	/* Exclude sticky posts from home page. */
+	add_action( 'pre_get_posts', 'path_exclude_sticky' );
+	
 	/* Create twitter contact method. */
 	add_filter( 'user_contactmethods', 'path_twitter_method' );
 	
@@ -241,6 +244,8 @@ function path_quote_content( $content ) {
  * @since 0.1.0
  */
 function path_scripts() {
+
+	$sticky = get_option( 'sticky_posts' );
 	
 	if ( !is_admin() ) {
 		
@@ -249,13 +254,13 @@ function path_scripts() {
 		wp_enqueue_script( 'path-fitvids-settings', trailingslashit( get_template_directory_uri() ) . 'js/fitvids/fitvids.js', array( 'path-fitvids' ), '20120625', true );
 		
 		/* Enqueue Flexslider */
-		if ( is_page_template( 'page-templates/path-slider.php' ) ) {
+		if ( ! empty( $sticky ) && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) ) {
 			wp_enqueue_script( 'path-flexslider', trailingslashit( get_template_directory_uri() ) . 'js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120703', true );
 			wp_enqueue_script( 'path-flexslider-settings', trailingslashit( get_template_directory_uri() ) . 'js/flexslider/settings.flexslider.js', array( 'path-flexslider' ), '20120703', true );
 		}
 		
 		/* Enqueue Styles */
-		if ( is_page_template( 'page-templates/path-slider.php' ) )
+		if ( ! empty( $sticky ) && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) )
 			wp_enqueue_style( 'path-flexslider-stylesheet', trailingslashit( get_template_directory_uri() ) . 'css/flexslider/flexslider.css', false, 1.0, 'screen' );
 		
 	}
@@ -376,18 +381,30 @@ function path_excerpt_more() {
 }
 
 /**
- * Change excerpt length in slider template. 
+ * Change excerpt length in slider template and home page. 
  * @since 0.1.0
  */
 function path_excerpt_length( $length ) {
 
-	if ( is_page_template( 'page-templates/path-slider.php' ) )
+	/* if is sticky posts. */
+	if ( is_sticky() && is_home() || is_page_template( 'page-templates/path-slider.php' ) )
 		return 40;
 	else
 		return 60;
 	
 }
 
+/**
+ * Exclude sticky posts from home page. Sticky posts are in a slider.
+ * @since 0.1.0
+ */
+function path_exclude_sticky( $query ) {
+	
+	/* Exclude if is home and is main query. */
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post__not_in', get_option( 'sticky_posts' ) );
+	
+}
 
 /**
  * Adds twitter on the edit user screen.
@@ -416,23 +433,27 @@ function path_author_box() { ?>
 			$i = new CoAuthorsIterator();
 			print $i->count() == 1 ? '<h4>' . __( 'Author of the article', 'path' ) . '</h4> ' : '<h4>' . __( 'Authors of the article', 'path' ) . '</h4> ';
 			
-			$i->iterate();
-			the_author_posts_link();
-			echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
+			$i->iterate(); ?>
+			<div class="author-co-profile"><?php
 			
-		?>
+				the_author_posts_link();
+				echo get_avatar( get_the_author_meta( 'user_email' ), '96' ); ?>
 			
-			<p class="author-description author-bio">
-				<?php the_author_meta( 'description' ); ?>
-			</p>
-			
-			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
-				<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
-					<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
+				<p class="author-description author-bio">
+					<?php the_author_meta( 'description' ); ?>
 				</p>
-			<?php } // End check for twitter 
 			
-			while( $i->iterate() ) {
+				<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+					<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
+						<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
+					</p>
+				<?php } // End check for twitter ?>
+				
+			</div><?php
+			
+			while( $i->iterate() ) { ?>
+			
+			<div class="author-co-profile"><?php
 			
 				the_author_posts_link();
 				echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
@@ -447,7 +468,8 @@ function path_author_box() { ?>
 					<p class="twitter <?php if ( $i->count() > 2 ) echo 'multi-author'; ?>">
 						<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 					</p>
-				<?php } // End check for twitter 
+				<?php } // End check for twitter ?>
+			</div><?php
 				
 				} // end while
 		}
@@ -465,10 +487,12 @@ function path_author_box() { ?>
 				<p class="twitter">
 					<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 				</p>
-			<?php } // End check for twitter 
+			<?php } // End check for twitter
+			
 		} // End else ?>
 		
 	</div>
+		
 	<?php
 }
 
@@ -485,9 +509,6 @@ function path_byline( $byline ) {
 		$byline.=  __( ' [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' );
 		$byline.= '</div>';
 		
-	}
-	else {
-		$byline = '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>';
 	}
 	
 	return $byline;
