@@ -418,6 +418,20 @@ function path_twitter_method( $meta ) {
 }
 
 /**
+ * Check if twitter username is added and echo it.
+ * @since 0.1.0
+ */
+function path_twitter_check() {
+
+	if ( get_the_author_meta( 'twitter' ) ) { ?>
+		<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
+			<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
+		</p>
+	<?php } // End check for twitter
+	
+}
+
+/**
  * Adds an author box at the end of single posts.
  * @note if Co Author Plus plugin is found, use multiple Co Authors loop. Else use normal info.
  * @since 0.1.0
@@ -434,7 +448,10 @@ function path_author_box() { ?>
 			print $i->count() == 1 ? '<h4>' . __( 'Author of the article', 'path' ) . '</h4> ' : '<h4>' . __( 'Authors of the article', 'path' ) . '</h4> ';
 			
 			$i->iterate(); ?>
-			<div class="author-co-profile"><?php
+			
+			<div class="author-co-profile">
+			
+			<?php
 			
 				the_author_posts_link();
 				echo get_avatar( get_the_author_meta( 'user_email' ), '96' ); ?>
@@ -447,13 +464,17 @@ function path_author_box() { ?>
 					<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
 						<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 					</p>
-				<?php } // End check for twitter ?>
+				<?php } // End check for twitter
+				
+			?>
 				
 			</div><?php
 			
 			while( $i->iterate() ) { ?>
 			
-			<div class="author-co-profile"><?php
+			<div class="author-co-profile">
+			
+				<?php
 			
 				the_author_posts_link();
 				echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
@@ -469,9 +490,10 @@ function path_author_box() { ?>
 						<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 					</p>
 				<?php } // End check for twitter ?>
-			</div><?php
 				
-				} // end while
+			</div>
+			
+			<?php } // end while
 		}
 		else { ?>
 
