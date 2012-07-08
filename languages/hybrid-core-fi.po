@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hybrid Core in Finnish\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-25 08:53+0200\n"
-"PO-Revision-Date: 2012-06-25 08:53+0200\n"
+"POT-Creation-Date: 2012-07-08 22:24+0200\n"
+"PO-Revision-Date: 2012-07-08 22:24+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,7 @@ msgid "You can add custom <acronym title=\"Hypertext Markup Language\">HTML</acr
 msgstr "Voit lisätä omaa <acronym title=\"Hypertext Markup Language\">HTML-koodia</acronym> ja/tai lyhytkoodeja, jotka lisätään automaattisesti teemaan."
 
 #: admin/theme-settings.php:47
-#: admin/theme-settings.php:170
+#: admin/theme-settings.php:171
 #, php-format
 msgid "%s Theme Settings"
 msgstr "%s Teeman asetukset"
@@ -82,15 +82,19 @@ msgstr "%s Teeman asetukset"
 msgid "Theme Settings"
 msgstr "Teeman asetukset"
 
-#: admin/theme-settings.php:195
+#: admin/theme-settings.php:172
+msgid "Customize"
+msgstr "Muokkaa"
+
+#: admin/theme-settings.php:198
 msgid "Update Settings"
 msgstr "Päivitä asetukset"
 
-#: admin/theme-settings.php:252
+#: admin/theme-settings.php:255
 msgid "Documentation"
 msgstr "Dokumentaatio"
 
-#: admin/theme-settings.php:256
+#: admin/theme-settings.php:259
 msgid "Support"
 msgstr "Tuki"
 
@@ -202,7 +206,7 @@ msgstr "Laskeva"
 
 #: classes/widget-authors.php:137
 msgid "Display Name"
-msgstr "Näytä nimi"
+msgstr "Näytettävä nimi"
 
 #: classes/widget-authors.php:137
 msgid "Email"
@@ -491,115 +495,115 @@ msgid "An advanced widget that gives you total control over the output of your t
 msgstr "Vimpain, jolla hallitaan avainsanoja."
 
 #: classes/widget-tags.php:44
-#: classes/widget-tags.php:137
+#: classes/widget-tags.php:143
 msgid "Tags"
 msgstr "Avainsanat"
 
-#: classes/widget-tags.php:165
+#: classes/widget-tags.php:171
 msgid "View"
 msgstr "Näkymä"
 
-#: classes/widget-tags.php:165
-#: extensions/breadcrumb-trail.php:387
-#: extensions/breadcrumb-trail.php:420
-#: extensions/breadcrumb-trail.php:435
-#: extensions/breadcrumb-trail.php:463
+#: classes/widget-tags.php:171
+#: extensions/breadcrumb-trail.php:389
+#: extensions/breadcrumb-trail.php:422
+#: extensions/breadcrumb-trail.php:437
+#: extensions/breadcrumb-trail.php:465
 msgid "Edit"
 msgstr "Editoi"
 
-#: classes/widget-tags.php:166
+#: classes/widget-tags.php:172
 msgid "Flat"
 msgstr "Tyhjä"
 
-#: classes/widget-tags.php:282
+#: classes/widget-tags.php:288
 msgid "Pad counts?"
 msgstr "Pad lukumäärä?"
 
-#: extensions/breadcrumb-trail.php:42
+#: extensions/breadcrumb-trail.php:44
 msgid "Browse:"
 msgstr "Navigointi:"
 
-#: extensions/breadcrumb-trail.php:45
+#: extensions/breadcrumb-trail.php:47
 msgid "Home"
 msgstr "Etusivu"
 
-#: extensions/breadcrumb-trail.php:299
+#: extensions/breadcrumb-trail.php:301
 #: functions/context.php:423
 msgid "g:i a"
 msgstr "G:i"
 
-#: extensions/breadcrumb-trail.php:302
+#: extensions/breadcrumb-trail.php:304
 #, php-format
 msgid "Minute %1$s"
 msgstr "Minuutti %1$s"
 
-#: extensions/breadcrumb-trail.php:302
+#: extensions/breadcrumb-trail.php:304
 #: functions/context.php:426
 msgid "i"
 msgstr "i"
 
-#: extensions/breadcrumb-trail.php:305
+#: extensions/breadcrumb-trail.php:307
 #: functions/context.php:429
 msgid "g a"
 msgstr "g a"
 
-#: extensions/breadcrumb-trail.php:316
-#: extensions/breadcrumb-trail.php:322
-#: extensions/breadcrumb-trail.php:327
-#: extensions/breadcrumb-trail.php:332
-#: extensions/breadcrumb-trail.php:519
+#: extensions/breadcrumb-trail.php:318
+#: extensions/breadcrumb-trail.php:324
+#: extensions/breadcrumb-trail.php:329
+#: extensions/breadcrumb-trail.php:334
+#: extensions/breadcrumb-trail.php:521
 #: functions/context.php:435
 #: functions/context.php:441
 #: functions/core-seo.php:90
 msgid "Y"
 msgstr "Y"
 
-#: extensions/breadcrumb-trail.php:317
-#: extensions/breadcrumb-trail.php:328
-#: extensions/breadcrumb-trail.php:523
+#: extensions/breadcrumb-trail.php:319
+#: extensions/breadcrumb-trail.php:330
+#: extensions/breadcrumb-trail.php:525
 msgid "F"
 msgstr "F"
 
-#: extensions/breadcrumb-trail.php:318
-#: extensions/breadcrumb-trail.php:527
+#: extensions/breadcrumb-trail.php:320
+#: extensions/breadcrumb-trail.php:529
 msgid "d"
 msgstr "d"
 
-#: extensions/breadcrumb-trail.php:323
+#: extensions/breadcrumb-trail.php:325
 #, php-format
 msgid "Week %1$s"
 msgstr "Viikko %1$s"
 
-#: extensions/breadcrumb-trail.php:323
+#: extensions/breadcrumb-trail.php:325
 #: functions/context.php:435
 msgid "W"
 msgstr "W"
 
-#: extensions/breadcrumb-trail.php:339
+#: extensions/breadcrumb-trail.php:341
 #: functions/context.php:452
 #, php-format
 msgid "Search results for &quot;%1$s&quot;"
 msgstr "Hakutulokset haulle: &quot;%1$s&quot;"
 
-#: extensions/breadcrumb-trail.php:343
+#: extensions/breadcrumb-trail.php:345
 #: functions/context.php:456
 msgid "404 Not Found"
 msgstr "404 Sivua ei löytynyt"
 
-#: extensions/breadcrumb-trail.php:412
+#: extensions/breadcrumb-trail.php:414
 msgid "Split"
 msgstr "Jaa"
 
-#: extensions/breadcrumb-trail.php:416
+#: extensions/breadcrumb-trail.php:418
 msgid "Merge"
 msgstr "Yhdistä"
 
-#: extensions/breadcrumb-trail.php:523
+#: extensions/breadcrumb-trail.php:525
 #: functions/core-seo.php:86
 msgid "F Y"
 msgstr "F Y"
 
-#: extensions/breadcrumb-trail.php:527
+#: extensions/breadcrumb-trail.php:529
 msgid "F j, Y"
 msgstr "j.m.Y"
 
@@ -858,66 +862,66 @@ msgstr "Vastaa"
 msgid "Log in to reply."
 msgstr "Kirjaudu sisään vastataksesi."
 
-#: functions/sidebars.php:81
+#: functions/sidebars.php:87
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Päävimpain"
 
-#: functions/sidebars.php:82
+#: functions/sidebars.php:88
 msgid "The main (primary) widget area, most often used as a sidebar."
 msgstr "Päävimpainalue, yleisesti käytetty sivupalkissa."
 
-#: functions/sidebars.php:85
+#: functions/sidebars.php:91
 msgctxt "sidebar"
 msgid "Secondary"
 msgstr "Toinen vimpain"
 
-#: functions/sidebars.php:86
+#: functions/sidebars.php:92
 msgid "The second most important widget area, most often used as a secondary sidebar."
 msgstr "Toiseksi tärkein vimpainalue, yleisesti käytetty sivupalkissa."
 
-#: functions/sidebars.php:89
+#: functions/sidebars.php:95
 msgctxt "sidebar"
 msgid "Subsidiary"
 msgstr "Kolmas vimpain"
 
-#: functions/sidebars.php:90
+#: functions/sidebars.php:96
 msgid "A widget area loaded in the footer of the site."
 msgstr "Vimpainalue, joka ladataan sivun alaplakkiin."
 
-#: functions/sidebars.php:93
+#: functions/sidebars.php:99
 msgctxt "sidebar"
 msgid "Header"
 msgstr "Yläpalkin vimpain"
 
-#: functions/sidebars.php:94
+#: functions/sidebars.php:100
 msgid "Displayed within the site's header area."
 msgstr "Näytetään sivun otsakkeessa."
 
-#: functions/sidebars.php:97
+#: functions/sidebars.php:103
 msgctxt "sidebar"
 msgid "Before Content"
 msgstr "Ennen sisältöä"
 
-#: functions/sidebars.php:98
+#: functions/sidebars.php:104
 msgid "Loaded before the page's main content area."
 msgstr "Ladataan ennen sivun sisältöä."
 
-#: functions/sidebars.php:101
+#: functions/sidebars.php:107
 msgctxt "sidebar"
 msgid "After Content"
 msgstr "Sisällön jälkeen"
 
-#: functions/sidebars.php:102
+#: functions/sidebars.php:108
 msgid "Loaded after the page's main content area."
 msgstr "Ladataan sivun sisällön jälkeen."
 
-#: functions/sidebars.php:105
+#: functions/sidebars.php:111
 msgctxt "sidebar"
 msgid "After Singular"
 msgstr "Yksittäisen artikkelin jälkeen"
 
-#: functions/sidebars.php:106
+#: functions/sidebars.php:112
 msgid "Loaded on singular post (page, attachment, etc.) views before the comments area."
 msgstr "Ladataan yksittäisen sivun (artikkelin, kuvasivun jne.) jälkeen ennen kommenttialuetta."
 
