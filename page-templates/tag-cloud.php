@@ -65,8 +65,6 @@ get_header(); // Loads the header.php template. ?>
 		
 		<?php do_atomic( 'close_content' ); // path_close_content ?>
 
-		<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
-
 	</div><!-- #content -->
 
 	<?php do_atomic( 'after_content' ); // path_after_content ?>
