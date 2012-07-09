@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>A guide to the Path theme</title>
+
+<style type="text/css">body{width:750px;margin:36px auto 60px auto;font:16px/25px Georgia,Times,'Times New Roman',serif}a:link,a:visited{color:#2f6eb9;text-decoration:none}a:hover,a:active{text-decoration:underline}h1,h2,h3,h4,h5,h6{margin:40px 0 30px 0;color:#000;font-weight:bold;font-family:Arial,sans-serif}h1{margin-top:80px;font-size:2.2em}code{padding:0 3px;background:#eee}pre code{padding:0}pre{padding:9px;background:#eee;border:1px solid #ccc}ul{list-style:square}p.first{font-size:21px}p.second{font-size:15px}ul.space li{margin-bottom:10px}.section{overflow:hidden}.columns-2{float:left;width:350px;margin:0 0 21px 25px}.columns-3{float:left;width:230px;margin:0 0 21px 20px}</style>
+
+</head>
+<body>
+
+<h1>Path WordPress theme</h1>
+
+<p class="first"><em>Path</em> is a parent theme for WordPress.  </p>
+
+<p class="second">This theme is a parent theme.  <strong>All modification</strong> should be made via a child theme.</p>
+
+<h2>Features</h2>
+
+<p><em>Path</em> is built on <a href="http://themehybrid.com/hybrid-core" title="Hybrid Core theme framework">Hybrid Core</a> framework. I can't thank enough <a href="http://justintadlock.com" title="Justin Tadlock">Justin Tadlock</a> who has created it. This theme rolemodel is <a href="http://themehybrid.com/themes/my-life" title="My Life">My Life</a> theme, so check out all the <a href="http://themehybrid.com/themes" title="Hybrid Themes">Hybrid Themes</a>.</p>
+
+<ul>
+	<li>Per-post layouts which means that you can choose one, two or three column layout. Content on the left, right or center.</li>
+	<li>Post setting that allows you to add a custom stylesheet for individual posts.</li>
+	<li>A smart breadcrumb system.</li>
+	<li>Built-in pagination.</li>
+	<li>Post thumbnails that work with WordPress featured image functionality and provide extra features.</li>
+	<li>Multiple sidebars areas: Primary, Secondary, Subsidiary, Before Content and After Singular.</li>
+	<li>Dynamic body, post, and comment <acronym title="Cascading Style Sheets">CSS</acronym> classes.</li>
+	<li>Fully internationalized, so you can translate the theme in any language. You should place your translations files to child theme <code>languages</code> folder.</li>
+	<li>Built-in WordPress menu system. There are three menus in the theme: Primary, Secondary and Subsidiary.</li>
+	<li>Context-aware action and filter hooks.</li>
+	<li>Some of the most-used filter hooks are shortcode-ready and have accompanying shortcodes.</li>
+	<li>Theme settings page (Appearance &raquo;&raquo; Theme Settings) that allows you to add footer text and set global layout.</li>
+	<li>Set logo under Appearance &raquo;&raquo; Header.</li>
+	<li>Set background under Appearance &raquo;&raquo; Background.</li>
+	<li>Ability to create custom templates for any post type in multiple ways.</li>
+	<li>Highly-configurable widgets that give you full control over their display.</li>
+	<li>Widget areas are content-aware, meaning that they only appear if they contain active widgets.</li>
+	<li>Support for Post Formats.</li>
+	<li>Theme was designed with <a href="http://www.lukew.com/ff/entry.asp?933" title="Mobile First">Mobile First</a> attitude. It uses so called footer menus for "mobile" devices, <a href="https://github.com/scottjehl/Respond" title="Respond.js">Respond.js</a> for legacy browsers and <a href="http://fitvidsjs.com/" title="Fit Vids">Fit Vids</a> for videos.</li>
+</ul>
+
+<h2>Child themes</h2>
+
+<p><em>Path</em> is a parent theme, so create a child theme for any customizations.</p>
+
+<ul>
+	<li>Create a theme folder in your <code>/wp-content/themes</code> directory called <code>path-child</code>.</li>
+	<li>After that create a <code>style.css</code> file in <code>/wp-content/themes/path-child</code> folder.</li>
+	<li>At the top of your <code>style.css</code> file, add the below information.</li>
+</ul>
+
+<pre><code>/**
+ * Theme Name: Path Child
+ * Theme URI: http://link-to-your-site.com
+ * Description: Describe your child theme.
+ * Version: 0.1
+ * Author: Your Name
+ * Author URI: http://link-to-your-site.com
+ * Tags: Some, Tags
+ * Template: path
+ */</code></pre>
+
+<p>After that you might want to import all the styles from parent theme.</p>
+
+<pre><code>@import url( '../path/style.css' );
+
+/* Custom code goes below here. */</code></pre>
+
+<p>This is officially-supported way of modifying themes in WordPress.</p>
+
+<p><strong>Note!</strong>
+If you want to use media queries in child theme and support them in browsers like IE7 and IE8,
+you should copy and paste css rules from parent theme <code>style.css</code> to child theme <code>style.css</code> and remove line <code>@import url( '../path/style.css' );</code>
+</p>
+<p>
+Remember to change all the url like this.<br />
+<code>background: url(../path/images/menu-plus.png) no-repeat 0 0;</code>
+</p>
+
+<h2>Supported plugins</h2>
+
+<p><strong>Co-Authors Plus</strong></p>
+<p>Theme is designed for multi-author blogging or magazine style websites. Theme filters byline so that all authors are displayed if <a href="http://wordpress.org/extend/plugins/co-authors-plus/" title="Co-Authors Plus">Co-Authors Plus</a> is installed. And theme also adds author metabox under every article, displaying all authors. You can also add Twitter username in user profile.</p>
+
+<p><strong>Smart Archives Reloaded</strong></p>
+<p>If <a href="http://wordpress.org/extend/plugins/smart-archives-reloaded/" title="Smart Archives Reloaded">Smart Archives Reloaded</a> is installed and active, it automatically do its magic in <em>Archives</em> page template.</p> 
+
+<p><strong>Social Path</strong></p>
+
+<p>If <a href="#" title="Social Path">Social Path</a> is installed and active, you can share your posts on Twitter, Google+ and Facebook. Plugin adds these buttons after singular post.</p>
+
+<p><strong>Gravity Forms</strong></p>
+<p>Path includes base CSS for <a href="http://www.gravityforms.com/" title="Gravity Forms">Gravity Forms</a> plugin. CSS can be found in the middle of the <code>style.css</code>.</p>
+
+<h2>Theme Settings (Appearance &raquo;&raquo; Theme Settings)</h2>
+
+<p><strong>Set logo</strong></p>
+
+<p>Set logo under Appearance &raquo;&raquo; Header. Suggested logo size is 300 x 99 (in pixels). Image size is flexible so you can try different image size. Theme is using Header images only for logo, not header images. Of course you can remove default logo and Blog name will be displayed.</p>
+
+<p><strong>Set background</strong></p>
+
+<p>Set background under Appearance &raquo;&raquo; Background.</p>
+
+<p><strong>Change default layout</strong></p>
+
+<p>
+Path theme has two column layout by default, content on the left and sidebar on the right. You can change this default layout under Appearance &raquo;&raquo; Theme Settings. You can overwrite this in post
+editor by choosing layout for that certain post:
+</p>
+<ul>
+<li>Default</li>
+<li>One Column</li>
+<li>Two Columns, Left (theme default)</li>
+<li>Two Columns, Right</li>
+<li>Three Columns, Left</li>
+<li>Three Columns, Right</li>
+<li>Three Columns, Center</li>
+</ul>
+
+<p><strong>Footer text</strong></p>
+
+<p>You can change Footer text in Footer Settings metabox.</p>
+
+<h2>Page Templates</h2>
+
+<p>There are several page templates in this theme. They are located in <code>page-templates</code> folder. If you need to overwrite page templates in a child theme, create subfolder <code>page-templates</code> in child theme and copy certain page template in that folder and start modifying.</p>
+
+<ul>
+	<li>Archives (archives.php): this page template automatically work with <a href="http://wordpress.org/extend/plugins/smart-archives-reloaded/" title="Smart Archives Reloaded ">Smart Archives Reloaded</a> Plugin. If it's not active, you're still covered with some basic archive stuff.</li>
+	<li>Authors (authors.php): displays all the authors who have capability to publish or edit posts or pages.</li>
+	<li>Most Popular (most-popular.php): displays most read articles in all time.</li>
+	<li>Most Popular by comment (most-popular-by-comments.php): displays most commented articles in all time.</li>
+	<li>Most Popular by month (most-popular-by-month.php): displays most read articles in current month and year.</li>
+	<li>Most Popular by year (most-popular-by-year.php): displays most read articles in current year.</li>
+	<li>Most Popular last 30 days (most-popular-last-30-days-php): displays most read articles in last 30 days.</li>
+	<li>Slider (path-slider.php): Displays Sticky Posts in a slider and some more articles after that. So remember to <strong>use some Sticky Posts to see slider</strong> activated. Theme is using Flexslider.</li>
+	<li>Tag Cloud (tag-cloud.php): Displays Tag Cloud.</li>
+</ul>
+
+<h2>Tips</h2>
+
+<p>Video Post type archive is displayd just a little differently. You can add Custom link in Menu using link <code>http://mydomain.com/type/video/</code>. 
+Youtube videos have Thumbnail pictures in URL <code>http://img.youtube.com/vi/ID/0.jpg</code>. Just replace ID with your video ID like A7CI4yb3eu4.
+</p>
+<p>
+Now, you can add this Thumbnail by adding Custom Field <code>Thumbnail</code> with value <code>http://img.youtube.com/vi/ID/0.jpg</code> in post editor. 
+If you don't see custom Custom Field in post editor, click Screen options upper right and click <code>Custom Fields</code>.</p>
+
+<h2>Action Hooks reference</h2>
+<p>
+With action hooks you can add your custom code in a certain points in the theme. If you open <code>header.php</code> for example you'll
+see this line of code: 
+</p>
+
+<pre><code>&lt;?php do_atomic( 'open_body' ); // path_open_body ?&gt;</code></pre>
+
+<p>
+It means that you can add your code in that spot  without modifying <code>header.php</code> file. 
+You do it using child theme <code>functions.php</code>. Add this inside setup function.
+</p>
+
+<pre><code>add_action( "{$prefix}_open_body", 'my_open_body_code' );</code></pre>
+
+<p>And this after setup function.</p>
+
+<pre><code>
+function my_open_body_code() {
+
+	echo 'My code';
+
+}
+</code></pre>
+
+<p>Here are all the hooks used in Path theme.</p>
+
+<ul>
+<li><strong>header.php</strong>
+	<ul>
+	<li>path_open_body</li>
+	<li>path_before_header</li>
+	<li>path_open_header</li>
+	<li>path_header</li>
+	<li>path_close_header</li>
+	<li>path_after_header</li>
+	<li>path_before_main</li>
+	<li>path_open_main</li>
+	</ul>
+</li>
+<li><strong>menu-primary.php</strong>
+	<ul>
+	<li>path_before_menu_primary</li>
+	<li>path_open_menu_primary</li>
+	<li>path_close_menu_primary</li>
+	<li>path_after_menu_primary</li>
+	</ul>
+</li>
+<li><strong>menu-primary-mobile.php</strong>
+	<ul>
+	<li>path_before_menu_primary_mobile</li>
+	<li>path_open_menu_primary_mobile</li>
+	<li>path_close_menu_primary_mobile</li>
+	<li>path_after_menu_primary_mobile</li>
+	</ul>
+</li>
+<li><strong>menu-secondary.php</strong>
+	<ul>
+	<li>path_before_menu_secondary</li>
+	<li>path_open_menu_secondary</li>
+	<li>path_close_menu_secondary</li>
+	<li>path_after_menu_secondary</li>
+	</ul>
+</li>
+<li><strong>menu-secondary-mobile.php</strong>
+	<ul>
+	<li>path_before_menu_secondary_mobile</li>
+	<li>path_open_menu_secondary_mobile</li>
+	<li>path_close_menu_secondary_mobile</li>
+	<li>path_after_menu_secondary_mobile</li>
+	</ul>
+</li>
+<li><strong>sidebar-before-content.php</strong>
+	<ul>
+	<li>path_before_sidebar_before_content</li>
+	<li>path_open_sidebar_before_content</li>
+	<li>path_close_sidebar_before_content</li>
+	<li>path_after_sidebar_before_content</li>
+	</ul>
+</li>
+<li><strong>404.php</strong>, <strong>attachment-image.php</strong>, <strong>content-*.php</strong>, <strong>index.php</strong>, <strong>search.php</strong>, <strong>taxonomy-post_format-video.php</strong>
+	<ul>
+	<li>path_before_content</li>
+	<li>path_open_content</li>
+	<li>path_before_entry (not in 404.php)</li>
+	<li>path_open_entry (not in 404.php)</li>
+	<li>path_close_entry(not in 404.php)</li>
+	<li>path_after_entry(not in 404.php)</li>
+	<li>path_after_singular (not in 404.php, search.php and taxonomy-post_format-video.php)</li>
+	<li>path_close_content</li>
+	<li>path_after_content</li>
+	</ul>
+</li>
+<li><strong>comment.php</strong>
+	<ul>
+	<li>path_before_comment</li>
+	<li>path_open_comment</li>
+	<li>path_close_comment</li>
+	<li>path_after_comment</li>
+	</ul>
+</li>
+<li><strong>comments.php</strong>
+	<ul>
+	<li>path_before_comment_list</li>
+	<li>path_after_comment_list</li>
+	</ul>
+</li>
+<li><strong>sidebar-primary.php</strong>
+	<ul>
+	<li>path_before_sidebar_primary</li>
+	<li>path_open_sidebar_primary</li>
+	<li>path_close_sidebar_primary</li>
+	<li>path_after_sidebar_primary</li>
+	</ul>
+</li>
+<li><strong>sidebar-secondary.php</strong>
+	<ul>
+	<li>path_before_sidebar_secondary</li>
+	<li>path_open_sidebar_secondary</li>
+	<li>path_close_sidebar_secondary</li>
+	<li>path_after_sidebar_secondary</li>
+	</ul>
+</li>
+<li><strong>sidebar-after-singular.php</strong>
+	<ul>
+	<li>path_before_sidebar_after_singular</li>
+	<li>path_open_sidebar_after_singular</li>
+	<li>path_close_sidebar_after_singular</li>
+	<li>path_after_sidebar_after_singular</li>
+	</ul>
+</li>
+<li><strong>footer.php</strong>
+	<ul>
+	<li>path_close_main</li>
+	<li>path_after_main</li>
+	<li>path_before_footer</li>
+	<li>path_open_footer</li>
+	<li>path_footer</li>
+	<li>path_close_footer</li>
+	<li>path_after_footer</li>
+	<li>path_close_body</li>
+	</ul>
+</li>
+<li><strong>sidebar-subsidiary.php</strong>
+	<ul>
+	<li>path_before_sidebar_subsidiary</li>
+	<li>path_open_sidebar_subsidiary</li>
+	<li>path_close_sidebar_subsidiary</li>
+	<li>path_after_sidebar_subsidiary</li>
+	</ul>
+</li>
+<li><strong>menu-subsidiary.php</strong>
+	<ul>
+	<li>path_before_menu_subsidiary</li>
+	<li>path_open_menu_subsidiary</li>
+	<li>path_close_menu_subsidiary</li>
+	<li>path_after_menu_subsidiary</li>
+	</ul>
+</li>
+</ul>
+
+
+<h2>Theme support</h2>
+
+<p>Support for the <em>Path</em> theme is not offered on the WordPress support forums.  There is a community called <a href="http://themehybrid.com" title="Theme Hybrid">Theme Hybrid</a> where support is offered for this theme.  You are encouraged to sign up to the site to use its support forums and become a part of the community.</p>
+
+<h2>Credits</h2>
+
+<p>Path is build on <a href="http://themehybrid.com/hybrid-core" title="Hybrid Core">Hybrid Core</a> framework by <a href="http://justintadlock.com/" title="Justin Tadlock">Justin Tadlock</a>.</p>
+
+<p>Theme uses</p>
+
+<ul>
+	<li><a href="http://www.google.com/webfonts#ChoosePlace:select" title="Google Font">Google Font Abel</a>, which is licensed under <a href="http://scripts.sil.org/OFL" title="OFL">OFL</a>.</li>
+	<li><a href="" title="Flexslider">FlexSlider</a>, which is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" title="GPLv2">GPLv2</a> license.</li>
+	<li><a href="http://fitvidsjs.com" title="FitVids">FitVids</a>, which is licensed under <a href="http://sam.zoy.org/wtfpl/" title="WTFPL">WTFPL</a>.</li>
+	<li><a href="https://github.com/scottjehl/Respond" title="Respond.js">Respond.js</a>, which is licensed under <a href="http://www.opensource.org/licenses/mit-license.php" title="MIT">MIT</a>.</li>
+</ul>
+
+
+<h2>Copyright &amp; license</h2>
+
+<p><em>Path</em> is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" title="GNU GPL">GNU General Public License</a>, version 2 (<acronym title="GNU General Public License">GPL</acronym>).</p>
+
+<p>This theme is copyrighted to <a href="http://foxnet.fi" title="Sami Keijonen">Sami Keijonen</a>.</p>
+
+<p>2012 &copy; Sami Keijonen.  All rights reserved.</p>
+
+</body>
+</html>
