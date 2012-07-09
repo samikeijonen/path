@@ -72,7 +72,7 @@ function path_theme_setup() {
 	// Background default color
 	'default-color' => 'e9edf1',
 	// Background image default
-	'default-image' => get_template_directory_uri() . '/images/path_bg.png' 
+	'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/path_bg.png' 
 	) );
 	
 	/* Add support for flexible headers. This means logo in this theme, not header image. @link http://make.wordpress.org/themes/2012/04/06/updating-custom-backgrounds-and-custom-headers-for-wordpress-3-4/ */
@@ -81,7 +81,7 @@ function path_theme_setup() {
 	'height' => 99,
 	'flex-width' => true,
 	'width' => 300,
-	'default-image' => get_template_directory_uri() . '/images/logo.png',
+	'default-image' => trailingslashit( get_template_directory_uri() ) . 'images/logo.png',
 	'header-text' => false,
 	//'wp-head-callback' => 'path_head_logo_style',
 	);
@@ -155,7 +155,7 @@ function path_respond_mediaqueries() {
 	
 	<!-- Enables media queries in some unsupported browsers. -->
 	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+	<script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ); ?>js/respond.min.js"></script>
 	<![endif]-->
 	
 	<?php
@@ -388,7 +388,7 @@ function path_excerpt_length( $length ) {
 
 	/* if is sticky posts. */
 	if ( is_sticky() && is_home() || is_page_template( 'page-templates/path-slider.php' ) )
-		return 40;
+		return 30;
 	else
 		return 60;
 	
@@ -414,20 +414,6 @@ function path_twitter_method( $meta ) {
 
 	$meta['twitter'] = __( 'Twitter Username', 'path' );
 	return $meta;
-	
-}
-
-/**
- * Check if twitter username is added and echo it.
- * @since 0.1.0
- */
-function path_twitter_check() {
-
-	if ( get_the_author_meta( 'twitter' ) ) { ?>
-		<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
-			<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
-		</p>
-	<?php } // End check for twitter
 	
 }
 
