@@ -11,7 +11,7 @@
  
  if ( has_nav_menu( 'primary' ) ) : ?>
  
-	<?php do_atomic( 'before_menu_primary_mobile_mobile' ); // path_before_menu_primary_mobile_mobile ?>
+	<?php do_atomic( 'before_menu_primary_mobile' ); // path_before_menu_primary_mobile ?>
  
 		<div id="menu-primary-mobile" class="menu-container">
 
