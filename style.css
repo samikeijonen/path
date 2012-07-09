@@ -1413,6 +1413,9 @@ body .fb_edge_widget_with_comment{
 
 /* Header. */
 #header {
+	padding: 1em 2%;
+}
+.custom-header #header {
 	padding: 0.5em 2%;
 }
 
