@@ -72,6 +72,8 @@ get_header(); // Loads the header.php template. ?>
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
 							<div id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
+							
+								<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-smaller-thumbnail' ) ); ?>
 										
 								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 									
