@@ -136,18 +136,13 @@ editor by choosing layout for that certain post:
 	<li>Most Popular by month (most-popular-by-month.php): displays most read articles in current month and year.</li>
 	<li>Most Popular by year (most-popular-by-year.php): displays most read articles in current year.</li>
 	<li>Most Popular last 30 days (most-popular-last-30-days-php): displays most read articles in last 30 days.</li>
-	<li>Slider (path-slider.php): Displays Sticky Posts in a slider and some more articles after that. So remember to <strong>use some Sticky Posts to see slider</strong> activated. Theme is using Flexslider.</li>
+	<li>Slider (path-slider.php): Displays Sticky Posts in a slider and some more articles after that. So remember to <strong>use some Sticky Posts to see slider</strong> activated. Theme is using FlexSlider.</li>
 	<li>Tag Cloud (tag-cloud.php): Displays Tag Cloud.</li>
 </ul>
 
-<h2>Tips</h2>
+<h2>Slider</h2>
 
-<p>Video Post type archive is displayd just a little differently. You can add Custom link in Menu using link <code>http://mydomain.com/type/video/</code>. 
-Youtube videos have Thumbnail pictures in URL <code>http://img.youtube.com/vi/ID/0.jpg</code>. Just replace ID with your video ID like A7CI4yb3eu4.
-</p>
-<p>
-Now, you can add this Thumbnail by adding Custom Field <code>Thumbnail</code> with value <code>http://img.youtube.com/vi/ID/0.jpg</code> in post editor. 
-If you don't see custom Custom Field in post editor, click Screen options upper right and click <code>Custom Fields</code>.</p>
+<p>Path uses <a href="https://github.com/woothemes/FlexSlider/" title="FlexSlider">FlexSlider</a> in <em>Slider</em> page template and in home page. Only sticky posts are shown in Slider, so if you want to see it in action you need to use some sticky posts. Recommended image size is 660 x 300 (in pixels). It's safe to use WordPress featured image as slider image but it's not necessary if you have attached images in posts. It graps the first one automatically. <code>get_the_image</code> extension is used to do all the magic.</p>
 
 <h2>Action Hooks reference</h2>
 <p>
@@ -323,7 +318,7 @@ function my_open_body_code() {
 
 <ul>
 	<li><a href="http://www.google.com/webfonts#ChoosePlace:select" title="Google Font">Google Font Abel</a>, which is licensed under <a href="http://scripts.sil.org/OFL" title="OFL">OFL</a>.</li>
-	<li><a href="" title="Flexslider">FlexSlider</a>, which is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" title="GPLv2">GPLv2</a> license.</li>
+	<li><a href="https://github.com/woothemes/FlexSlider/" title="Flexslider">FlexSlider</a>, which is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" title="GPLv2">GPLv2</a> license.</li>
 	<li><a href="http://fitvidsjs.com" title="FitVids">FitVids</a>, which is licensed under <a href="http://sam.zoy.org/wtfpl/" title="WTFPL">WTFPL</a>.</li>
 	<li><a href="https://github.com/scottjehl/Respond" title="Respond.js">Respond.js</a>, which is licensed under <a href="http://www.opensource.org/licenses/mit-license.php" title="MIT">MIT</a>.</li>
 </ul>
