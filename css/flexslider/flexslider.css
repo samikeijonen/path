@@ -89,21 +89,17 @@ html[xmlns] .slides {display: block;}
 	padding-bottom: 0;
 }
 #slider-content .slider-images {
+	padding: 1em 0;
 }
 #slider-content .slider-title {
 }
 .flexslider .flex-control-nav {
-	bottom: -1.15em;
+	bottom: -1em;
 }
 #slider-content .entry-title a {
-
 }
 #slider-content img {
-   	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box;
     border: none;
-    padding: 1em 0;
 }
 .flex-control-paging li a:hover {
 	background: #ca4842;
