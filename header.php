@@ -41,7 +41,7 @@
 
 		<?php do_atomic( 'before_header' ); // path_before_header ?>
 
-		<header id="header">
+		<div id="header">
 
 			<?php do_atomic( 'open_header' ); // path_open_header ?>
 
@@ -69,7 +69,7 @@
 
 			<?php do_atomic( 'close_header' ); // path_close_header ?>
 
-		</header><!-- #header -->
+		</div><!-- #header -->
 
 		<?php do_atomic( 'after_header' ); // path_after_header ?>
 
