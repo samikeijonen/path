@@ -110,9 +110,6 @@ function path_theme_setup() {
 	/* Enqueue Google fonts */
 	add_action( 'wp_enqueue_scripts', 'path_google_fonts' );
 	
-	/* Set logo under Appearance >> Header to site title. */
-	add_filter( "{$prefix}_site_title", 'path_site_title' );
-	
 	/* Filter footer settings. Add back to the top link. */
 	add_filter( "{$prefix}_default_theme_settings", 'path_default_footer_settings' );
 	
@@ -295,38 +292,6 @@ function path_url_grabber() {
 		return get_permalink( get_the_ID() );
 
 	return esc_url_raw( $matches[1] );
-}
-
-/**
- * Filter Hybrid site title and replace text with logo, which can be set under Appearance >> Header.
- * @since 0.1.0
- */
-function path_site_title( $title ) {
-
-	/* If viewing the front page of the site, use an <h1> tag. Otherwise, use a <div> tag. */
-	$tag = ( is_front_page() ) ? 'h1' : 'div';
-	
-	/* Get header image url, width and height. */
-	$path_logo_image_url = get_header_image();
-	$path_header_image_width  = get_custom_header()->width;
-	$path_header_image_height = get_custom_header()->height;
-	
-	$path_logo_image = '<img src="' .$path_logo_image_url .'" width="' . $path_header_image_width . '" height="' . $path_header_image_height . '" alt="' .  get_bloginfo( 'name' ) . '" />';
-
-	if ( !empty( $path_logo_image_url ) ) {
-	
-		if ( $title = get_bloginfo( 'name' ) )
-			$title = sprintf( '<%1$s id="site-title"><a href="%2$s" title="%3$s" rel="home">%4$s<span>%5$s</span></a></%1$s>', tag_escape( $tag ), home_url(), esc_attr( $title ), $path_logo_image, $title );
-	
-	} 
-	else { 
-	/* Get the site title.  If it's not empty, wrap it with the appropriate HTML. */
-	if ( $title = get_bloginfo( 'name' ) )
-		$title = sprintf( '<%1$s id="site-title"><a href="%2$s" title="%3$s" rel="home"><span>%4$s</span></a></%1$s>', tag_escape( $tag ), home_url(), esc_attr( $title ), $title );
-	
-	}
-	
-	return $title;
 }
 
 /**

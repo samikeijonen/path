@@ -41,18 +41,26 @@
 
 		<?php do_atomic( 'before_header' ); // path_before_header ?>
 
-		<div id="header">
+		<header id="header">
 
 			<?php do_atomic( 'open_header' ); // path_open_header ?>
 
 			<div class="wrap">
 
 				<div id="branding">
-					<?php hybrid_site_title(); ?>
-					<?php /* if ( get_custom_header() ) { ?>
-					<img src="<?php header_image(); ?>" height=<?php echo get_custom_header()->height; ?>" width=<?php echo get_custom_header()->width; ?>" alt="" /> 
-					<?php } */  ?>
-					<?php hybrid_site_description(); ?>
+				
+					<?php if ( get_header_image() ) { /* if header image is set use it as logo. */ ?>
+						
+						<h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><img src="<?php header_image(); ?>" height=<?php echo get_custom_header()->height; ?>" width=<?php echo get_custom_header()->width; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" /></a></h1>
+					
+					<?php } else { ?>
+					
+						<h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					
+					<?php }  ?>
+					
+					<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+					
 				</div><!-- #branding -->
 
 				<?php do_atomic( 'header' ); // path_header ?>
@@ -61,7 +69,7 @@
 
 			<?php do_atomic( 'close_header' ); // path_close_header ?>
 
-		</div><!-- #header -->
+		</header><!-- #header -->
 
 		<?php do_atomic( 'after_header' ); // path_after_header ?>
 
