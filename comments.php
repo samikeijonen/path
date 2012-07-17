@@ -27,8 +27,8 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 
 				<?php if ( get_option( 'page_comments' ) ) : ?>
 					<div class="comments-nav">
-						<span class="page-numbers"><?php printf( __( 'Page %1$s of %2$s', 'path' ), ( get_query_var( 'cpage' ) ? absint( get_query_var( 'cpage' ) ) : 1 ), get_comment_pages_count() ); ?></span>
 						<?php previous_comments_link(); ?>
+						<span class="page-numbers"><?php printf( __( 'Page %1$s of %2$s', 'path' ), ( get_query_var( 'cpage' ) ? absint( get_query_var( 'cpage' ) ) : 1 ), get_comment_pages_count() ); ?></span>
 						<?php next_comments_link(); ?>
 					</div><!-- .comments-nav -->
 				<?php endif; ?>

@@ -21,10 +21,12 @@ get_header(); // Loads the header.php template. ?>
 
 		<div class="hfeed">
 
-			<div id="post-0" class="<?php hybrid_entry_class(); ?>">
+			<article id="post-0" class="<?php hybrid_entry_class(); ?>">
 			
-			<h1 class="error-404-title entry-title"><?php _e( 'What happened!?', 'path' ); ?></h1>
-
+				<header class="entry-header">
+					<h1 class="error-404-title entry-title"><?php _e( 'What happened!?', 'path' ); ?></h1>
+				</header><!-- .entry-header -->
+				
 				<div class="entry-content">
 				
 					<p>
@@ -32,10 +34,18 @@ get_header(); // Loads the header.php template. ?>
 					</p>
 			
 					<?php get_search_form(); // Loads the searchform.php template. ?>
+					
+					<p>
+						<?php _e( "Or here are the latest posts, hope it helps.", 'path' ); ?>
+					</p>
+
+					<ul>
+						<?php wp_get_archives( array( 'limit' => 20, 'type' => 'postbypost' ) ); ?>
+					</ul>
 			
 				</div><!-- .entry-content -->
 
-			</div><!-- .hentry -->
+			</article><!-- .hentry -->
 
 		</div><!-- .hfeed -->
 
