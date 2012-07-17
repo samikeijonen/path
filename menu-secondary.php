@@ -13,7 +13,7 @@
  
 	<?php do_atomic( 'before_menu_secondary' ); // path_before_menu_secondary ?>
 	
-	<div id="menu-secondary-title" class="nav-anchors">
+	<nav id="menu-secondary-title" class="nav-anchors">
 	
 		<div class="wrap">
 		
@@ -21,21 +21,21 @@
 
 		</div><!-- .wrap -->
 	
-	</div><!-- #menu-secondary-title -->
+	</nav><!-- #menu-secondary-title -->
  
-		<div id="menu-secondary" class="menu-container">
+	<nav id="menu-secondary" class="menu-container">
 
-			<div class="wrap">
+		<div class="wrap">
 				
-				<?php do_atomic( 'open_menu_secondary' ); // path_open_menu_secondary ?>
+			<?php do_atomic( 'open_menu_secondary' ); // path_open_menu_secondary ?>
 					
-				<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'menu', 'menu_class' => '', 'menu_id' => 'menu-secondary-items', 'fallback_cb' => '' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container_class' => 'menu', 'menu_class' => '', 'menu_id' => 'menu-secondary-items', 'fallback_cb' => '' ) ); ?>
 				
-				<?php do_atomic( 'close_menu_secondary' ); // path_close_menu_secondary ?>
+			<?php do_atomic( 'close_menu_secondary' ); // path_close_menu_secondary ?>
 				
-			</div><!-- .wrap -->
+		</div><!-- .wrap -->
 
-		</div><!-- #menu-secondary .menu-container -->
+	</nav><!-- #menu-secondary .menu-container -->
 	
 	<?php do_atomic( 'after_menu_secondary' ); // path_after_menu_secondary ?>
 	

@@ -316,6 +316,10 @@ img.wp-smiley {
 }
 
 /* Mobiles menus. */
+nav#menu-primary-mobile ul,
+nav#menu-secondary-mobile ul {
+	list-style-type: circle;
+}
 #menu-primary-mobile,
 #menu-secondary-mobile,
 #menu-primary-title,
@@ -1007,7 +1011,7 @@ ol.comment-list {
 
 /* Author profile. */
 .singular-post .author-profile {
-	border: 1px dotted #e9edf1;
+	border: 1px solid #e9edf1;
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 4%;

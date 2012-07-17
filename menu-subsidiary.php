@@ -13,7 +13,7 @@ if ( has_nav_menu( 'subsidiary' ) ) : ?>
 
 	<?php do_atomic( 'before_menu_subsidiary' ); // path_before_menu_subsidiary ?>
 
-	<div id="menu-subsidiary" class="menu-container">
+	<nav id="menu-subsidiary" class="menu-container">
 		
 		<div class="wrap">
 
@@ -25,7 +25,7 @@ if ( has_nav_menu( 'subsidiary' ) ) : ?>
 		
 		</div><!-- .wrap -->
 
-	</div><!-- #menu-subsidiary .menu-container -->
+	</nav><!-- #menu-subsidiary .menu-container -->
 
 	<?php do_atomic( 'after_menu_subsidiary' ); // path_after_menu_subsidiary ?>
 

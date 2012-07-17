@@ -32,7 +32,7 @@
 
 		<?php do_atomic( 'before_footer' ); // path_before_footer ?>
 
-		<div id="footer">
+		<footer id="footer">
 
 			<?php do_atomic( 'open_footer' ); // path_open_footer ?>
 
@@ -46,7 +46,7 @@
 
 			<?php do_atomic( 'close_footer' ); // path_close_footer ?>
 
-		</div><!-- #footer -->
+		</footer><!-- #footer -->
 
 		<?php do_atomic( 'after_footer' ); // path_after_footer ?>
 

@@ -13,7 +13,7 @@
  
 	<?php do_atomic( 'before_menu_secondary_mobile' ); // path_before_menu_secondary_mobile ?>
  
-		<div id="menu-secondary-mobile" class="menu-container">
+		<nav id="menu-secondary-mobile" class="menu-container">
 
 			<div class="wrap">
 				
@@ -27,7 +27,7 @@
 						
 			</div><!-- .wrap -->
 
-		</div><!-- #menu-secondary-mobile .menu-container -->
+		</nav><!-- #menu-secondary-mobile .menu-container -->
 	
 	<?php do_atomic( 'after_menu_secondary_mobile' ); // path_after_menu_secondary_mobile ?>
 	

@@ -27,29 +27,33 @@ get_header(); // Loads the header.php template. ?>
 
 					<?php do_atomic( 'before_entry' ); // path_before_entry ?>
 
-					<div id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
+					<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
 					
 						<?php do_atomic( 'open_entry' ); // path_open_entry ?>
 
-						<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
-
-							<div class="entry-content">
-								
-								<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'path' ) ); ?>
-								
-								<p class="term-cloud post_tag-cloud tag-cloud">
-									<?php wp_tag_cloud( array( 'number' => 0, 'unit' => 'em', 'smallest' => 0.7, 'largest' => 2 ) ); ?>
-								</p><!-- .term-cloud .post_tag-cloud -->
-	
-								<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'path' ), 'after' => '</p>' ) ); ?>
-								
-							</div><!-- .entry-content -->
+						<header class="entry-header">
+							<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+						</header><!-- .entry-header -->
 						
-						<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">[entry-edit-link]</div>' ); ?>
+						<div class="entry-content">
+								
+							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'path' ) ); ?>
+								
+							<p class="term-cloud post_tag-cloud tag-cloud">
+								<?php wp_tag_cloud( array( 'number' => 0, 'unit' => 'em', 'smallest' => 0.7, 'largest' => 2 ) ); ?>
+							</p><!-- .term-cloud .post_tag-cloud -->
+	
+							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'path' ), 'after' => '</p>' ) ); ?>
+								
+						</div><!-- .entry-content -->
+						
+						<footer class="entry-footer">
+							<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">[entry-edit-link]</div>' ); ?>
+						</footer><!-- .entry-footer -->
 						
 						<?php do_atomic( 'close_entry' ); // path_close_entry ?>
 
-					</div><!-- .hentry -->
+					</article><!-- .hentry -->
 
 					<?php do_atomic( 'after_entry' ); // path_after_entry ?>
 

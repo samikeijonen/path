@@ -41,13 +41,13 @@
 
 		<?php do_atomic( 'before_header' ); // path_before_header ?>
 
-		<div id="header">
+		<header id="header">
 
 			<?php do_atomic( 'open_header' ); // path_open_header ?>
 
 			<div class="wrap">
 
-				<div id="branding">
+				<hgroup id="branding">
 				
 					<?php if ( get_header_image() ) { /* if header image is set use it as logo. */ ?>
 						
@@ -61,7 +61,7 @@
 					
 					<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 					
-				</div><!-- #branding -->
+				</hgroup><!-- #branding -->
 
 				<?php do_atomic( 'header' ); // path_header ?>
 
@@ -69,7 +69,7 @@
 
 			<?php do_atomic( 'close_header' ); // path_close_header ?>
 
-		</div><!-- #header -->
+		</header><!-- #header -->
 
 		<?php do_atomic( 'after_header' ); // path_after_header ?>
 
@@ -87,4 +87,4 @@
 
 			<?php do_atomic( 'open_main' ); // path_open_main ?>
 
-			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'before' => __( 'You are here:', 'path' ), 'separator'  => __( '&#8764;', 'path' ) ) ); ?>
+			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'before' => __( 'You are here:', 'path' ), 'separator'  => __( '&#8764;', 'path' ) ) ); ?>

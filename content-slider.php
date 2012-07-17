@@ -32,7 +32,7 @@ $args = array( 'post__in' => $sticky );
 			
 				<li>
 				   
-					<div id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?> featured">
+					<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?> featured">
 						
 						<div class="slider-images">
 							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-slider-thumbnail', 'image_class' => 'path-slider', 'default_image' => trailingslashit( get_template_directory_uri() ) . 'images/path_default_slider_image.png', 'width' => 660, 'height' => 300 ) ); ?>	
@@ -40,7 +40,10 @@ $args = array( 'post__in' => $sticky );
 						
 						<div class="slider-title">
 						
-							<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+							<header class="entry-header">
+								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'picturesque' ) . '</div>' ); ?>
+							</header><!-- .entry-header -->
 							
 							<div class="entry-summary">
 									<?php the_excerpt(); ?>
@@ -48,7 +51,7 @@ $args = array( 'post__in' => $sticky );
 							
 						</div><!-- .slider-title -->
 						
-					</div><!-- .featured-post -->	
+					</article><!-- .featured-post -->	
 				
 				</li>
 				

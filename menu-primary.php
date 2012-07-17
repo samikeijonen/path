@@ -13,7 +13,7 @@
  
 	<?php do_atomic( 'before_menu_primary' ); // path_before_menu_primary ?>
 	
-	<div id="menu-primary-title" class="nav-anchors">
+	<nav id="menu-primary-title" class="nav-anchors">
 	
 		<div class="wrap">
 				
@@ -23,23 +23,23 @@
 			
 		</div><!-- .wrap -->
 	
-	</div><!-- #menu-primary-title -->
+	</nav><!-- #menu-primary-title -->
  
-		<div id="menu-primary" class="menu-container">
+	<nav id="menu-primary" class="menu-container">
 
-			<div class="wrap">
+		<div class="wrap">
 				
-				<?php do_atomic( 'open_menu_primary' ); // path_open_menu_primary ?>	
+			<?php do_atomic( 'open_menu_primary' ); // path_open_menu_primary ?>	
 					
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu', 'menu_class' => '', 'menu_id' => 'menu-primary-items', 'fallback_cb' => '' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu', 'menu_class' => '', 'menu_id' => 'menu-primary-items', 'fallback_cb' => '' ) ); ?>
 				
-				<?php do_atomic( 'close_menu_primary' ); // path_close_menu_primary ?>
+			<?php do_atomic( 'close_menu_primary' ); // path_close_menu_primary ?>
 				
-				<?php if ( !is_admin_bar_showing() ) get_search_form(); // Loads the searchform.php template. ?>
+			<?php if ( !is_admin_bar_showing() ) get_search_form(); // Loads the searchform.php template. ?>
 						
-			</div><!-- .wrap -->
+		</div><!-- .wrap -->
 
-		</div><!-- #menu-primary .menu-container -->
+	</nav><!-- #menu-primary .menu-container -->
 	
 	<?php do_atomic( 'after_menu_primary' ); // path_after_menu_primary ?>
 	
