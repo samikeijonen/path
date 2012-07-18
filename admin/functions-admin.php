@@ -13,7 +13,7 @@ function path_theme_admin_setup() {
     
 	global $theme_settings_page;
 	
-	/* Get the theme settings page name */
+	/* Get the theme settings page name. */
 	$theme_settings_page = 'appearance_page_theme-settings';
 
 	/* Get the theme prefix. */
@@ -68,7 +68,7 @@ function path_theme_meta_box_logo() { ?>
 
 	<table class="form-table">
 
-		<!-- Featured Slider -->
+		<!-- Logo -->
 		<tr>
 			<th>
 				<label for="<?php echo hybrid_settings_field_id( 'path_custom_logo' ); ?>"><?php _e( 'Custom logo:', 'path' ); ?></label>
@@ -88,7 +88,7 @@ function path_theme_meta_box_background() { ?>
 
 	<table class="form-table">
 
-		<!-- Featured Slider -->
+		<!-- Background -->
 		<tr>
 			<th>
 				<label for="<?php echo hybrid_settings_field_id( 'path_custom_background' ); ?>"><?php _e( 'Custom background:', 'path' ); ?></label>

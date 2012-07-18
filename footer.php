@@ -36,11 +36,13 @@
 
 			<?php do_atomic( 'open_footer' ); // path_open_footer ?>
 
-			<div class="wrap footer-content">
+			<div class="wrap">
 
-				<?php hybrid_footer_content() // footer text ?>
+				<div class="footer-content">
+					<?php hybrid_footer_content(); ?>
+				</div>
 
-				<?php do_atomic( 'footer' ); // path_footer ?>
+				<?php do_atomic( 'footer' ); // picturesque_footer ?>
 
 			</div><!-- .wrap -->
 
