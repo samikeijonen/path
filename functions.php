@@ -341,7 +341,7 @@ function path_comment_note() { ?>
  */
 function path_excerpt_more() {
 
-	return '...<p><a class="more-link" href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '">  ' . __( 'Read more &rarr;', 'path' ) . ' </a></p>';
+	return '...<span class="path-read-more"><a class="more-link" href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '">  ' . __( 'Read more &rarr;', 'path' ) . ' </a></span>';
 	 
 }
 

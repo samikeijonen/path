@@ -42,7 +42,7 @@
 					<?php hybrid_footer_content(); ?>
 				</div>
 
-				<?php do_atomic( 'footer' ); // picturesque_footer ?>
+				<?php do_atomic( 'footer' ); // path_footer ?>
 
 			</div><!-- .wrap -->
 

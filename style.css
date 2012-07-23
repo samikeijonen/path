@@ -556,6 +556,9 @@ h3.menu-secondary-mobile-title {
 .archive .format-link .entry-title {
 	margin-bottom: 1em;
 }
+.singular-attachment .entry-title {
+	text-align: center;
+}
 
 /* Bylines. */
 .byline {
