@@ -38,16 +38,8 @@ get_header(); // Loads the header.php template. ?>
 						<div class="entry-content">
 						
 							<?php echo wp_get_attachment_image( get_the_ID(), 'full', false, array( 'class' => 'aligncenter' ) ); ?>
+							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'path' ) ); ?>
 							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'path' ), 'after' => '</p>' ) ); ?>
-							
-							<?php $gallery = do_shortcode( sprintf( '[gallery id="%1$s" exclude="%2$s" columns="8"]', $post->post_parent, get_the_ID() ) ); ?>
-						
-							<?php if ( !empty( $gallery ) ) { ?>
-								<div class="image-gallery">
-									<h3><?php _e( 'Gallery', 'path' ); ?></h3>
-									<?php echo $gallery; ?>
-								</div>
-							<?php } ?>
 							
 						</div><!-- .entry-content -->
 						
@@ -60,6 +52,19 @@ get_header(); // Loads the header.php template. ?>
 					</article><!-- .hentry -->
 					
 					<?php do_atomic( 'after_entry' ); // path_after_entry ?>
+					
+					<div class="attachment-meta">
+					
+						<?php $gallery = do_shortcode( sprintf( '[gallery id="%1$s" exclude="%2$s" columns="8"]', $post->post_parent, get_the_ID() ) ); ?>
+						
+						<?php if ( !empty( $gallery ) ) { ?>
+							<div class="image-gallery">
+								<h3><?php _e( 'Gallery', 'path' ); ?></h3>
+								<?php echo $gallery; ?>
+							</div>
+						<?php } ?>
+						
+					</div><!-- .attachment-meta -->
 						
 					<?php get_sidebar( 'after-singular' ); // Loads the sidebar-after-singular.php template. ?>
 
@@ -69,16 +74,12 @@ get_header(); // Loads the header.php template. ?>
 
 				<?php endwhile; ?>
 
-			<?php else : ?>
-
-				<?php get_template_part( 'loop-error' ); // Loads the loop-error.php template. ?>
-
 			<?php endif; ?>
 
 		</div><!-- .hfeed -->
 
 		<?php do_atomic( 'close_content' ); // path_close_content ?>
-
+		
 		<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
 
 	</div><!-- #content -->

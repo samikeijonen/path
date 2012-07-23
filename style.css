@@ -510,6 +510,9 @@ h3.menu-secondary-mobile-title {
 	margin-bottom: 2em;
 	padding-bottom: 0;
 }
+.singular-attachment .hentry {
+	text-align: center;
+}
 .page-template-path-slider .hentry,
 .page-template-most-popular .hentry,
 .page-template-most-popular-last-30-days .hentry,
