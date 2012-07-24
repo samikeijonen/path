@@ -1636,16 +1636,16 @@ img {
 }
 
 /* Slider Page Template. */
-.page-template-path-slider .hentry {
+.page-template-path-slider #content .hentry {
 	float: left;
 	border-bottom: none;
 	margin: 0 4% 0 0;
 	width: 48%;
 }
-.page-template-path-slider .last {
+.page-template-path-slider #content .last {
 	margin: 0;
 }
-.page-template-path-slider .path-line {
+.page-template-path-slider #content .path-line {
 	border-bottom: 1px solid #e9edf1;
 	margin-bottom: 1.5em;
 }
@@ -1654,17 +1654,17 @@ img {
 	margin: 0;
 	width: 100%;
 }
-.page-template-path-slider .path-thumbnail {
+.page-template-path-slider #content .path-thumbnail {
 	float: none;
 }
-.page-template-path-slider .entry-header {
+.page-template-path-slider #content .entry-header {
 	text-align: center;
 }
-.page-template-path-slider .hfeed-more-articles .entry-header,
+.page-template-path-slider #content .hfeed-more-articles .entry-header,
 .page-template-path-slider #slider-content .entry-header {
 	text-align: left;
 }
-.page-template-path-slider .hfeed-more-articles h2 {
+.page-template-path-slider #content .hfeed-more-articles h2 {
 	font-size: 1.25em;
 }
 
