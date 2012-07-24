@@ -79,7 +79,7 @@
 
 		<div id="main">
 		
-		<?php if ( ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) && !is_paged() ) get_template_part( 'content-slider' ); // Loads the content-slider.php template. ?>
+		<?php if ( ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) && !is_paged() ) get_template_part( 'sticky-slider' ); // Loads the sticky-slider.php template. ?>
 		
 		<?php get_sidebar( 'before-content' ); // Loads the sidebar-before-content.php template. ?>
 

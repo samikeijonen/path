@@ -267,8 +267,6 @@ hr {
 .path-thumbnail {
 	float: left;
 	margin: 0 1.5em .5em 0;
-	max-width: 194px;
-	max-height: 120px;
 }
 .path-smaller-thumbnail {
 	float: left;
@@ -1635,6 +1633,39 @@ img {
 .comment-list li li.has-avatar .comment-text {
 	margin-left: 3.75em;
 	overflow: hidden;
+}
+
+/* Slider Page Template. */
+.page-template-path-slider .hentry {
+	float: left;
+	border-bottom: none;
+	margin: 0 4% 0 0;
+	width: 48%;
+}
+.page-template-path-slider .last {
+	margin: 0;
+}
+.page-template-path-slider .path-line {
+	border-bottom: 1px solid #e9edf1;
+	margin-bottom: 1.5em;
+}
+.page-template-path-slider #slider-content .hentry {
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+.page-template-path-slider .path-thumbnail {
+	float: none;
+}
+.page-template-path-slider .entry-header {
+	text-align: center;
+}
+.page-template-path-slider .hfeed-more-articles .entry-header,
+.page-template-path-slider #slider-content .entry-header {
+	text-align: left;
+}
+.page-template-path-slider .hfeed-more-articles h2 {
+	font-size: 1.25em;
 }
 
 /* layout-3c-l */

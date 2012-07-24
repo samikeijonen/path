@@ -209,7 +209,7 @@ function path_disable_sidebars( $sidebars_widgets ) {
  */
 function path_add_image_sizes() {
 
-	add_image_size( 'path-thumbnail', 194, 120, true );
+	add_image_size( 'path-thumbnail', 300, 170, true );
 	add_image_size( 'path-smaller-thumbnail', 80, 80, true );
 	add_image_size( 'path-slider-thumbnail', 660, 300, true );
 	

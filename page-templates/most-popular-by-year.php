@@ -48,7 +48,7 @@ get_header(); // Loads the header.php template. ?>
 					
 						<?php do_atomic( 'open_entry' ); // path_open_entry ?>
 
-						<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) );?>
+						<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) );?>
 
 						<header class="entry-header">
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>

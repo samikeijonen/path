@@ -23,7 +23,7 @@ get_header(); // Loads the header.php template. ?>
 			
 			<?php
 			
-			/* Loop posts but not sticky ones. Sticky posts are displayd in the slider. That is called in header.php (content-slider.php). */
+			/* Loop posts but not sticky ones. Sticky posts are displayd in the slider. That is called in header.php (sticky-slider.php). */
 			$sticky = get_option('sticky_posts');
 						
 			$args = array (
@@ -31,15 +31,45 @@ get_header(); // Loads the header.php template. ?>
 				'posts_per_page' => 10
 			);
 			
-			$wp_query = new WP_Query( $args );
+			$loop = new WP_Query( $args );
+			$counter = 1;
 			
 			?>
 			
-			<?php if ( $wp_query->have_posts() ) : ?>
+			<?php if ( $loop->have_posts() ) : ?>
 
-				<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<?php get_template_part( 'content', ( post_type_supports( get_post_type(), 'post-formats' ) ? get_post_format() : get_post_type() ) ); ?>
+					<?php do_atomic( 'before_entry' ); // path_before_entry ?>
+
+					<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); if ( ( $counter % 2 ) == 0 ) echo ' last'; ?>">
+					
+						<?php do_atomic( 'open_entry' ); // path_open_entry ?>
+
+						<header class="entry-header">
+							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) ); ?>
+							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+							<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'picturesque' ) . '</div>' ); ?>
+						</header><!-- .entry-header -->
+
+						<div class="entry-summary">
+							<?php the_excerpt(); ?>
+							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'path' ), 'after' => '</p>' ) ); ?>
+						</div><!-- .entry-summary -->
+						
+						<footer class="entry-footer">
+							<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms taxonomy="category" before="Posted in "] [entry-terms before="Tagged "]', 'path' ) . '</div>' ); ?>
+						</footer><!-- .entry-footer -->
+						
+						<?php do_atomic( 'close_entry' ); // path_close_entry ?>
+
+					</article><!-- .hentry -->
+					
+					<?php if ( ( $counter % 2 ) == 0 ) echo '<div class="clear path-line"> </div>'; ?>
+
+					<?php do_atomic( 'after_entry' ); // path_after_entry ?>
+					
+					<?php $counter++; ?>
 
 				<?php endwhile; ?>
 
@@ -51,9 +81,9 @@ get_header(); // Loads the header.php template. ?>
 			
 			<?php wp_reset_postdata(); // Reset Query ?>
 			
-			<h3 class="section-title"><?php _e( 'More Articles', 'path' ); ?></h3>
-				
-				<div class="hfeed-more-articles">				
+			<div class="hfeed-more-articles">
+			
+				<h3 class="section-title"><?php _e( 'More Articles', 'path' ); ?></h3>				
 					
 					<?php
 
@@ -64,6 +94,7 @@ get_header(); // Loads the header.php template. ?>
 					);
 					
 					$loop = new WP_Query( $args );
+					$counter = 1;
 
 					?>
 					
@@ -71,16 +102,20 @@ get_header(); // Loads the header.php template. ?>
 					
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
-							<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); ?>">
+							<article id="post-<?php the_ID(); ?>" class="<?php hybrid_entry_class(); if ( ( $counter % 2 ) == 0 ) echo ' last'; ?>">
 							
 								<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-smaller-thumbnail' ) ); ?>
 										
 								<header class="entry-header">
-									<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
+									<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 									<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
 								</header><!-- .entry-header -->
 								
 							</article><!-- .hentry -->
+							
+							<?php if ( ( $counter % 2 ) == 0 ) echo '<div class="clear path-line"> </div>'; ?>
+							
+							<?php $counter++; ?>
 		
 						<?php endwhile; ?>			
 		
@@ -90,9 +125,9 @@ get_header(); // Loads the header.php template. ?>
 		
 					<?php endif; ?>
 
-					<?php wp_reset_postdata(); // Reset Query ?>
+				<?php wp_reset_postdata(); // Reset Query ?>
 		
-				</div><!-- .hfeed-more -->
+			</div><!-- .hfeed-more -->
 						
 		</div><!-- .hfeed -->
 		
