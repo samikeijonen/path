@@ -1,7 +1,7 @@
 /**
  * Theme Name: Path
  * Theme URI: http://foxnet.fi
- * Description: Path is designed for multiauthor blogs and magazine styles websites. It supports plenty of plugins like... It's responsive, it supports post formats, it's translation-ready and so much more.
+ * Description: Path is designed for multiauthor blogs and magazine style websites. But who am I to tell you what to do with the theme. Feel free to use it for whatever you like. It supports plenty of plugins like Gravity Forms, Co-Authors Plus, Smart Archives Reloaded and Social Path. It's responsive, it supports post formats, it's translation-ready and so much more. You can set global layout in theme settings: one column, two columns or three columns. You can have the content on the left, right or center. You can also set logo, background and footer text in theme settings. There are 5 widget areas and 3 menu locations in the theme. And guess what, sticky posts are in a cool FlexSlider. I hope you enjoy Path Theme as much I do. Cheers!
  * Version: 0.1
  * Author: Sami Keijonen
  * Author URI: http://foxnet.fi
@@ -59,8 +59,12 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*  Transitions. */
-a, input[type=submit], input[type=button], input[type=text], textarea {
+/* Transitions. */
+a,
+input[type=submit],
+input[type=button],
+input[type=text],
+textarea {
 	-webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
@@ -68,7 +72,7 @@ a, input[type=submit], input[type=button], input[type=text], textarea {
     transition: all 0.2s ease-out;
 }
 
-/* Headers */
+/* Headers. */
 h1,
 h2,
 h3,
@@ -97,7 +101,7 @@ h6 {
 	font-size: 0.9375em; /* 15px / 16px = 0.9375 */
 }
 
-/* Lists */
+/* Lists. */
 ul {
 	list-style-type: circle;
 }
@@ -118,7 +122,7 @@ dl dd {
 	color: #777;
 }
 
-/* Blockquotes */
+/* Blockquotes. */
 blockquote {
 	background: #e9edf1;
 	border: 1px solid #e5e5e5;
@@ -156,7 +160,7 @@ abbr {
 	border-bottom: 1px dotted #999;
 }
 
-/* Tables */
+/* Tables. */
 table {
 	background: #fff;
 	margin: 0 0 1em 0;
@@ -194,7 +198,7 @@ tfoot tr:hover th {
 	color: #666;
 }
 
-/* WP calendar */
+/* WP calendar. */
 #wp-calendar th,
 #wp-calendar td {
 	font-weight: normal;
@@ -215,7 +219,7 @@ tfoot tr:hover th {
 	text-align: right;
 }
 
-/* Horizontal rule */
+/* Horizontal rule. */
 hr {
 	background: #e9edf1;
 	height: 1px;
@@ -230,7 +234,7 @@ hr {
 	height: auto;
 }
 
-/* Avatars */
+/* Avatars. */
 .avatar {
 	float: left;
 	margin: 0 1em .5em 0;
@@ -241,7 +245,7 @@ hr {
 	height: 80px;
 }
 
-/* Captions */
+/* Captions. */
 .wp-caption {
 	max-width: 100%;
 	overflow: visible;
@@ -262,7 +266,7 @@ hr {
 	text-align: center;
 }
 
-/* Thumbnails */
+/* Thumbnails. */
 .thumbnail,
 .path-thumbnail {
 	float: left;
@@ -271,11 +275,9 @@ hr {
 .path-smaller-thumbnail {
 	float: left;
 	margin: 0 1em .5em 0;
-	max-width: 80px;
-	max-height: 80px;
 }
 
-/* Galleries */
+/* Galleries. */
 .gallery {
 	margin-bottom: 1.5em !important;
 }
@@ -294,7 +296,7 @@ hr {
 	padding: 3%;
 }
 
-/* WP smiley */
+/* WP smiley. */
 img.wp-smiley {
 	background: transparent !important;
 	border: none !important;
@@ -303,7 +305,7 @@ img.wp-smiley {
 	padding: 0 !important;
 }
 
-/* Container */
+/* Container. */
 #container {
 }
 
@@ -313,7 +315,7 @@ img.wp-smiley {
 	display: none;
 }
 
-/* Mobiles menus. */
+/* Mobile menus. */
 nav#menu-primary-mobile ul,
 nav#menu-secondary-mobile ul {
 	list-style-type: circle;
@@ -384,7 +386,7 @@ h3.menu-secondary-mobile-title {
 	padding: 1em 0 0.25em;
 }
 
-/* Center */
+/* Center. */
 #menu-primary-title,
 #menu-secondary-title,
 #header,
@@ -392,7 +394,7 @@ h3.menu-secondary-mobile-title {
 	text-align: center;
 }
 
-/* Header */
+/* Header. */
 #header {
 	margin: 0 auto;
 	padding: 0 2% 0.25em;
@@ -402,14 +404,14 @@ h3.menu-secondary-mobile-title {
 	z-index: 88;
 }
 
-/* Branding */
+/* Branding. */
 #branding {
 	padding: 0.5em 0 1em;
 	position: relative;
 	z-index: 98;
 }
 
-/* Site title and description */
+/* Site title and description. */
 #site-title {
 	font: 1.25em/1.35 'Oswald', Georgia, sans-serif;
 	margin: 0;
@@ -448,7 +450,7 @@ h3.menu-secondary-mobile-title {
 	padding: 1em 0 0 0;
 }
 	
-/* Main */
+/* Main. */
 #main,
 #main .wrap {
 	margin: 0;
@@ -463,19 +465,11 @@ h3.menu-secondary-mobile-title {
 	border-radius: 4px;
 }
 
-/* Content */
-#content {
-	float: none;
-	width: 100%;
-}
-
 /* Primary and secondary sidebar. */
 #sidebar-primary,
 #sidebar-secondary {
-	float: none;
 	margin: 0 0 1em 0;
 	padding: 0;
-	width: 100%;
 }
 
 /* Breadcrumbs. */
@@ -497,7 +491,6 @@ h3.menu-secondary-mobile-title {
 /* =Posts
 -------------------------------------------------------------- */
 
-/* Posts */
 .hentry {
 	border-bottom: 1px solid #e9edf1;
 	margin-bottom: 1.5em;
@@ -601,7 +594,7 @@ a.more-link:hover {
 	text-decoration: none;*/
 }
 
-/* Loop meta */
+/* Loop meta. */
 .loop-meta {
 	border-bottom: 1px solid #e9edf1;
 	margin-bottom: 1em;
@@ -718,7 +711,7 @@ a.more-link:hover {
 	max-width: 100%;
 }
 
-/* Search widget */
+/* Search widget. */
 .widget-search {
 	padding-bottom: 1.5em !important;
 }
@@ -779,7 +772,7 @@ input[type="submit"]:hover {
 	padding-bottom: 1em;
 }
 
-/* Comments closed */
+/* Comments closed. */
 .comments-closed {
 	color: #555;
 	padding: 0 1.5em;
@@ -898,13 +891,13 @@ ol.comment-list {
 	overflow: hidden;
 }
 
-/* Cancel reply link */
+/* Cancel reply link. */
 #reply-title small a {
 	font: bold 0.875em/1.2 "Helvetica Neue", Helvetica, sans-serif;
 	margin-left: 1em;
 }
 
-/* Comment form labels */
+/* Comment form labels. */
 #respond label {
 	font: normal 1em/1.8 "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -916,7 +909,7 @@ ol.comment-list {
 	font-weight: bold;
 }
 
-/* Comment form inputs and textarea elements */
+/* Comment form inputs and textarea elements. */
 #respond input[type="text"],
 #respond textarea {
 	background: #e9edf1;
@@ -937,7 +930,7 @@ ol.comment-list {
 	background: #fff;
 }
 
-/* Submit button */
+/* Submit button. */
 #respond #submit {
 	background: #ca4842;
 	border: none;
@@ -958,7 +951,7 @@ ol.comment-list {
 /* =Footer area
 -------------------------------------------------------------- */
 
-/* Footer */
+/* Footer. */
 #footer {
 	font-size: .875em;
 	margin: 0;
@@ -980,11 +973,11 @@ ol.comment-list {
     content: " ▲";
 }
 
-/* Subsidiary menu */
+/* Subsidiary menu. */
 #menu-subsidiary {
 	background: #b2cecf;
-	position: relative;
 	padding: 0 2%;
+	position: relative;
 	margin: 0;
 	overflow: hidden;
 	width: 96%;
@@ -1161,7 +1154,7 @@ body .fb_edge_widget_with_comment{
 
 @media only screen and (min-width: 49em) {
 
-/* Primary menu */
+/* Primary menu. */
 #menu-primary {
 	background: #404040;
 	display: block;
@@ -1285,7 +1278,7 @@ body .fb_edge_widget_with_comment{
 	display: none;
 }
 
-/* Menu secondary */
+/* Menu secondary. */
 #menu-secondary {
 	display: block;
 	padding: 0 2% 1em;
@@ -1354,7 +1347,7 @@ body .fb_edge_widget_with_comment{
 	color: #404040;
 }
 
-/* Drop-down styles */
+/* Drop-down styles. */
 #menu-secondary li:hover ul,
 #menu-secondary li.sfHover ul {
 	top: 2.0625em; /* 33px / 16px = 2.0625 */
@@ -1370,7 +1363,7 @@ body .fb_edge_widget_with_comment{
 	top: 0;
 }
 	
-/* Sub-nav indicator */
+/* Sub-nav indicator. */
 #menu-secondary a.sf-with-ul {
 	padding-right: 2.54545455em; /* 28px / 11px = 2.54545455 */
 }
@@ -1438,7 +1431,7 @@ body .fb_edge_widget_with_comment{
 	text-align: left;
 }
 
-/* Site title */
+/* Site title. */
 #site-title {
 	float: left;
 	font-size: 2em; /* 32px / 16px = 2 */
@@ -1472,7 +1465,7 @@ body .fb_edge_widget_with_comment{
 	margin: 1em 0 1.5em;
 }
 
-/* Image */
+/* Image. */
 img {
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
@@ -1546,7 +1539,7 @@ img {
 	margin-left: 2%;
 }
 
-/* Subsidiary */
+/* Subsidiary. */
 #sidebar-subsidiary .widget {
 	float: left;
 	margin-right: 4%;
@@ -1556,14 +1549,14 @@ img {
 /* =Layouts
 -------------------------------------------------------------- */
 
-/* One column */
+/* One column. */
 .layout-1c #content {
 	float: none;
 	margin-right: 0;
 	width: 100%;
 }
 
-/* Two columns */
+/* Two columns. */
 .layout-2c-l #content,
 .layout-default #content,
 .layout-3c-l #content,
@@ -1668,12 +1661,13 @@ img {
 	font-size: 1.25em;
 }
 
-/* layout-3c-l */
+/* layout-3c-l. */
 .layout-3c-l #content {
 	float: left;
 	width: 46%;
 }
-.layout-3c-l #sidebar-primary, .layout-3c-l #sidebar-secondary {
+.layout-3c-l #sidebar-primary,
+.layout-3c-l #sidebar-secondary {
 	float: left;
 	width: 23%;
 	margin: 0 0 0 4%;
@@ -1682,12 +1676,13 @@ img {
 	clear: none;
 }
 
-/* layout-3c-r */
+/* layout-3c-r. */
 .layout-3c-r #content {
 	float: right;
 	width: 46%;
 }
-.layout-3c-r #sidebar-primary, .layout-3c-r #sidebar-secondary {
+.layout-3c-r #sidebar-primary,
+.layout-3c-r #sidebar-secondary {
 	float: left;
 	width: 23%;
 	margin: 0 4% 0 0;
@@ -1696,7 +1691,7 @@ img {
 	clear: none;
 }
 
-/* layout-3c-c */
+/* layout-3c-c. */
 .layout-3c-c #content {
 	float: left;
 	margin-left: 27%;
