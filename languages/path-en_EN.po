@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-17 18:03+0200\n"
-"PO-Revision-Date: 2012-07-17 18:03+0200\n"
+"POT-Creation-Date: 2012-07-24 12:56+0200\n"
+"PO-Revision-Date: 2012-07-24 12:56+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "MIME-Version: 1.0\n"
@@ -25,6 +25,41 @@ msgstr ""
 
 #: 404.php:39
 msgid "Or here are the latest posts, hope it helps."
+msgstr ""
+
+#: attachment-image.php:41
+#: content-video.php:37
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: attachment-image.php:42
+#: content-aside.php:27
+#: content-aside.php:38
+#: content-audio.php:27
+#: content-audio.php:38
+#: content-gallery.php:27
+#: content-gallery.php:44
+#: content-image.php:27
+#: content-image.php:38
+#: content-link.php:27
+#: content-link.php:48
+#: content-page.php:26
+#: content-page.php:43
+#: content-quote.php:20
+#: content-status.php:22
+#: content-video.php:27
+#: content-video.php:38
+#: content.php:27
+#: content.php:45
+msgid "Pages:"
+msgstr ""
+
+#: attachment-image.php:47
+msgid "Published on [entry-published] [entry-edit-link before=\"| \"]"
+msgstr ""
+
+#: attachment-image.php:62
+msgid "Gallery"
 msgstr ""
 
 #: comment.php:31
@@ -61,27 +96,6 @@ msgstr ""
 msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]"
 msgstr ""
 
-#: content-aside.php:27
-#: content-aside.php:38
-#: content-audio.php:27
-#: content-audio.php:38
-#: content-gallery.php:27
-#: content-gallery.php:44
-#: content-image.php:27
-#: content-image.php:38
-#: content-link.php:27
-#: content-link.php:48
-#: content-page.php:26
-#: content-page.php:43
-#: content-quote.php:20
-#: content-status.php:22
-#: content-video.php:27
-#: content-video.php:38
-#: content.php:27
-#: content.php:45
-msgid "Pages:"
-msgstr ""
-
 #: content-aside.php:31
 #: content-audio.php:31
 #: content-gallery.php:31
@@ -114,12 +128,6 @@ msgstr ""
 msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
 msgstr ""
 
-#: content-slider.php:45
-#: content.php:22
-#: content.php:40
-msgid "Published by [entry-author] on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
-msgstr ""
-
 #: content-status.php:27
 msgid "[post-format-link] updated on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
 msgstr ""
@@ -128,8 +136,9 @@ msgstr ""
 msgid "[post-format-link] updated on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
 msgstr ""
 
-#: content-video.php:37
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+#: content.php:22
+#: content.php:40
+msgid "Published by [entry-author] on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
 msgstr ""
 
 #: content.php:49
@@ -396,7 +405,7 @@ msgstr ""
 msgid "Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
 msgstr ""
 
-#: page-templates/path-slider.php:54
+#: page-templates/path-slider.php:86
 msgid "More Articles"
 msgstr ""
 
