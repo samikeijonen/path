@@ -14,7 +14,7 @@
  */
  
 /* Load Hybrid Core theme framework. */
-require_once( trailingslashit( TEMPLATEPATH ) . 'library/hybrid.php' );
+require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 new Hybrid();
 
 /* Theme setup function using 'after_setup_theme' hook. */
@@ -91,8 +91,8 @@ function path_theme_setup() {
 	/* Set content width. */
 	hybrid_set_content_width( 600 );
 	
-	/* Add respond.js for unsupported browsers. */
-	add_action( 'wp_head', 'path_respond_mediaqueries' );
+	/* Add respond.js and  html5shiv.js for unsupported browsers. */
+	add_action( 'wp_head', 'path_respond_html5shiv' );
 	
 	/* Disable primary sidebar widgets when layout is one column. */
 	add_filter( 'sidebars_widgets', 'path_disable_sidebars' );
@@ -143,16 +143,18 @@ function path_theme_setup() {
 }
 
 /**
- * Function for help to unsupported browsers understand mediaqueries.
+ * Function for help to unsupported browsers understand mediaqueries and html5.
  * @link: https://github.com/scottjehl/Respond
+ * @link: http://code.google.com/p/html5shiv/
  * @since 0.1.0
  */
-function path_respond_mediaqueries() {
+function path_respond_html5shiv() {
 	?>
 	
-	<!-- Enables media queries in some unsupported browsers. -->
+	<!-- Enables media queries and html5 in some unsupported browsers. -->
 	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ); ?>js/respond.min.js"></script>
+	<script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ); ?>js/respond/respond.min.js"></script>
+	<script type="text/javascript" src="<?php echo trailingslashit( get_template_directory_uri() ); ?>js/html5shiv/html5shiv.js"></script>
 	<![endif]-->
 	
 	<?php
@@ -415,13 +417,11 @@ function path_author_box() { ?>
 					<p class="twitter <?php if ( $i->count() > 1 ) echo 'multi-author'; ?>">
 						<?php printf( __( 'Follow %1$s %2$s &#64;%3$s on Twitter.', 'path' ), '<a href="http://twitter.com/' . get_the_author_meta( 'twitter' ) . '"', 'title="' . get_the_author_meta( 'display_name' ) . '">', get_the_author_meta( 'twitter' ) . '</a>' ); ?>
 					</p>
-				<?php } // End check for twitter
+				<?php } // End check for twitter ?>
 				
-			?>
-				
-			</div><?php
+			</div>
 			
-			while( $i->iterate() ) { ?>
+			<?php while( $i->iterate() ) { ?>
 			
 			<div class="author-co-profile">
 			

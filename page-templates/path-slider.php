@@ -49,7 +49,6 @@ get_header(); // Loads the header.php template. ?>
 						<header class="entry-header">
 							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) ); ?>
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-							<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'picturesque' ) . '</div>' ); ?>
 						</header><!-- .entry-header -->
 
 						<div class="entry-summary">
@@ -58,7 +57,7 @@ get_header(); // Loads the header.php template. ?>
 						</div><!-- .entry-summary -->
 						
 						<footer class="entry-footer">
-							<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">' . __( '[entry-terms taxonomy="category" before="Posted in "] [entry-terms before="Tagged "]', 'path' ) . '</div>' ); ?>
+							<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
 						</footer><!-- .entry-footer -->
 						
 						<?php do_atomic( 'close_entry' ); // path_close_entry ?>
