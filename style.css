@@ -319,6 +319,16 @@ img.wp-smiley {
 nav#menu-primary-mobile ul,
 nav#menu-secondary-mobile ul {
 	list-style-type: circle;
+	margin-top: 0.5em;
+}
+nav#menu-primary-mobile ul ul,
+nav#menu-secondary-mobile ul ul {
+	margin-top: 0;
+}
+nav#menu-primary-mobile li a,
+nav#menu-secondary-mobile li a {
+	display: block;
+	padding: 0.625em 0;
 }
 #menu-primary-mobile,
 #menu-secondary-mobile,
@@ -343,7 +353,7 @@ nav#menu-secondary-mobile ul {
 }
 h3.menu-primary-mobile-title,
 h3.menu-secondary-mobile-title {
-	margin-top: 0.5em;
+	margin: 0.5em 0 0 0;
 }
 #menu-primary-title a {
 	color: #f6f6e8;
@@ -517,16 +527,6 @@ h3.menu-secondary-mobile-title {
 .taxonomy-post_format-video .hentry {
 	background: #e9edf1;
 	padding: 3%;
-}
-.sticky,
-.page-template-most-popular .sticky,
-.page-template-most-popular-last-30-days .sticky,
-.page-template-most-popular-by-comments .sticky,
-.page-template-most-popular-by-year .sticky,
-.page-template-most-popular-by-month .sticky {
-	/*background: #e9edf1;
-	border: 1px solid #e5e5e5;
-	padding: 3%;*/
 }
 
 /* Post titles. */
