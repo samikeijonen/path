@@ -272,9 +272,15 @@ hr {
 	float: left;
 	margin: 0 1.5em .5em 0;
 }
+.thumbnail {
+	max-width: 150px;
+	max-height: 150px;
+}
 .path-smaller-thumbnail {
 	float: left;
-	margin: 0 1em .5em 0;
+	margin: 0 1em 0.5em 0;
+	max-width: 80px;
+	max-height: 80px;
 }
 
 /* Galleries. */
@@ -561,7 +567,7 @@ h3.menu-secondary-mobile-title {
 	margin-bottom: 1em;
 }
 .hfeed-more-articles .byline {
-	margin-bottom: 0;
+	margin-bottom: 0.25em;
 }
 	
 /* Entry meta. */
@@ -573,25 +579,6 @@ h3.menu-secondary-mobile-title {
 .singular .entry-meta .category,
 .singular .entry-meta .post_tag {
 	display: block;
-}
-
-/* More link. */
-a.more-link  {
-/*
-	background: #ca4842;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	color: #fff;
-	display: inline-block;
-	font: normal normal bold 0.875em/1.2 "Helvetica Neue", Helvetica, sans-serif;
-	margin: 0 0.714285714em 0 0;
-	padding: 0.857142857em 1.07142857em;
-	*/
-}
-a.more-link:hover {
-	/*background: #b7322c;
-	text-decoration: none;*/
 }
 
 /* Loop meta. */
@@ -1157,6 +1144,12 @@ body .fb_edge_widget_with_comment{
 
 @media only screen and (min-width: 49em) {
 
+/* WP calendar. */
+#sidebar-subsidiary #wp-calendar th,
+#sidebar-subsidiary #wp-calendar td {
+	padding: 2px 1px;
+}
+
 /* Primary menu. */
 #menu-primary {
 	background: #404040;
@@ -1474,7 +1467,15 @@ img {
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
 	border: 1px solid #e9edf1;
-	padding: .25em; /* 4px / 16px = 0.25 */
+	padding: 4px;
+}
+.thumbnail {
+	max-width: 160px; /* 4px padding and 1px border left and right. */
+	max-height: 160px;
+}
+.path-smaller-thumbnail {
+	max-width: 90px; /* 4px padding and 1px border left and right. */
+	max-height: 90px;
 }
 #site-title img {
 	border: none;
@@ -1484,6 +1485,11 @@ img {
 #content {
 	float: left;
 	width: 64%; /* 4% for margin */
+}
+
+/* Byline. */
+.hfeed-more-articles .byline {
+	margin-bottom: 0.8em;
 }
 
 #main .wrap {
@@ -1739,6 +1745,22 @@ img {
 .layout-3c-c #footer .wrap {
 	max-width: 73.1428571em; /* 64 * ( 16 px / 14 px ) = 73.1428571 */
 	padding-bottom: 1em;
+}
+
+/* WP calendar. */
+.layout-3c-l #sidebar-primary #wp-calendar th,
+.layout-3c-l #sidebar-secondary #wp-calendar th,
+.layout-3c-r #sidebar-primary #wp-calendar th,
+.layout-3c-r #sidebar-secondary #wp-calendar th,
+.layout-3c-c #sidebar-primary #wp-calendar th,
+.layout-3c-c #sidebar-secondary #wp-calendar th,
+.layout-3c-l #sidebar-primary #wp-calendar td,
+.layout-3c-l #sidebar-secondary #wp-calendar td,
+.layout-3c-r #sidebar-primary #wp-calendar td,
+.layout-3c-r #sidebar-secondary #wp-calendar td,
+.layout-3c-c #sidebar-primary #wp-calendar td,
+.layout-3c-c #sidebar-secondary #wp-calendar td {
+	padding: 2px 1px;
 }
 
 }
