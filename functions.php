@@ -238,8 +238,9 @@ function path_quote_content( $content ) {
 }
 
 /**
- * Path uses FitVids for responsive videos.
+ * Path uses FitVids for responsive videos and FlexSlider for Slider.
  * @link http://fitvidsjs.com/
+ * @link https://github.com/woothemes/FlexSlider/
  * @since 0.1.0
  */
 function path_scripts() {
@@ -252,14 +253,14 @@ function path_scripts() {
 		wp_enqueue_script( 'path-fitvids', trailingslashit( get_template_directory_uri() ) . 'js/fitvids/jquery.fitvids.js', array( 'jquery' ), '20120625', true );
 		wp_enqueue_script( 'path-fitvids-settings', trailingslashit( get_template_directory_uri() ) . 'js/fitvids/fitvids.js', array( 'path-fitvids' ), '20120625', true );
 		
-		/* Enqueue Flexslider */
-		if ( ! empty( $sticky ) && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) ) {
+		/* Enqueue FlexSlider js only when it is used. */
+		if ( ! empty( $sticky ) && !is_paged() && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) ) {
 			wp_enqueue_script( 'path-flexslider', trailingslashit( get_template_directory_uri() ) . 'js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120703', true );
 			wp_enqueue_script( 'path-flexslider-settings', trailingslashit( get_template_directory_uri() ) . 'js/flexslider/settings.flexslider.js', array( 'path-flexslider' ), '20120703', true );
 		}
 		
-		/* Enqueue Styles */
-		if ( ! empty( $sticky ) && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) )
+		/* Enqueue FlexSlider css only when it is used. */
+		if ( ! empty( $sticky ) && !is_paged() && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) )
 			wp_enqueue_style( 'path-flexslider-stylesheet', trailingslashit( get_template_directory_uri() ) . 'css/flexslider/flexslider.css', false, 1.0, 'screen' );
 		
 	}
@@ -404,10 +405,10 @@ function path_author_box() { ?>
 			
 			<div class="author-co-profile">
 			
-			<?php
-			
+				<?php
 				the_author_posts_link();
-				echo get_avatar( get_the_author_meta( 'user_email' ), '96' ); ?>
+				echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
+				?>
 			
 				<p class="author-description author-bio">
 					<?php the_author_meta( 'description' ); ?>
@@ -426,10 +427,8 @@ function path_author_box() { ?>
 			<div class="author-co-profile">
 			
 				<?php
-			
 				the_author_posts_link();
 				echo get_avatar( get_the_author_meta( 'user_email' ), '96' );
-				
 				?>
 				
 				<p class="author-description author-bio">
