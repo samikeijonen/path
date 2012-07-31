@@ -537,7 +537,7 @@ function path_customize_register( $wp_customize ) {
 	// Layout section
 	$wp_customize->add_section( 'path_customize_layout', array(
 		'title'			=> __( 'Layout', 'path' ),
-		'priority'		=> 50,
+		'priority'		=> 20,
 	) );
 	
 	// Layout setting
