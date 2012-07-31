@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-24 12:56+0200\n"
-"PO-Revision-Date: 2012-07-24 12:56+0200\n"
+"POT-Creation-Date: 2012-07-30 15:06+0200\n"
+"PO-Revision-Date: 2012-07-30 15:06+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "MIME-Version: 1.0\n"
@@ -145,55 +145,59 @@ msgstr ""
 msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"| Tagged \"]"
 msgstr ""
 
-#: functions.php:303
+#: functions.php:309
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr ""
 
-#: functions.php:303
+#: functions.php:309
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr ""
 
-#: functions.php:303
+#: functions.php:309
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr ""
 
-#: functions.php:333
+#: functions.php:339
 msgid "Please comment with your real name using good manners."
 msgstr ""
 
-#: functions.php:344
+#: functions.php:350
 msgid "Read more &rarr;"
 msgstr ""
 
-#: functions.php:380
+#: functions.php:386
 msgid "Twitter Username"
 msgstr ""
 
-#: functions.php:399
+#: functions.php:405
 msgid "Author of the article"
 msgstr ""
 
-#: functions.php:399
+#: functions.php:405
 msgid "Authors of the article"
 msgstr ""
 
-#: functions.php:416
-#: functions.php:441
-#: functions.php:461
+#: functions.php:422
+#: functions.php:443
+#: functions.php:463
 #, php-format
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr ""
 
-#: functions.php:451
+#: functions.php:453
 msgid "Article written by [entry-author]"
 msgstr ""
 
-#: functions.php:481
+#: functions.php:483
 msgid "and"
 msgstr ""
 
-#: functions.php:482
+#: functions.php:484
 msgid " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+
+#: functions.php:512
+msgid "Customize"
 msgstr ""
 
 #: header.php:90
@@ -405,7 +409,7 @@ msgstr ""
 msgid "Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
 msgstr ""
 
-#: page-templates/path-slider.php:86
+#: page-templates/path-slider.php:85
 msgid "More Articles"
 msgstr ""
 

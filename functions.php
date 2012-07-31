@@ -113,9 +113,6 @@ function path_theme_setup() {
 	/* Filter footer settings. Add back to the top link. */
 	add_filter( "{$prefix}_default_theme_settings", 'path_default_footer_settings' );
 	
-	/* Set global layout. */
-	add_filter( 'get_theme_layout', 'path_theme_layout' );
-	
 	/* Add after comments note for good mannners. */
 	add_action( 'comment_form_before', 'path_comment_note' );
 	
@@ -139,6 +136,18 @@ function path_theme_setup() {
 	
 	/* Add social media buttons after singular post entry. Facebook like, twitter tweet and google+. This uses Social Path Plugin. */
 	add_action( "{$prefix}_singular-post_after_singular", 'path_add_social_media' );
+	
+	/* Set global layout. */
+	add_filter( 'get_theme_layout', 'path_theme_layout' );
+	
+	/* Add Customize link to Appearance menu in admin. */
+	add_action ( 'admin_menu', 'path_admin_customize' );
+	
+	/* Add layout option in Customize. */
+	add_action( 'customize_register', 'path_customize_register' );
+	
+	/* Add js to customize. */
+	add_action( 'customize_preview_init', 'path_customize_preview_js' );
 	
 }
 
@@ -306,25 +315,6 @@ function path_default_footer_settings( $settings ) {
     $settings['footer_insert'] = '<p class="copyright">' . __( 'Copyright &#169; [the-year] [site-link].', 'path' ) . '</p>' . "\n\n" . '<p class="credit">' . __( 'Powered by [wp-link] and [theme-link].', 'path' ) . __( ' <a class="top" href="#container">Back to Top</a>', 'path' ) . '</p>';
     
     return $settings;
-}
-
-/**
- * Filter global layout, which is defined under Appearance >> Theme Settings.
- * @since 0.1.0
- */
-function path_theme_layout( $layout ) {
-
-	/* Get global layout. */
-	$path_global_layout = hybrid_get_setting( 'path_global_layout' );
-	
-	if ( !$path_global_layout )
-		return $layout;
-
-	if ( 'layout-default' == $layout )
-		$layout = $path_global_layout;
-
-	return $layout;
-	
 }
 
 /**
@@ -499,7 +489,95 @@ function path_add_social_media() {
 	
 }
 
+/**
+ * Filter global layout, which is defined under Appearance >> Theme Settings.
+ * @since 0.1.0
+ */
+function path_theme_layout( $layout ) {
 
+	/* Get global layout. */
+	$path_global_layout = hybrid_get_setting( 'path_global_layout' );
+	
+	if ( !$path_global_layout )
+		return $layout;
+
+	if ( 'layout-default' == $layout )
+		$layout = $path_global_layout;
+
+	return $layout;
+	
+}
+
+/**
+ * Add the Customize link to the admin menu.
+ * @link: http://ottopress.com/2012/theme-customizer-part-deux-getting-rid-of-options-pages/
+ * @since 0.1.0
+ */
+function path_admin_customize() {
+
+	add_theme_page( __( 'Customize', 'path' ), __( 'Customize', 'path' ), 'edit_theme_options', 'customize.php' );
+	
+}
+
+/**
+ * Add layout option in theme Customize.
+ * @link: http://ottopress.com/2012/how-to-leverage-the-theme-customizer-in-your-own-themes/
+ * @since 0.1.0
+ */
+function path_customize_register( $wp_customize ) {
+	
+	/* Get blogname and blogdescription settings. */
+	
+	// if header image is not set
+	if ( ! get_header_image() ) {
+		$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
+	}
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+	
+	// Layout section
+	$wp_customize->add_section( 'path_customize_layout', array(
+		'title'			=> __( 'Layout', 'path' ),
+		'priority'		=> 50,
+	) );
+	
+	// Layout setting
+	$wp_customize->add_setting( 'path_theme_settings[path_global_layout]', array(
+		'type'				=> 'option',
+		'default'			=> 'layout-default',
+		'capability'		=> 'edit_theme_options',
+		'sanitize_callback'	=> 'sanitize_key',
+		'transport'			=>	'postMessage',
+	) );
+	
+	// Layout control
+	$wp_customize->add_control( 'path_theme_settings[path_global_layout]', array(
+		'section'		=> 'path_customize_layout',
+		'settings'		=> 'path_theme_settings[path_global_layout]',
+		'type'			=> 'radio',
+		'choices'				=> array(
+			'layout-default'	=> __( 'Default', 'path' ),
+			'layout-1c'			=> __( 'One Column', 'path' ),
+			'layout-2c-l'		=> __( 'Two Columns, Left', 'path' ),
+			'layout-2c-r'		=> __( 'Two Columns, Right', 'path' ),
+			'layout-3c-l'		=> __( 'Three Columns, Left', 'path' ),
+			'layout-3c-r'		=> __( 'Three Columns, Right', 'path' ),
+			'layout-3c-c'		=> __( 'Three Columns, Center', 'path' ),
+		),
+	) );
+	
+}
+
+/**
+ * This make Theme Customizer live preview reload changes asynchronously.
+ * Used with blogname, blogdescription and global layout.
+ * @note: credit goes to TwentyEleven theme.
+ * @since 0.1.0
+ */
+function path_customize_preview_js() {
+
+	wp_enqueue_script( 'path-customizer', trailingslashit( get_template_directory_uri() ) . 'js/customize/path-customizer.js', array( 'customize-preview' ), '20120731', true );
+
+}
 
 /**
  * Gets posts from last 30 days.

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-24 12:56+0200\n"
-"PO-Revision-Date: 2012-07-24 12:56+0200\n"
+"POT-Creation-Date: 2012-07-30 15:06+0200\n"
+"PO-Revision-Date: 2012-07-30 15:06+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "MIME-Version: 1.0\n"
@@ -146,56 +146,60 @@ msgstr "[entry-author]  [entry-published] [entry-comments-link before=\" | \"] [
 msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"| Tagged \"]"
 msgstr "[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"| Avainsanat \"]"
 
-#: functions.php:303
+#: functions.php:309
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr "Copyright &#169; [the-year] [site-link]."
 
-#: functions.php:303
+#: functions.php:309
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr "Alustana [wp-link] ja [theme-link]."
 
-#: functions.php:303
+#: functions.php:309
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr " <a class=\"top\" href=\"#container\">Takaisin ylös</a>"
 
-#: functions.php:333
+#: functions.php:339
 msgid "Please comment with your real name using good manners."
 msgstr "Ole hyvä ja kommentoi omalla nimellä hyvien tapojen mukaisesti."
 
-#: functions.php:344
+#: functions.php:350
 msgid "Read more &rarr;"
 msgstr "Lue lisää &rarr;"
 
-#: functions.php:380
+#: functions.php:386
 msgid "Twitter Username"
 msgstr "Twitter käyttäjänimi"
 
-#: functions.php:399
+#: functions.php:405
 msgid "Author of the article"
 msgstr "Artikkelin kirjoittaja"
 
-#: functions.php:399
+#: functions.php:405
 msgid "Authors of the article"
 msgstr "Artikkelin kirjoittajat"
 
-#: functions.php:416
-#: functions.php:441
-#: functions.php:461
+#: functions.php:422
+#: functions.php:443
+#: functions.php:463
 #, php-format
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr "Seuraa %1$s %2$s &#64;%3$s Twitterissä."
 
-#: functions.php:451
+#: functions.php:453
 msgid "Article written by [entry-author]"
 msgstr "Artikkelin kirjoittaja [entry-author]"
 
-#: functions.php:481
+#: functions.php:483
 msgid "and"
 msgstr "ja"
 
-#: functions.php:482
+#: functions.php:484
 msgid " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
 msgstr " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+
+#: functions.php:512
+msgid "Customize"
+msgstr "Kustomoi"
 
 #: header.php:90
 msgid "You are here:"
@@ -406,7 +410,7 @@ msgstr "Kuukausittainen arkisto"
 msgid "Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
 msgstr "Luettu [entry-views] [entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"Avainsanat \"]"
 
-#: page-templates/path-slider.php:86
+#: page-templates/path-slider.php:85
 msgid "More Articles"
 msgstr "Lisää artikkeleita"
 
