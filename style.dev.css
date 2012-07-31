@@ -385,7 +385,7 @@ h3.menu-secondary-mobile-title {
 .menu-primary-anchor:after,
 .menu-secondary-anchor:after,
 .search-primary-anchor:after {
-    content: " ?";
+    content: " ▼";
 }
 .menu-secondary-anchor:after {
 	font-size: 1em;
@@ -954,7 +954,7 @@ ol.comment-list {
 	text-align: center;
 }
 .top:after {
-    content: " ?";
+    content: " ▲";
 }
 
 /* Subsidiary menu. */
