@@ -546,7 +546,7 @@ function path_customize_register( $wp_customize ) {
 		'default'			=> 'layout-default',
 		'capability'		=> 'edit_theme_options',
 		'sanitize_callback'	=> 'sanitize_key',
-		'transport'			=>	'postMessage',
+		'transport'			=> 'postMessage',
 	) );
 	
 	// Layout control
