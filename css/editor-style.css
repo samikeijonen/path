@@ -25,7 +25,7 @@ img {
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
 	border: 1px solid #e9edf1;
-	padding: .25em; /* 4px / 16px = 0.25 */
+	padding: 4px;
 }
 /* Headers */
 h1,

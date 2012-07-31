@@ -25,8 +25,8 @@
 	list-style: none;
 } 
 
-/* FlexSlider Necessary Styles
-*********************************/ 
+/* =FlexSlider Necessary Styles
+-------------------------------------------------------------- */
 .flexslider {
 	margin: 0;
 	padding: 0;
@@ -67,8 +67,8 @@ html[xmlns] .slides {
 }
 
 
-/* FlexSlider Default Theme
-*********************************/
+/* =FlexSlider Default Theme
+-------------------------------------------------------------- */
 .flexslider {
 	position: relative;
 	-webkit-border-radius: 4px;

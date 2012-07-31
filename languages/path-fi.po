@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-30 15:06+0200\n"
-"PO-Revision-Date: 2012-07-30 15:06+0200\n"
+"PO-Revision-Date: 2012-07-31 13:34+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "MIME-Version: 1.0\n"
@@ -383,7 +383,7 @@ msgstr "Kolme saraketta, sisältö keskellä"
 
 #: admin/functions-admin.php:126
 msgid "Set the layout for the entire site. The default layout is 2 columns with content on the left. You can overwrite this value in individual post or page. Note! Three column layouts will only work if you use Primary and Secondary Widget areas and browser window is wide enough."
-msgstr "Asetu sivuston ulkoasu. Oletus on kaksi saraketta, missä sisältö on vasemmalla. Yksittäisen artikkelin kohdalla voit muuttaa tätä asetusta. Huom! Kolmen sarakkeen ulkoasu toimii vain jos käytössä on sekä ensi -että toissijainen vimpainalue ja näytön resoluution on riittävän leveä."
+msgstr "Aseta sivuston ulkoasu. Oletus on kaksi saraketta, missä sisältö on vasemmalla. Yksittäisen artikkelin kohdalla voit muuttaa tätä asetusta. Huom! Kolmen sarakkeen ulkoasu toimii vain, jos käytössä on sekä ensi -että toissijainen vimpainalue ja näytön resoluutio on riittävän leveä."
 
 #: page-templates/archives.php:44
 #, php-format
