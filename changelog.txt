@@ -1,5 +1,7 @@
 31.7.2012 - version 0.1.1
 
+* Better code in theme customize and settings page when choosing global layout.
+
 * Arrows fixed back to normal. They were replaced by ?-mark when compressing style.css. 
 
 * @link: http://stackoverflow.com/questions/2701192/ascii-character-for-up-down-triangle-arrow-to-display-in-html

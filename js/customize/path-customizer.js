@@ -11,7 +11,9 @@
 	} );
 	wp.customize( 'path_theme_settings[path_global_layout]', function( value ) {
 		value.bind( function( to ) {
-			$( 'body' ).removeClass( 'layout-default layout-1c layout-2c-l layout-2c-r layout-3c-l layout-3c-r layout-3c-c' ).addClass( to );
+			var classes = $( 'body' ).attr( 'class' ).replace( /layout-[a-zA-Z0-9_-]*/g, '' ); // replace class with prefix layout- to ''
+			$( 'body' ).attr( 'class', classes ).addClass( to ); // add new class
 		} );
 	} );
+
 } )( jQuery );

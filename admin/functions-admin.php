@@ -104,7 +104,11 @@ function path_theme_meta_box_background() { ?>
 }
 
 /* Function for displaying the layout meta box. */
-function path_theme_meta_box_layout() { ?>
+function path_theme_meta_box_layout() {
+
+	/* Get theme layouts. */
+	$path_supported_layouts = get_theme_support( 'theme-layouts' );
+	$path_layouts = $path_supported_layouts[0]; // Array of all layouts without the 'layout-' prefix. ?>
 
 	<table class="form-table">
 		
@@ -115,13 +119,11 @@ function path_theme_meta_box_layout() { ?>
 			</th>
 			<td>
 			    <select id="<?php echo esc_attr( hybrid_settings_field_id( 'path_global_layout' ) ); ?>" name="<?php echo esc_attr( hybrid_settings_field_name( 'path_global_layout' ) ); ?>">
-					<option value="layout-default" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-default' ); ?>> <?php echo __( 'Default', 'path' ) ?> </option>
-					<option value="layout-1c" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-1c' ); ?>> <?php echo __( 'One Column', 'path' ) ?> </option>
-					<option value="layout-2c-l" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-2c-l' ); ?>> <?php echo __( 'Two Columns, Left', 'path' ) ?> </option>
-					<option value="layout-2c-r" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-2c-r' ); ?>> <?php echo __( 'Two Columns, Right', 'path' ) ?> </option>
-					<option value="layout-3c-l" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-3c-l' ); ?>> <?php echo __( 'Three Columns, Left', 'path' ) ?> </option>
-					<option value="layout-3c-r" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-3c-r' ); ?>> <?php echo __( 'Three Columns, Right', 'path' ) ?> </option>
-					<option value="layout-3c-c" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-3c-c' ); ?>> <?php echo __( 'Three Columns, Center', 'path' ) ?> </option>
+					<option value="layout-default" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-default' ); ?>> <?php echo esc_html( theme_layouts_get_string( 'default' ) ); ?> </option>
+					<?php
+					foreach ( $path_layouts as $path_layout ) { ?>
+						<option value="<?php echo esc_attr( "layout-{$path_layout}" ); ?>" <?php selected( hybrid_get_setting( 'path_global_layout' ), "layout-{$path_layout}" ); ?>> <?php echo esc_html( theme_layouts_get_string( $path_layout ) ); ?> </option>
+					<?php } ?>
 			    </select>
 			    <p><span class="description"><?php _e( 'Set the layout for the entire site. The default layout is 2 columns with content on the left. You can overwrite this value in individual post or page. Note! Three column layouts will only work if you use Primary and Secondary Widget areas and browser window is wide enough.', 'path' ); ?></span></p>
 			</td>

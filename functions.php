@@ -549,20 +549,25 @@ function path_customize_register( $wp_customize ) {
 		'transport'			=> 'postMessage',
 	) );
 	
+	/* Get theme layouts. */
+	$path_supported_layouts = get_theme_support( 'theme-layouts' );
+	$path_layouts = $path_supported_layouts[0]; // Array of all layouts without the 'layout-' prefix.
+	
+	/* Add layout-default to $path_layout_choices. */
+	$path_layout_choices['layout-default'] = theme_layouts_get_string( 'default' );
+	
+	/* Then add rest of what user had added in add_theme_support( 'theme-layouts' ). */
+	foreach ( $path_layouts as $path_layout ) {
+		$path_layout_choices["layout-{$path_layout}"] = theme_layouts_get_string( $path_layout );
+	}
+	
 	// Layout control
 	$wp_customize->add_control( 'path_theme_settings[path_global_layout]', array(
+		'label'			=>	__( 'Global Layout:', 'path' ),
 		'section'		=> 'path_customize_layout',
 		'settings'		=> 'path_theme_settings[path_global_layout]',
 		'type'			=> 'radio',
-		'choices'				=> array(
-			'layout-default'	=> __( 'Default', 'path' ),
-			'layout-1c'			=> __( 'One Column', 'path' ),
-			'layout-2c-l'		=> __( 'Two Columns, Left', 'path' ),
-			'layout-2c-r'		=> __( 'Two Columns, Right', 'path' ),
-			'layout-3c-l'		=> __( 'Three Columns, Left', 'path' ),
-			'layout-3c-r'		=> __( 'Three Columns, Right', 'path' ),
-			'layout-3c-c'		=> __( 'Three Columns, Center', 'path' ),
-		),
+		'choices'		=> $path_layout_choices,
 	) );
 	
 }
