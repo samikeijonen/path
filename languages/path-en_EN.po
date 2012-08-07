@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 15:06+0200\n"
-"PO-Revision-Date: 2012-07-30 15:06+0200\n"
+"POT-Creation-Date: 2012-08-07 10:21+0200\n"
+"PO-Revision-Date: 2012-08-07 10:22+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_n;_x:1,2c\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;"
+"esc_html__;esc_html_e;_n;_x:1,2c\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Language: English\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:27
@@ -20,37 +21,32 @@ msgstr ""
 
 #: 404.php:33
 #, php-format
-msgid "You tried going to %s, which doesn't exist. You can try navigate or search."
+msgid ""
+"You tried going to %s, which doesn't exist. You can try navigate or search."
 msgstr ""
 
 #: 404.php:39
 msgid "Or here are the latest posts, hope it helps."
 msgstr ""
 
-#: attachment-image.php:41
-#: content-video.php:37
+#: attachment-image.php:41 content-video.php:37 page-templates/archives.php:40
+#: page-templates/tag-cloud.php:40
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: attachment-image.php:42
-#: content-aside.php:27
-#: content-aside.php:38
-#: content-audio.php:27
-#: content-audio.php:38
-#: content-gallery.php:27
-#: content-gallery.php:44
-#: content-image.php:27
-#: content-image.php:38
-#: content-link.php:27
-#: content-link.php:48
-#: content-page.php:26
-#: content-page.php:43
-#: content-quote.php:20
-#: content-status.php:22
-#: content-video.php:27
-#: content-video.php:38
-#: content.php:27
-#: content.php:45
+#: attachment-image.php:42 content-aside.php:27 content-aside.php:38
+#: content-audio.php:27 content-audio.php:38 content-gallery.php:27
+#: content-gallery.php:44 content-image.php:27 content-image.php:38
+#: content-link.php:27 content-link.php:48 content-page.php:26
+#: content-page.php:43 content-quote.php:20 content-status.php:22
+#: content-video.php:27 content-video.php:38 content.php:27 content.php:45
+#: page-templates/archives.php:68
+#: page-templates/most-popular-by-comments.php:58
+#: page-templates/most-popular-by-month.php:61
+#: page-templates/most-popular-by-year.php:60
+#: page-templates/most-popular-last-30-days.php:62
+#: page-templates/most-popular.php:59 page-templates/path-slider.php:56
+#: page-templates/tag-cloud.php:46
 msgid "Pages:"
 msgstr ""
 
@@ -85,7 +81,9 @@ msgstr ""
 
 #: comments.php:49
 #, php-format
-msgid "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
 msgstr ""
 
 #: comments.php:55
@@ -93,111 +91,133 @@ msgid "Comments are closed."
 msgstr ""
 
 #: content-aside.php:22
-msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]"
+msgid ""
+"[post-format-link] published on [entry-published] [entry-edit-link before="
+"\"| \"]"
 msgstr ""
 
-#: content-aside.php:31
-#: content-audio.php:31
-#: content-gallery.php:31
-#: content-image.php:31
-#: content-link.php:31
-#: content-video.php:31
+#: content-aside.php:31 content-audio.php:31 content-gallery.php:31
+#: content-image.php:31 content-link.php:31 content-video.php:31
 #: content.php:31
-msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"Tagged \"]"
 msgstr ""
 
-#: content-aside.php:42
-#: content-audio.php:42
-#: content-gallery.php:48
-#: content-image.php:42
-#: content-link.php:54
-#: content-quote.php:27
+#: content-aside.php:42 content-audio.php:42 content-gallery.php:48
+#: content-image.php:42 content-link.php:54 content-quote.php:27
 #: content-video.php:42
-msgid "[post-format-link] published on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgid ""
+"[post-format-link] published on [entry-published] [entry-permalink before="
+"\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
 msgstr ""
 
-#: content-audio.php:22
-#: content-gallery.php:22
-#: content-image.php:22
-#: content-link.php:22
-#: content-video.php:22
-msgid "[post-format-link] published on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+#: content-audio.php:22 content-gallery.php:22 content-image.php:22
+#: content-link.php:22 content-video.php:22
+msgid ""
+"[post-format-link] published on [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\" | \"]"
 msgstr ""
 
 #: content-quote.php:25
-msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgid ""
+"[post-format-link] published on [entry-published] [entry-edit-link before="
+"\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] "
+"[entry-terms before=\"Tagged \"]"
 msgstr ""
 
 #: content-status.php:27
-msgid "[post-format-link] updated on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-edit-link before=\"| "
+"\"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-"
+"terms before=\"Tagged \"]"
 msgstr ""
 
 #: content-status.php:29
-msgid "[post-format-link] updated on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-permalink before=\"| "
+"\"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
 msgstr ""
 
-#: content.php:22
-#: content.php:40
-msgid "Published by [entry-author] on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+#: content.php:22 content.php:40 sticky-slider.php:45
+#: page-templates/most-popular-by-comments.php:53
+#: page-templates/most-popular-by-month.php:56
+#: page-templates/most-popular-by-year.php:55
+#: page-templates/most-popular-last-30-days.php:57
+#: page-templates/most-popular.php:54 page-templates/path-slider.php:60
+#: page-templates/path-slider.php:110
+msgid ""
+"Published by [entry-author] on [entry-published] [entry-comments-link before="
+"\" | \"] [entry-edit-link before=\" | \"]"
 msgstr ""
 
 #: content.php:49
-msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"| Tagged \"]"
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"| Tagged \"]"
 msgstr ""
 
-#: functions.php:309
+#: functions.php:315
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr ""
 
-#: functions.php:309
+#: functions.php:315
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr ""
 
-#: functions.php:309
+#: functions.php:315
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr ""
 
-#: functions.php:339
+#: functions.php:326
 msgid "Please comment with your real name using good manners."
 msgstr ""
 
-#: functions.php:350
+#: functions.php:337
 msgid "Read more &rarr;"
 msgstr ""
 
-#: functions.php:386
+#: functions.php:373
 msgid "Twitter Username"
 msgstr ""
 
-#: functions.php:405
+#: functions.php:392
 msgid "Author of the article"
 msgstr ""
 
-#: functions.php:405
+#: functions.php:392
 msgid "Authors of the article"
 msgstr ""
 
-#: functions.php:422
-#: functions.php:443
-#: functions.php:463
+#: functions.php:409 functions.php:430 functions.php:450
 #, php-format
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr ""
 
-#: functions.php:453
+#: functions.php:440
 msgid "Article written by [entry-author]"
 msgstr ""
 
-#: functions.php:483
+#: functions.php:470
 msgid "and"
 msgstr ""
 
-#: functions.php:484
-msgid " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+#: functions.php:471
+msgid ""
+" [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
+"before=\" | \"]"
 msgstr ""
 
-#: functions.php:512
+#: functions.php:518
 msgid "Customize"
+msgstr ""
+
+#: functions.php:539 admin/functions-admin.php:56
+msgid "Layout"
+msgstr ""
+
+#: functions.php:566 admin/functions-admin.php:118
+msgid "Global Layout:"
 msgstr ""
 
 #: header.php:90
@@ -256,7 +276,9 @@ msgstr ""
 
 #: loop-meta.php:169
 #, php-format
-msgid "You are browsing most viewed articles in current month (%1$s) and year (%2$s)."
+msgid ""
+"You are browsing most viewed articles in current month (%1$s) and year "
+"(%2$s)."
 msgstr ""
 
 #: loop-meta.php:179
@@ -279,14 +301,11 @@ msgstr ""
 msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
 msgstr ""
 
-#: loop-nav.php:23
-#: loop-nav.php:27
-#: loop-nav.php:29
+#: loop-nav.php:23 loop-nav.php:27 loop-nav.php:29
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr ""
 
-#: loop-nav.php:24
-#: loop-nav.php:27
+#: loop-nav.php:24 loop-nav.php:27
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -294,8 +313,7 @@ msgstr ""
 msgid "Next &rarr;"
 msgstr ""
 
-#: menu-primary-mobile.php:24
-#: menu-primary.php:20
+#: menu-primary-mobile.php:24 menu-primary.php:20
 msgid "Primary Menu"
 msgstr ""
 
@@ -303,14 +321,11 @@ msgstr ""
 msgid "Primary Mobile Menu"
 msgstr ""
 
-#: menu-primary.php:22
-#: searchform.php:16
-#: searchform.php:17
+#: menu-primary.php:22 searchform.php:16 searchform.php:17
 msgid "Search"
 msgstr ""
 
-#: menu-secondary-mobile.php:22
-#: menu-secondary.php:20
+#: menu-secondary-mobile.php:22 menu-secondary.php:20
 msgid "Secondary Menu"
 msgstr ""
 
@@ -326,17 +341,15 @@ msgstr ""
 msgid "Background"
 msgstr ""
 
-#: admin/functions-admin.php:56
-msgid "Layout"
-msgstr ""
-
 #: admin/functions-admin.php:74
 msgid "Custom logo:"
 msgstr ""
 
 #: admin/functions-admin.php:77
 #, php-format
-msgid "Want to replace or remove default logo? <a href=\"%s\">Go to Appearance &gt;&gt; Header</a>. "
+msgid ""
+"Want to replace or remove default logo? <a href=\"%s\">Go to Appearance &gt;"
+"&gt; Header</a>. "
 msgstr ""
 
 #: admin/functions-admin.php:94
@@ -345,43 +358,17 @@ msgstr ""
 
 #: admin/functions-admin.php:97
 #, php-format
-msgid "Want to replace or remove default background? <a href=\"%s\">Go to Appearance &gt;&gt; Background</a>. "
+msgid ""
+"Want to replace or remove default background? <a href=\"%s\">Go to "
+"Appearance &gt;&gt; Background</a>. "
 msgstr ""
 
-#: admin/functions-admin.php:114
-msgid "Global Layout:"
-msgstr ""
-
-#: admin/functions-admin.php:118
-msgid "Default"
-msgstr ""
-
-#: admin/functions-admin.php:119
-msgid "One Column"
-msgstr ""
-
-#: admin/functions-admin.php:120
-msgid "Two Columns, Left"
-msgstr ""
-
-#: admin/functions-admin.php:121
-msgid "Two Columns, Right"
-msgstr ""
-
-#: admin/functions-admin.php:122
-msgid "Three Columns, Left"
-msgstr ""
-
-#: admin/functions-admin.php:123
-msgid "Three Columns, Right"
-msgstr ""
-
-#: admin/functions-admin.php:124
-msgid "Three Columns, Center"
-msgstr ""
-
-#: admin/functions-admin.php:126
-msgid "Set the layout for the entire site. The default layout is 2 columns with content on the left. You can overwrite this value in individual post or page. Note! Three column layouts will only work if you use Primary and Secondary Widget areas and browser window is wide enough."
+#: admin/functions-admin.php:128
+msgid ""
+"Set the layout for the entire site. The default layout is 2 columns with "
+"content on the left. You can overwrite this value in individual post or "
+"page. Note! Three column layouts will only work if you use Primary and "
+"Secondary Widget areas and browser window is wide enough."
 msgstr ""
 
 #: page-templates/archives.php:44
@@ -406,10 +393,11 @@ msgstr ""
 #: page-templates/most-popular-by-year.php:64
 #: page-templates/most-popular-last-30-days.php:66
 #: page-templates/most-popular.php:63
-msgid "Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgid ""
+"Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in "
+"\"] [entry-terms before=\"Tagged \"]"
 msgstr ""
 
 #: page-templates/path-slider.php:85
 msgid "More Articles"
 msgstr ""
-

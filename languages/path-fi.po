@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 15:06+0200\n"
-"PO-Revision-Date: 2012-07-31 13:34+0200\n"
+"POT-Creation-Date: 2012-08-07 10:22+0200\n"
+"PO-Revision-Date: 2012-08-07 10:22+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
+"Language: fi_FI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_n;_x:1,2c\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;"
+"esc_html__;esc_html_e;_n;_x:1,2c\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Language: Finnish\n"
-"X-Poedit-Country: FINLAND\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:27
@@ -21,37 +21,34 @@ msgstr "Mitä tapahtui?"
 
 #: 404.php:33
 #, php-format
-msgid "You tried going to %s, which doesn't exist. You can try navigate or search."
-msgstr "Yritit vissiin mennä osoitteeseen %s, mutta et onnistunut. Kokeile navigoida tai etsiä."
+msgid ""
+"You tried going to %s, which doesn't exist. You can try navigate or search."
+msgstr ""
+"Yritit vissiin mennä osoitteeseen %s, mutta et onnistunut. Kokeile navigoida "
+"tai etsiä."
 
 #: 404.php:39
 msgid "Or here are the latest posts, hope it helps."
 msgstr "Tai jos uusimmista artikkeleista löytyy etsimäsi."
 
-#: attachment-image.php:41
-#: content-video.php:37
+#: attachment-image.php:41 content-video.php:37 page-templates/archives.php:40
+#: page-templates/tag-cloud.php:40
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lue lisää <span class=\"meta-nav\">&rarr;</span>"
 
-#: attachment-image.php:42
-#: content-aside.php:27
-#: content-aside.php:38
-#: content-audio.php:27
-#: content-audio.php:38
-#: content-gallery.php:27
-#: content-gallery.php:44
-#: content-image.php:27
-#: content-image.php:38
-#: content-link.php:27
-#: content-link.php:48
-#: content-page.php:26
-#: content-page.php:43
-#: content-quote.php:20
-#: content-status.php:22
-#: content-video.php:27
-#: content-video.php:38
-#: content.php:27
-#: content.php:45
+#: attachment-image.php:42 content-aside.php:27 content-aside.php:38
+#: content-audio.php:27 content-audio.php:38 content-gallery.php:27
+#: content-gallery.php:44 content-image.php:27 content-image.php:38
+#: content-link.php:27 content-link.php:48 content-page.php:26
+#: content-page.php:43 content-quote.php:20 content-status.php:22
+#: content-video.php:27 content-video.php:38 content.php:27 content.php:45
+#: page-templates/archives.php:68
+#: page-templates/most-popular-by-comments.php:58
+#: page-templates/most-popular-by-month.php:61
+#: page-templates/most-popular-by-year.php:60
+#: page-templates/most-popular-last-30-days.php:62
+#: page-templates/most-popular.php:59 page-templates/path-slider.php:56
+#: page-templates/tag-cloud.php:46
 msgid "Pages:"
 msgstr "Sivut:"
 
@@ -86,120 +83,168 @@ msgstr "Sivu %1$s / %2$s"
 
 #: comments.php:49
 #, php-format
-msgid "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
-msgstr "Kommentointi on suljettu, mutta <a href=\"%s\" title=\"Trackback URL for this post\">paluuviitteet</a> ja päivitysilmoitukset ovat sallittuja."
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Kommentointi on suljettu, mutta <a href=\"%s\" title=\"Trackback URL for "
+"this post\">paluuviitteet</a> ja päivitysilmoitukset ovat sallittuja."
 
 #: comments.php:55
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
 #: content-aside.php:22
-msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]"
-msgstr "[post-format-link] julkaistu [entry-published] [entry-edit-link before=\"| \"]"
+msgid ""
+"[post-format-link] published on [entry-published] [entry-edit-link before="
+"\"| \"]"
+msgstr ""
+"[post-format-link] julkaistu [entry-published] [entry-edit-link before=\"| "
+"\"]"
 
-#: content-aside.php:31
-#: content-audio.php:31
-#: content-gallery.php:31
-#: content-image.php:31
-#: content-link.php:31
-#: content-video.php:31
+#: content-aside.php:31 content-audio.php:31 content-gallery.php:31
+#: content-image.php:31 content-link.php:31 content-video.php:31
 #: content.php:31
-msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
-msgstr "[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"Avainsanat \"]"
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"Tagged \"]"
+msgstr ""
+"[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] "
+"[entry-terms before=\"Avainsanat \"]"
 
-#: content-aside.php:42
-#: content-audio.php:42
-#: content-gallery.php:48
-#: content-image.php:42
-#: content-link.php:54
-#: content-quote.php:27
+#: content-aside.php:42 content-audio.php:42 content-gallery.php:48
+#: content-image.php:42 content-link.php:54 content-quote.php:27
 #: content-video.php:42
-msgid "[post-format-link] published on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
-msgstr "[post-format-link] julkaistu [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgid ""
+"[post-format-link] published on [entry-published] [entry-permalink before="
+"\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+"[post-format-link] julkaistu [entry-published] [entry-permalink before=\"| "
+"\"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
 
-#: content-audio.php:22
-#: content-gallery.php:22
-#: content-image.php:22
-#: content-link.php:22
-#: content-video.php:22
-msgid "[post-format-link] published on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
-msgstr "[post-format-link] julkaistu [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+#: content-audio.php:22 content-gallery.php:22 content-image.php:22
+#: content-link.php:22 content-video.php:22
+msgid ""
+"[post-format-link] published on [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+"[post-format-link] julkaistu [entry-published] [entry-comments-link before="
+"\" | \"] [entry-edit-link before=\" | \"]"
 
 #: content-quote.php:25
-msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
-msgstr "[post-format-link] julkaistu [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"Avainsanat \"]"
+msgid ""
+"[post-format-link] published on [entry-published] [entry-edit-link before="
+"\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] "
+"[entry-terms before=\"Tagged \"]"
+msgstr ""
+"[post-format-link] julkaistu [entry-published] [entry-edit-link before=\"| "
+"\"]<br />[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa "
+"\"] [entry-terms before=\"Avainsanat \"]"
 
 #: content-status.php:27
-msgid "[post-format-link] updated on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
-msgstr "[post-format-link] päivitetty [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"Avainsanat \"]"
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-edit-link before=\"| "
+"\"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-"
+"terms before=\"Tagged \"]"
+msgstr ""
+"[post-format-link] päivitetty [entry-published] [entry-edit-link before=\"| "
+"\"]<br />[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa "
+"\"] [entry-terms before=\"Avainsanat \"]"
 
 #: content-status.php:29
-msgid "[post-format-link] updated on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
-msgstr "[post-format-link] päivitetty [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-permalink before=\"| "
+"\"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+"[post-format-link] päivitetty [entry-published] [entry-permalink before=\"| "
+"\"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
 
-#: content.php:22
-#: content.php:40
-msgid "Published by [entry-author] on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
-msgstr "[entry-author]  [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+#: content.php:22 content.php:40 sticky-slider.php:45
+#: page-templates/most-popular-by-comments.php:53
+#: page-templates/most-popular-by-month.php:56
+#: page-templates/most-popular-by-year.php:55
+#: page-templates/most-popular-last-30-days.php:57
+#: page-templates/most-popular.php:54 page-templates/path-slider.php:60
+#: page-templates/path-slider.php:110
+msgid ""
+"Published by [entry-author] on [entry-published] [entry-comments-link before="
+"\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+"[entry-author]  [entry-published] [entry-comments-link before=\" | \"] "
+"[entry-edit-link before=\" | \"]"
 
 #: content.php:49
-msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"| Tagged \"]"
-msgstr "[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"| Avainsanat \"]"
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"| Tagged \"]"
+msgstr ""
+"[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] "
+"[entry-terms before=\"| Avainsanat \"]"
 
-#: functions.php:309
+#: functions.php:315
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr "Copyright &#169; [the-year] [site-link]."
 
-#: functions.php:309
+#: functions.php:315
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr "Alustana [wp-link] ja [theme-link]."
 
-#: functions.php:309
+#: functions.php:315
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr " <a class=\"top\" href=\"#container\">Takaisin ylös</a>"
 
-#: functions.php:339
+#: functions.php:326
 msgid "Please comment with your real name using good manners."
 msgstr "Ole hyvä ja kommentoi omalla nimellä hyvien tapojen mukaisesti."
 
-#: functions.php:350
+#: functions.php:337
 msgid "Read more &rarr;"
 msgstr "Lue lisää &rarr;"
 
-#: functions.php:386
+#: functions.php:373
 msgid "Twitter Username"
 msgstr "Twitter käyttäjänimi"
 
-#: functions.php:405
+#: functions.php:392
 msgid "Author of the article"
 msgstr "Artikkelin kirjoittaja"
 
-#: functions.php:405
+#: functions.php:392
 msgid "Authors of the article"
 msgstr "Artikkelin kirjoittajat"
 
-#: functions.php:422
-#: functions.php:443
-#: functions.php:463
+#: functions.php:409 functions.php:430 functions.php:450
 #, php-format
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr "Seuraa %1$s %2$s &#64;%3$s Twitterissä."
 
-#: functions.php:453
+#: functions.php:440
 msgid "Article written by [entry-author]"
 msgstr "Artikkelin kirjoittaja [entry-author]"
 
-#: functions.php:483
+#: functions.php:470
 msgid "and"
 msgstr "ja"
 
-#: functions.php:484
-msgid " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
-msgstr " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+#: functions.php:471
+msgid ""
+" [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
+"before=\" | \"]"
+msgstr ""
+" [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
+"before=\" | \"]"
 
-#: functions.php:512
+#: functions.php:518
 msgid "Customize"
 msgstr "Kustomoi"
+
+#: functions.php:539 admin/functions-admin.php:56
+msgid "Layout"
+msgstr "Ulkoasu"
+
+#: functions.php:566 admin/functions-admin.php:118
+msgid "Global Layout:"
+msgstr "Sivuston ulkoasu:"
 
 #: header.php:90
 msgid "You are here:"
@@ -257,7 +302,9 @@ msgstr "Kuukauden luetuimmat"
 
 #: loop-meta.php:169
 #, php-format
-msgid "You are browsing most viewed articles in current month (%1$s) and year (%2$s)."
+msgid ""
+"You are browsing most viewed articles in current month (%1$s) and year "
+"(%2$s)."
 msgstr "Luetuimmat artikkelit tässä kuussa (%1$s) ja tänä vuonna (%2$s)."
 
 #: loop-meta.php:179
@@ -280,14 +327,11 @@ msgstr "Luetuimmat artikkelit viimeisen 30 päivän ajalta."
 msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
 msgstr "<span class=\"meta-nav\">&larr;</span> Palaa takaisin"
 
-#: loop-nav.php:23
-#: loop-nav.php:27
-#: loop-nav.php:29
+#: loop-nav.php:23 loop-nav.php:27 loop-nav.php:29
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr "<span class=\"meta-nav\">&larr;</span> Edellinen"
 
-#: loop-nav.php:24
-#: loop-nav.php:27
+#: loop-nav.php:24 loop-nav.php:27
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seuraava <span class=\"meta-nav\">&rarr;</span>"
 
@@ -295,8 +339,7 @@ msgstr "Seuraava <span class=\"meta-nav\">&rarr;</span>"
 msgid "Next &rarr;"
 msgstr "Seuraava &rarr;"
 
-#: menu-primary-mobile.php:24
-#: menu-primary.php:20
+#: menu-primary-mobile.php:24 menu-primary.php:20
 msgid "Primary Menu"
 msgstr "Päävalikko"
 
@@ -304,14 +347,11 @@ msgstr "Päävalikko"
 msgid "Primary Mobile Menu"
 msgstr "Päävalikko"
 
-#: menu-primary.php:22
-#: searchform.php:16
-#: searchform.php:17
+#: menu-primary.php:22 searchform.php:16 searchform.php:17
 msgid "Search"
 msgstr "Etsi"
 
-#: menu-secondary-mobile.php:22
-#: menu-secondary.php:20
+#: menu-secondary-mobile.php:22 menu-secondary.php:20
 msgid "Secondary Menu"
 msgstr "Toinen valikko"
 
@@ -327,18 +367,18 @@ msgstr "Logon lataaminen"
 msgid "Background"
 msgstr "Taustakuva"
 
-#: admin/functions-admin.php:56
-msgid "Layout"
-msgstr "Ulkoasu"
-
 #: admin/functions-admin.php:74
 msgid "Custom logo:"
 msgstr "Logo:"
 
 #: admin/functions-admin.php:77
 #, php-format
-msgid "Want to replace or remove default logo? <a href=\"%s\">Go to Appearance &gt;&gt; Header</a>. "
-msgstr "Haluatko vaihtaa tai poistaa oletuslogon? <a href=\"%s\">Mene kohtaan ulkoasu &gt;&gt; Otsake</a>. "
+msgid ""
+"Want to replace or remove default logo? <a href=\"%s\">Go to Appearance &gt;"
+"&gt; Header</a>. "
+msgstr ""
+"Haluatko vaihtaa tai poistaa oletuslogon? <a href=\"%s\">Mene kohtaan "
+"ulkoasu &gt;&gt; Otsake</a>. "
 
 #: admin/functions-admin.php:94
 msgid "Custom background:"
@@ -346,44 +386,24 @@ msgstr "Taustakuva:"
 
 #: admin/functions-admin.php:97
 #, php-format
-msgid "Want to replace or remove default background? <a href=\"%s\">Go to Appearance &gt;&gt; Background</a>. "
-msgstr "Haluatko vaihtaa tai poistaa alkuperäisen taustankuvan? <a href=\"%s\">Mene kohtaan Ulkoasu &gt;&gt; Tausta</a>. "
+msgid ""
+"Want to replace or remove default background? <a href=\"%s\">Go to "
+"Appearance &gt;&gt; Background</a>. "
+msgstr ""
+"Haluatko vaihtaa tai poistaa alkuperäisen taustankuvan? <a href=\"%s\">Mene "
+"kohtaan Ulkoasu &gt;&gt; Tausta</a>. "
 
-#: admin/functions-admin.php:114
-msgid "Global Layout:"
-msgstr "Sivuston ulkoasu:"
-
-#: admin/functions-admin.php:118
-msgid "Default"
-msgstr "Oletus"
-
-#: admin/functions-admin.php:119
-msgid "One Column"
-msgstr "Yksi sarake"
-
-#: admin/functions-admin.php:120
-msgid "Two Columns, Left"
-msgstr "Kaksi saraketta, sisältö vasemmalla"
-
-#: admin/functions-admin.php:121
-msgid "Two Columns, Right"
-msgstr "Kaksi saraketta, sisältö oikealla"
-
-#: admin/functions-admin.php:122
-msgid "Three Columns, Left"
-msgstr "Kolme saraketta, sisältö vasemmalla"
-
-#: admin/functions-admin.php:123
-msgid "Three Columns, Right"
-msgstr "Kolme saraketta, sisältö oikealla"
-
-#: admin/functions-admin.php:124
-msgid "Three Columns, Center"
-msgstr "Kolme saraketta, sisältö keskellä"
-
-#: admin/functions-admin.php:126
-msgid "Set the layout for the entire site. The default layout is 2 columns with content on the left. You can overwrite this value in individual post or page. Note! Three column layouts will only work if you use Primary and Secondary Widget areas and browser window is wide enough."
-msgstr "Aseta sivuston ulkoasu. Oletus on kaksi saraketta, missä sisältö on vasemmalla. Yksittäisen artikkelin kohdalla voit muuttaa tätä asetusta. Huom! Kolmen sarakkeen ulkoasu toimii vain, jos käytössä on sekä ensi -että toissijainen vimpainalue ja näytön resoluutio on riittävän leveä."
+#: admin/functions-admin.php:128
+msgid ""
+"Set the layout for the entire site. The default layout is 2 columns with "
+"content on the left. You can overwrite this value in individual post or "
+"page. Note! Three column layouts will only work if you use Primary and "
+"Secondary Widget areas and browser window is wide enough."
+msgstr ""
+"Aseta sivuston ulkoasu. Oletus on kaksi saraketta, missä sisältö on "
+"vasemmalla. Yksittäisen artikkelin kohdalla voit muuttaa tätä asetusta. "
+"Huom! Kolmen sarakkeen ulkoasu toimii vain, jos käytössä on sekä ensi -että "
+"toissijainen vimpainalue ja näytön resoluutio on riittävän leveä."
 
 #: page-templates/archives.php:44
 #, php-format
@@ -407,10 +427,34 @@ msgstr "Kuukausittainen arkisto"
 #: page-templates/most-popular-by-year.php:64
 #: page-templates/most-popular-last-30-days.php:66
 #: page-templates/most-popular.php:63
-msgid "Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
-msgstr "Luettu [entry-views] [entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] [entry-terms before=\"Avainsanat \"]"
+msgid ""
+"Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in "
+"\"] [entry-terms before=\"Tagged \"]"
+msgstr ""
+"Luettu [entry-views] [entry-terms taxonomy=\"category\" before=\"Artikkeli "
+"kategoriassa \"] [entry-terms before=\"Avainsanat \"]"
 
 #: page-templates/path-slider.php:85
 msgid "More Articles"
 msgstr "Lisää artikkeleita"
 
+#~ msgid "Default"
+#~ msgstr "Oletus"
+
+#~ msgid "One Column"
+#~ msgstr "Yksi sarake"
+
+#~ msgid "Two Columns, Left"
+#~ msgstr "Kaksi saraketta, sisältö vasemmalla"
+
+#~ msgid "Two Columns, Right"
+#~ msgstr "Kaksi saraketta, sisältö oikealla"
+
+#~ msgid "Three Columns, Left"
+#~ msgstr "Kolme saraketta, sisältö vasemmalla"
+
+#~ msgid "Three Columns, Right"
+#~ msgstr "Kolme saraketta, sisältö oikealla"
+
+#~ msgid "Three Columns, Center"
+#~ msgstr "Kolme saraketta, sisältö keskellä"
