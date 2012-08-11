@@ -1163,6 +1163,7 @@ body .fb_edge_widget_with_comment{
 	padding: 0;
 }
 #menu-primary li {
+	background: #404040;
 	display: inline;
 }
 #menu-primary li a {
