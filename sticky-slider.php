@@ -42,7 +42,7 @@ $args = array( 'post__in' => $sticky );
 						
 							<header class="entry-header">
 								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
-								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'picturesque' ) . '</div>' ); ?>
+								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
 							</header><!-- .entry-header -->
 							
 							<div class="entry-summary">
