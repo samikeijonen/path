@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Path PL\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-07 10:21+0200\n"
+"PO-Revision-Date: 2012-08-15 21:51+0100\n"
+"Last-Translator: Krzysztof Powrózek <powrozek@persoft.pl>\n"
+"Language-Team: Persoft.pl <powrozek@persoft.pl>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_n;_x:1,2c\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:27
+msgid "What happened!?"
+msgstr "Co się stało!?"
+
+#: 404.php:33
+#, php-format
+msgid "You tried going to %s, which doesn't exist. You can try navigate or search."
+msgstr "Próbowano znaleźć %s, ale nie istnieje. Spróbuj ponownie."
+
+#: 404.php:39
+msgid "Or here are the latest posts, hope it helps."
+msgstr "Lub zobacz poniżej ostatnie wpisy, mam nadzieję, że pomogą."
+
+#: attachment-image.php:41
+#: content-video.php:37
+#: page-templates/archives.php:40
+#: page-templates/tag-cloud.php:40
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Czytaj dalej <span class=\"meta-nav\">&rarr;</span>"
+
+#: attachment-image.php:42
+#: content-aside.php:27
+#: content-aside.php:38
+#: content-audio.php:27
+#: content-audio.php:38
+#: content-gallery.php:27
+#: content-gallery.php:44
+#: content-image.php:27
+#: content-image.php:38
+#: content-link.php:27
+#: content-link.php:48
+#: content-page.php:26
+#: content-page.php:43
+#: content-quote.php:20
+#: content-status.php:22
+#: content-video.php:27
+#: content-video.php:38
+#: content.php:27
+#: content.php:45
+#: page-templates/archives.php:68
+#: page-templates/most-popular-by-comments.php:58
+#: page-templates/most-popular-by-month.php:61
+#: page-templates/most-popular-by-year.php:60
+#: page-templates/most-popular-last-30-days.php:62
+#: page-templates/most-popular.php:59
+#: page-templates/path-slider.php:56
+#: page-templates/tag-cloud.php:46
+msgid "Pages:"
+msgstr "Strony:"
+
+#: attachment-image.php:47
+msgid "Published on [entry-published] [entry-edit-link before=\"| \"]"
+msgstr "Opublikowano [entry-published] [entry-edit-link before=\"| \"]"
+
+#: attachment-image.php:62
+msgid "Gallery"
+msgstr "Galeria"
+
+#: comment.php:31
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz oczekuje na moderację."
+
+#: comments.php:26
+msgid "No Responses"
+msgstr "Brak odpowiedzi"
+
+#: comments.php:26
+msgid "One Response"
+msgstr "Jedna odpowiedź"
+
+#: comments.php:26
+msgid "% Responses"
+msgstr "% odpowiedzi"
+
+#: comments.php:31
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr "Strona %1$s z %2$s"
+
+#: comments.php:49
+#, php-format
+msgid "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
+msgstr "Możliwość komentowania jest wyłączona, ale <a href=\"%s\" title=\"Trackback URL for this post\">trackbacki</a> i pingbacki są włączone."
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr "Możliwość komentowania jest wyłączona."
+
+#: content-aside.php:22
+msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]"
+msgstr "[post-format-link] opublikowano [entry-published] [entry-edit-link before=\"| \"]"
+
+#: content-aside.php:31
+#: content-audio.php:31
+#: content-gallery.php:31
+#: content-image.php:31
+#: content-link.php:31
+#: content-video.php:31
+#: content.php:31
+msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgstr "[entry-terms taxonomy=\"category\" before=\"Kategorie: \"] [entry-terms before=\"Tagi: \"]"
+
+#: content-aside.php:42
+#: content-audio.php:42
+#: content-gallery.php:48
+#: content-image.php:42
+#: content-link.php:54
+#: content-quote.php:27
+#: content-video.php:42
+msgid "[post-format-link] published on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr "[post-format-link] opublikowano [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+
+#: content-audio.php:22
+#: content-gallery.php:22
+#: content-image.php:22
+#: content-link.php:22
+#: content-video.php:22
+msgid "[post-format-link] published on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr "[post-format-link] opublikowano [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+
+#: content-quote.php:25
+msgid "[post-format-link] published on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgstr "[post-format-link] opublikowano [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Kategorie \"] [entry-terms before=\"Tagi \"]"
+
+#: content-status.php:27
+msgid "[post-format-link] updated on [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgstr "[post-format-link] aktualizowano [entry-published] [entry-edit-link before=\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Kategorie \"] [entry-terms before=\"Tagi \"]"
+
+#: content-status.php:29
+msgid "[post-format-link] updated on [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr "[post-format-link] aktualizowano [entry-published] [entry-permalink before=\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+
+#: content.php:22
+#: content.php:40
+#: sticky-slider.php:45
+#: page-templates/most-popular-by-comments.php:53
+#: page-templates/most-popular-by-month.php:56
+#: page-templates/most-popular-by-year.php:55
+#: page-templates/most-popular-last-30-days.php:57
+#: page-templates/most-popular.php:54
+#: page-templates/path-slider.php:60
+#: page-templates/path-slider.php:110
+msgid "Published by [entry-author] on [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr "[entry-author] [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+
+#: content.php:49
+msgid "[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"| Tagged \"]"
+msgstr "[entry-terms taxonomy=\"category\" before=\"Kategorie: \"] [entry-terms before=\"| Tagi: \"]"
+
+#: functions.php:315
+msgid "Copyright &#169; [the-year] [site-link]."
+msgstr "Copyright &#169; [the-year] [site-link]."
+
+#: functions.php:315
+msgid "Powered by [wp-link] and [theme-link]."
+msgstr "Oparte na [wp-link] oraz [theme-link]."
+
+#: functions.php:315
+msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
+msgstr " <a class=\"top\" href=\"#container\">Do góry</a>"
+
+#: functions.php:326
+msgid "Please comment with your real name using good manners."
+msgstr "Prosimy o komentarz z Twoim prawdziwym imieniem i nazwiskiem."
+
+#: functions.php:337
+msgid "Read more &rarr;"
+msgstr "Więcej &rarr;"
+
+#: functions.php:373
+msgid "Twitter Username"
+msgstr "Użytkownik Twitter"
+
+#: functions.php:392
+msgid "Author of the article"
+msgstr "Autor artykułu"
+
+#: functions.php:392
+msgid "Authors of the article"
+msgstr "Autorzy artykułu"
+
+#: functions.php:409
+#: functions.php:430
+#: functions.php:450
+#, php-format
+msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
+msgstr "Śledź %1$s %2$s &#64;%3$s na Twitterze."
+
+#: functions.php:440
+msgid "Article written by [entry-author]"
+msgstr "Artykuł napisany przez [entry-author]"
+
+#: functions.php:470
+msgid "and"
+msgstr "i"
+
+#: functions.php:471
+msgid " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link before=\" | \"]"
+
+#: functions.php:518
+msgid "Customize"
+msgstr "Dostosuj"
+
+#: functions.php:539
+#: admin/functions-admin.php:56
+msgid "Layout"
+msgstr "Układ"
+
+#: functions.php:566
+#: admin/functions-admin.php:118
+msgid "Global Layout:"
+msgstr "Główny układ:"
+
+#: header.php:90
+msgid "You are here:"
+msgstr "Jesteś tutaj:"
+
+#: header.php:90
+msgid "&#8764;"
+msgstr "&#8764;"
+
+#: loop-error.php:16
+msgid "Apologies, but no entries were found."
+msgstr "Nie znaleziono żadnych stron i artykułów w podanym zakresie wyszukiwania."
+
+#: loop-meta.php:86
+#, php-format
+msgid "You are browsing the search results for \"%s\""
+msgstr "Przeglądasz wyniki wyszukiwania dla zapytania \"%s\""
+
+#: loop-meta.php:95
+msgid "Archives by date"
+msgstr "Archiwum wg daty"
+
+#: loop-meta.php:99
+msgid "You are browsing the site archives by date."
+msgstr "Przeglądasz archiwum wg daty"
+
+#: loop-meta.php:123
+msgid "Archives"
+msgstr "Archiwum"
+
+#: loop-meta.php:127
+msgid "You are browsing the site archives."
+msgstr "Przeglądasz archiwum"
+
+#: loop-meta.php:137
+msgid "Most popular"
+msgstr "Najbardziej popularne"
+
+#: loop-meta.php:141
+msgid "You are browsing all time most viewed articles."
+msgstr "Przeglądasz najczęściej oglądane artykuły."
+
+#: loop-meta.php:151
+msgid "Most popular by year"
+msgstr "Najpopularniejsze w roku"
+
+#: loop-meta.php:155
+#, php-format
+msgid "You are browsing most viewed articles in the current year %d."
+msgstr "Przeglądasz najczęściej oglądane artykuły w bieżącym roku %d."
+
+#: loop-meta.php:165
+msgid "Most popular by month"
+msgstr "Najpopularniejsze w miesiącu"
+
+#: loop-meta.php:169
+#, php-format
+msgid "You are browsing most viewed articles in current month (%1$s) and year (%2$s)."
+msgstr "Przeglądasz najczęściej oglądane artykuły w bieżącym miesiącu (%1$s) i roku (%2$s)."
+
+#: loop-meta.php:179
+msgid "Most popular by comments"
+msgstr "Najczęściej komentowane"
+
+#: loop-meta.php:183
+msgid "You are browsing most viewed articles by comments."
+msgstr "Przeglądasz najczęściej komentowane artykuły."
+
+#: loop-meta.php:193
+msgid "Most popular articles in the last 30 days"
+msgstr "Najpopularniejsze artykuły w ciągu ostatnich 30 dni"
+
+#: loop-meta.php:197
+msgid "You are browsing most viewed articles in the last 30 days."
+msgstr "Przeglądasz najczęściej oglądane artykuły w ostatnich 30 dniach."
+
+#: loop-nav.php:17
+msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
+msgstr "<span class=\"meta-nav\">&larr;</span> Wróć do wpisu"
+
+#: loop-nav.php:23
+#: loop-nav.php:27
+#: loop-nav.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Poprzedni"
+
+#: loop-nav.php:24
+#: loop-nav.php:27
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Następny <span class=\"meta-nav\">&rarr;</span>"
+
+#: loop-nav.php:29
+msgid "Next &rarr;"
+msgstr "Następny &rarr;"
+
+#: menu-primary-mobile.php:24
+#: menu-primary.php:20
+msgid "Primary Menu"
+msgstr "Główne menu"
+
+#: menu-primary.php:20
+msgid "Primary Mobile Menu"
+msgstr "Główne mobilne menu"
+
+#: menu-primary.php:22
+#: searchform.php:16
+#: searchform.php:17
+msgid "Search"
+msgstr "Szukaj"
+
+#: menu-secondary-mobile.php:22
+#: menu-secondary.php:20
+msgid "Secondary Menu"
+msgstr "Drugie menu"
+
+#: menu-secondary.php:20
+msgid "Secondary Mobile Menu"
+msgstr "Drugie mobilne menu"
+
+#: admin/functions-admin.php:36
+msgid "Logo Upload"
+msgstr "Wgraj logo"
+
+#: admin/functions-admin.php:46
+msgid "Background"
+msgstr "Tło"
+
+#: admin/functions-admin.php:74
+msgid "Custom logo:"
+msgstr "Własne logo:"
+
+#: admin/functions-admin.php:77
+#, php-format
+msgid "Want to replace or remove default logo? <a href=\"%s\">Go to Appearance &gt;&gt; Header</a>. "
+msgstr "Chcesz zamienić lub usunąć domyślne logo? <a href=\"%s\">Idź do Ustawienia &gt;&gt; Nagłówek</a>. "
+
+#: admin/functions-admin.php:94
+msgid "Custom background:"
+msgstr "Własne tło:"
+
+#: admin/functions-admin.php:97
+#, php-format
+msgid "Want to replace or remove default background? <a href=\"%s\">Go to Appearance &gt;&gt; Background</a>. "
+msgstr "Chcesz zmienić lub usunąć domyślne tło? <a href=\"%s\">Idź do Ustawienia &gt;&gt; Tło</a>. "
+
+#: admin/functions-admin.php:128
+msgid "Set the layout for the entire site. The default layout is 2 columns with content on the left. You can overwrite this value in individual post or page. Note! Three column layouts will only work if you use Primary and Secondary Widget areas and browser window is wide enough."
+msgstr "Ustaw układ dla całej witryny.Domyślny układ to 2 kolumny z zawartością po lewej stronie. Można nadpisać tę wartość w każdym poście lub stronie. Uwaga! Układ trzech kolumn będzie działać tylko jeśli używasz podstawowego i dodatkowego obszary Widget i okno przeglądarki jest wystarczająco szerokie."
+
+#: page-templates/archives.php:44
+#, php-format
+msgid "There are %1$s posts published."
+msgstr "Opublikowano %1$s postów."
+
+#: page-templates/archives.php:50
+msgid "Archives by category"
+msgstr "Archiwum wg kategorii"
+
+#: page-templates/archives.php:54
+msgid "RSS"
+msgstr "RSS"
+
+#: page-templates/archives.php:58
+msgid "Archives by month"
+msgstr "Archiwum wg miesięcy"
+
+#: page-templates/most-popular-by-comments.php:62
+#: page-templates/most-popular-by-month.php:65
+#: page-templates/most-popular-by-year.php:64
+#: page-templates/most-popular-last-30-days.php:66
+#: page-templates/most-popular.php:63
+msgid "Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms before=\"Tagged \"]"
+msgstr "Wyświetleń [entry-views] [entry-terms taxonomy=\"category\" before=\"Kategorie \"] [entry-terms before=\"Tagi \"]"
+
+#: page-templates/path-slider.php:85
+msgid "More Articles"
+msgstr "Więcej artykułów"
+

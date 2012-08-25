@@ -1,3 +1,9 @@
+25.8.2012 - version 0.1.2
+
+* Hybrid Core updated to 1.4.2
+
+* Added Polish translations
+
 31.7.2012 - version 0.1.1
 
 * Better code in theme customize and settings page when choosing global layout.
