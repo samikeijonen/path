@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hybrid Core in Finnish\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-07 10:23+0200\n"
-"PO-Revision-Date: 2012-08-07 10:23+0200\n"
+"POT-Creation-Date: 2012-08-29 22:27+0200\n"
+"PO-Revision-Date: 2012-08-29 22:27+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "Language: fi_FI\n"
@@ -471,10 +471,6 @@ msgstr "Vimpain, jolla hallitaan hakulomaketta."
 msgid "Search"
 msgstr "Etsi"
 
-#: classes/widget-search.php:134
-msgid "Submit"
-msgstr "Lähetä"
-
 #: classes/widget-search.php:147
 msgid "Search Label:"
 msgstr "Etsi nimike:"
@@ -920,6 +916,9 @@ msgid ""
 msgstr ""
 "Ladataan yksittäisen sivun (artikkelin, kuvasivun jne.) jälkeen ennen "
 "kommenttialuetta."
+
+#~ msgid "Submit"
+#~ msgstr "Lähetä"
 
 #~ msgid "Title used for search engines and the browser title bar."
 #~ msgstr "Otsikko hakukoneille ja selaimen otsikolle."

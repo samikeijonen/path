@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hybrid Core in english\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-07 10:23+0200\n"
-"PO-Revision-Date: 2012-08-07 10:23+0200\n"
+"POT-Creation-Date: 2012-08-29 22:26+0200\n"
+"PO-Revision-Date: 2012-08-29 22:27+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "Language: en\n"
@@ -467,10 +467,6 @@ msgstr ""
 
 #: classes/widget-search.php:45 classes/widget-search.php:131
 msgid "Search"
-msgstr ""
-
-#: classes/widget-search.php:134
-msgid "Submit"
 msgstr ""
 
 #: classes/widget-search.php:147
