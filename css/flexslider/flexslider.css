@@ -227,6 +227,9 @@ html[xmlns] .slides {
 	float: left;
 	width: 46%;
 }
+#slider-content img {
+    padding: 4px 0;
+}
 #slider-content .slider-title {
 	float: right;
 	padding: 1em 0;
