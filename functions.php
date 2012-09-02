@@ -272,6 +272,9 @@ function path_scripts() {
 		if ( ! empty( $sticky ) && !is_paged() && ( is_home() || is_page_template( 'page-templates/path-slider.php' ) ) )
 			wp_enqueue_style( 'path-flexslider-stylesheet', trailingslashit( get_template_directory_uri() ) . 'css/flexslider/flexslider.css', false, 1.0, 'screen' );
 		
+		/* Dequeue Pullquote Shortcode plugin styles and add them in style.css. */
+		wp_dequeue_style( 'pullquote-shortcode' );
+		
 	}
 }
 

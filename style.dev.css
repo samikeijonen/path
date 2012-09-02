@@ -1133,6 +1133,23 @@ body .fb_edge_widget_with_comment{
 }
 
 
+/* =Pullquote Shortcode Plugin CSS
+-------------------------------------------------------------- */
+
+.pullquote {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	color: #666;
+	font-size: 1.125em; /* 18px / 16px = 1.125 */
+	font-style: italic;
+	line-height: 1.875em; /* 18px / 16px = 1.875 */
+	margin: 0.625em auto; 
+	padding: 0.625em;
+	text-align: center;
+	max-width: 12.5em; /* 200px / 16px = 12.5 */
+}
+
+
 /* =Layout for tablets version 
 -------------------------------------------------------------- */
 
@@ -1611,6 +1628,12 @@ img {
 
 .custom-header #site-description {
 	padding-top: 2.25em;
+}
+
+/* Pullquote Shortcode Plugin CSS. */
+.pullquote {
+	float: right;
+	margin: 0.625em 0 0.625em 1.25em;
 }
 
 }

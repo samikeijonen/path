@@ -1,10 +1,12 @@
-29.8.2012 - version 0.1.2
+2.9.2012 - version 0.1.2
 
 * Hybrid Core updated to 1.4.2.
 
 * Added Polish translations.
 
 * Slider image padding taken off from left and right.
+
+* Dequeue Pullquote Shortcode plugin styles and add them in style.css.
 
 31.7.2012 - version 0.1.1
 
