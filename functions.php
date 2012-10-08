@@ -148,7 +148,9 @@ function path_theme_setup() {
 	
 	/* Add js to customize. */
 	add_action( 'customize_preview_init', 'path_customize_preview_js' );
-	
+
+	/* Add css to customize. */
+	add_action( 'wp_head', 'path_customize_preview_css', 1 );
 }
 
 /**
@@ -200,13 +202,14 @@ function path_theme_layout_one_column( $layout ) {
  * @return array $sidebars_widgets
  */
 function path_disable_sidebars( $sidebars_widgets ) {
-	global $wp_query;
+	global $wp_query,$wp_customize;
 
 	if ( current_theme_supports( 'theme-layouts' ) && !is_admin() ) {
-
-		if ( 'layout-1c' == theme_layouts_get_layout() ) {
-			$sidebars_widgets['primary'] = false;
-			$sidebars_widgets['secondary'] = false;
+		if ( ! isset( $wp_customize ) ) {
+			if ( 'layout-1c' == theme_layouts_get_layout() ) {
+				$sidebars_widgets['primary'] = false;
+				$sidebars_widgets['secondary'] = false;
+			}
 		}
 	}
 
@@ -601,4 +604,20 @@ function path_filter_where( $where = '' ) {
 	
 }
 
+/**
+ * This make Theme Customizer live preview reload changes asynchronously.
+ * Used with Primary and Secndary sidebars
+ * 
+ * @since 0.1.0
+ */
+function path_customize_preview_css() {
+	global $wp_customize;
+
+	if ( isset( $wp_customize ) ) {
+		$css = trailingslashit( get_template_directory_uri() ) . 'css/customize/path-customizer.css';
+		?>
+		<link href='<?php echo $css; ?>' rel='stylesheet' type='text/css'>
+		<?php
+	}
+}
 ?>
