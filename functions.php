@@ -150,7 +150,8 @@ function path_theme_setup() {
 	add_action( 'customize_preview_init', 'path_customize_preview_js' );
 
 	/* Add css to customize. */
-	add_action( 'wp_head', 'path_customize_preview_css', 1 );
+	add_action( 'wp_enqueue_scripts', 'path_customize_preview_css' );
+	
 }
 
 /**
@@ -202,7 +203,7 @@ function path_theme_layout_one_column( $layout ) {
  * @return array $sidebars_widgets
  */
 function path_disable_sidebars( $sidebars_widgets ) {
-	global $wp_query,$wp_customize;
+	global $wp_query, $wp_customize;
 
 	if ( current_theme_supports( 'theme-layouts' ) && !is_admin() ) {
 		if ( ! isset( $wp_customize ) ) {
@@ -587,7 +588,7 @@ function path_customize_register( $wp_customize ) {
 function path_customize_preview_js() {
 
 	wp_enqueue_script( 'path-customizer', trailingslashit( get_template_directory_uri() ) . 'js/customize/path-customizer.js', array( 'customize-preview' ), '20120731', true );
-
+	
 }
 
 /**
@@ -605,19 +606,19 @@ function path_filter_where( $where = '' ) {
 }
 
 /**
- * This make Theme Customizer live preview reload changes asynchronously.
- * Used with Primary and Secndary sidebars
+ * This make Theme Customizer live preview work with 1 column layout.
+ * Used with Primary and Secondary sidebars.
  * 
- * @since 0.1.0
+ * @since 0.1.4
  */
 function path_customize_preview_css() {
 	global $wp_customize;
 
 	if ( isset( $wp_customize ) ) {
-		$css = trailingslashit( get_template_directory_uri() ) . 'css/customize/path-customizer.css';
-		?>
-		<link href='<?php echo $css; ?>' rel='stylesheet' type='text/css'>
-		<?php
+	
+		wp_enqueue_style( 'path-customizer-stylesheet', trailingslashit( get_template_directory_uri() ) . 'css/customize/path-customizer.css', false, 20121015, 'screen' );
+
 	}
 }
+
 ?>
