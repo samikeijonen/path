@@ -1,6 +1,10 @@
-15.10.2012 - version 0.1.4
+23.10.2012 - version 0.1.4
 
-* Customize support for 1 column layout
+* Updated Hybrid Core to version 1.4.3.
+
+* Most viewed widget added.
+
+* Customize support for 1 column layout.
 
 * Gravity Form CSS HTML5 input types added.
 
