@@ -746,6 +746,16 @@ input[type="submit"]:hover {
 	background: #b7322c;
 }
 
+/* For most viewed widget */
+.widget-most-viewed .hentry:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.widget-most-viewed .byline {
+	margin-top: 1em;
+}
+
 
 /* =Comments
 -------------------------------------------------------------- */

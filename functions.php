@@ -134,6 +134,9 @@ function path_theme_setup() {
 	/* Filter byline. Use Coauthors list if exist. */
 	add_filter( "{$prefix}_byline", 'path_byline' );
 	
+	/* Filter most viewed widget byline. Use Coauthors list if exist. */
+	add_filter( "{$prefix}_byline-most-viewed-widget", 'path_byline_widget' );
+	
 	/* Add social media buttons after singular post entry. Facebook like, twitter tweet and google+. This uses Social Path Plugin. */
 	add_action( "{$prefix}_singular-post_after_singular", 'path_add_social_media' );
 	
@@ -151,6 +154,9 @@ function path_theme_setup() {
 
 	/* Add css to customize. */
 	add_action( 'wp_enqueue_scripts', 'path_customize_preview_css' );
+	
+	/* Register additional widgets. */
+	add_action( 'widgets_init', 'path_register_widgets' );
 	
 }
 
@@ -485,6 +491,25 @@ function path_byline( $byline ) {
 }
 
 /**
+ * Filter byline in most viewed widget. If Co author plus plugin exists, use coauthors_posts_links()-function in byline. Else use basic stuff.
+ * @since 0.1.4
+ */
+function path_byline_widget( $byline ) {
+	
+	if( function_exists( 'coauthors_posts_links' ) ) {
+	
+		$byline = '<div class="byline">';
+		$byline.= coauthors_posts_links( $between = ', ', $betweenLast = ' ' . __( 'and', 'path' ) . ' ', $before = null, $after = null, $echo = false );
+		$byline.=  __( ' [entry-published]', 'path' );
+		$byline.= '</div>';
+		
+	}
+	
+	return $byline;
+	
+}
+
+/**
  * Add social media buttons after singular post entry. Facebook like, twitter tweet and google+. This uses Social Path Plugin.
  *
  * @since 0.1.0
@@ -619,6 +644,21 @@ function path_customize_preview_css() {
 		wp_enqueue_style( 'path-customizer-stylesheet', trailingslashit( get_template_directory_uri() ) . 'css/customize/path-customizer.css', false, 20121015, 'screen' );
 
 	}
+}
+
+/**
+ * Loads extra widget files and registers the widgets.
+ * 
+ * @since 0.1.4
+ * @access public
+ * @return void
+ */
+function path_register_widgets() {
+
+	/* Load and register the most-viewed posts widget. */
+	require_once( trailingslashit( THEME_DIR ) . 'includes/widget-most-viewed.php' );
+	register_widget( 'Path_Widget_Most_Viewed' );
+
 }
 
 ?>
