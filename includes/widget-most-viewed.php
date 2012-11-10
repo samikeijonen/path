@@ -15,14 +15,14 @@
 /**
  * Most viewed posts widget.
  *
- * @since 0.1.0
+ * @since 0.1.4
  */
 class Path_Widget_Most_Viewed extends WP_Widget {
 
 	/**
 	 * Set up the widget's path name, ID, class, description, and other options.
 	 *
-	 * @since 0.1.0
+	 * @since 0.1.4
 	 */
 	function __construct() {
 
@@ -46,7 +46,7 @@ class Path_Widget_Most_Viewed extends WP_Widget {
 	/**
 	 * Outputs the widget based on the arguments input through the widget controls.
 	 *
-	 * @since 0.1.0
+	 * @since 0.1.4
 	 */
 	function widget( $sidebar, $instance ) {
 		extract( $sidebar );
@@ -147,7 +147,7 @@ class Path_Widget_Most_Viewed extends WP_Widget {
 	/**
 	 * Updates the widget control options for the particular instance of the widget.
 	 *
-	 * @since 0.1.0
+	 * @since 0.1.4
 	 */
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
@@ -169,7 +169,7 @@ class Path_Widget_Most_Viewed extends WP_Widget {
 	/**
 	 * Displays the widget control options in the Widgets admin screen.
 	 *
-	 * @since 0.1.0
+	 * @since 0.1.4
 	 */
 	function form( $instance ) {
 
