@@ -26,7 +26,7 @@
 
 	<?php elseif ( !is_singular() && current_theme_supports( 'loop-pagination' ) ) : loop_pagination( array( 'prev_text' => __( '<span class="meta-nav">&larr;</span> Previous', 'path' ), 'next_text' => __( 'Next <span class="meta-nav">&rarr;</span>', 'path' ) ) ); ?>
 
-	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '<span class="meta-nav">&larr;</span> Previous', 'path' ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next &rarr;', 'path' ) . '</span>' ) ) ) : ?>
+	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '<span class="meta-nav">&larr;</span> Previous', 'path' ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next <span class="meta-nav">&rarr;</span>', 'path' ) . '</span>' ) ) ) : ?>
 
 		<div class="loop-nav">
 			<?php echo $nav; ?>
