@@ -112,24 +112,18 @@ function path_theme_meta_box_layout() {
 
 	<table class="form-table">
 		
-		<!-- Global Layout -->
+		<!-- Customize -->
 		<tr>
 			<th>
-			    <label for="<?php echo esc_attr( hybrid_settings_field_id( 'path_global_layout' ) ); ?>"><?php _e( 'Global Layout:', 'path' ); ?></label>
+				<label for="<?php echo hybrid_settings_field_id( 'path_customize' ); ?>"><?php _e( 'Customize:', 'path' ); ?></label>
 			</th>
 			<td>
-			    <select id="<?php echo esc_attr( hybrid_settings_field_id( 'path_global_layout' ) ); ?>" name="<?php echo esc_attr( hybrid_settings_field_name( 'path_global_layout' ) ); ?>">
-					<option value="layout-default" <?php selected( hybrid_get_setting( 'path_global_layout' ), 'layout-default' ); ?>> <?php echo esc_html( theme_layouts_get_string( 'default' ) ); ?> </option>
-					<?php
-					foreach ( $path_layouts as $path_layout ) { ?>
-						<option value="<?php echo esc_attr( "layout-{$path_layout}" ); ?>" <?php selected( hybrid_get_setting( 'path_global_layout' ), "layout-{$path_layout}" ); ?>> <?php echo esc_html( theme_layouts_get_string( $path_layout ) ); ?> </option>
-					<?php } ?>
-			    </select>
-			    <p><span class="description"><?php _e( 'Set the layout for the entire site. The default layout is 2 columns with content on the left. You can overwrite this value in individual post or page. Note! Three column layouts will only work if you use Primary and Secondary Widget areas and browser window is wide enough.', 'path' ); ?></span></p>
+				<p><?php printf( __( 'Want to set Global layout and set other features? <a href="%s">Go to Appearance &gt;&gt; Customize</a>. ', 'path' ), admin_url( 'customize.php' ) ); ?></p>
 			</td>
-		</tr>	
-		
+		</tr>
+
 		<!-- End custom form elements. -->
+		
 	</table><!-- .form-table -->		
 	
 <?php }		
