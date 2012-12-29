@@ -140,9 +140,6 @@ function path_theme_setup() {
 	/* Add social media buttons after singular post entry. Facebook like, twitter tweet and google+. This uses Social Path Plugin. */
 	add_action( "{$prefix}_singular-post_after_singular", 'path_add_social_media' );
 	
-	/* Set global layout. */
-	add_filter( 'get_theme_layout', 'path_theme_layout' );
-	
 	/* Add layout option in Customize. */
 	add_action( 'customize_register', 'path_customize_register' );
 	
@@ -515,25 +512,6 @@ function path_add_social_media() {
 
 	if ( function_exists( 'social_path_media' ) )
 		social_path_media();
-	
-}
-
-/**
- * Filter global layout, which is defined under Appearance >> Theme Settings.
- * @since 0.1.0
- */
-function path_theme_layout( $layout ) {
-
-	/* Get global layout. */
-	$path_global_layout = hybrid_get_setting( 'path_global_layout' );
-	
-	if ( !$path_global_layout )
-		return $layout;
-
-	if ( 'layout-default' == $layout )
-		$layout = $path_global_layout;
-
-	return $layout;
 	
 }
 
