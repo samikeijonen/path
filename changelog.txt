@@ -1,3 +1,9 @@
+23.10.2012 - version 0.2
+
+* Updated Hybrid Core to version 1.5.
+
+* Remove global layout from theme settings. Note! This might mean that you have to set global layout again under Appearance >> Customize.
+
 23.10.2012 - version 0.1.4
 
 * Updated Hybrid Core to version 1.4.3.
