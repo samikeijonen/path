@@ -4,18 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hybrid Core in english\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-29 22:27+0200\n"
-"PO-Revision-Date: 2012-08-29 22:27+0200\n"
+"POT-Creation-Date: 2012-07-26 22:47+0200\n"
+"PO-Revision-Date: 2012-07-26 22:48+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: GlotPress/0.1\n"
-"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_n;"
-"_x;_x:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_n;_x;_x:1,2c\n"
 "X-Poedit-Basepath: ../\n"
+"X-Poedit-Language: English\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/meta-box-post-seo.php:37
@@ -24,7 +23,7 @@ msgstr "SEO"
 
 #: admin/meta-box-post-seo.php:70
 msgid "Document Title:"
-msgstr "Nazwa dokumentu:"
+msgstr "Tytuł dokumentu:"
 
 #: admin/meta-box-post-seo.php:76
 msgid "Meta Description:"
@@ -40,12 +39,13 @@ msgstr "Szablon"
 
 #: admin/meta-box-post-template.php:87
 msgid "No templates exist for this post type."
-msgstr "Brak szablonów dla tego typu wpisu."
+msgstr "Brak szablonu dla tego wpisu"
 
-#: admin/meta-box-theme-about.php:31 admin/meta-box-theme-about.php:36
-#, php-format
+#: admin/meta-box-theme-about.php:31
+#: admin/meta-box-theme-about.php:36
+#, fuzzy, php-format
 msgid "About %s"
-msgstr "O %s"
+msgstr "O %1$s"
 
 #: admin/meta-box-theme-about.php:61
 msgid "Theme:"
@@ -68,26 +68,23 @@ msgid "Footer settings"
 msgstr "Ustawienia stopki"
 
 #: admin/meta-box-theme-footer.php:52
-msgid ""
-"You can add custom <acronym title=\"Hypertext Markup Language\">HTML</"
-"acronym> and/or shortcodes, which will be automatically inserted into your "
-"theme."
-msgstr ""
-"Możesz dodać własny kod <acronym title=\"Hypertext Markup Language\">HTML</"
-"acronym> i/lub shortcodes, które zostaną automatycznie dopisane do szablonu."
+msgid "You can add custom <acronym title=\"Hypertext Markup Language\">HTML</acronym> and/or shortcodes, which will be automatically inserted into your theme."
+msgstr "Możesz dodać własny kod <acronym title=\"Hypertext Markup Language\">HTML</acronym> i/lub shortcodes, które zostaną automatycznie dopisane do szablonu."
 
-#: admin/theme-settings.php:47 admin/theme-settings.php:171
+#: admin/theme-settings.php:47
+#: admin/theme-settings.php:171
 #, php-format
 msgid "%s Theme Settings"
-msgstr "%s ustawienia motywu"
+msgstr "Ustawienia motywu %s"
 
 #: admin/theme-settings.php:48
 msgid "Theme Settings"
 msgstr "Ustawienia motywu"
 
 #: admin/theme-settings.php:172
+#, fuzzy
 msgid "Customize"
-msgstr "Dostosuj"
+msgstr "Własny"
 
 #: admin/theme-settings.php:198
 msgid "Update Settings"
@@ -102,17 +99,13 @@ msgid "Support"
 msgstr "Wsparcie"
 
 #: classes/widget-archives.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"archives."
-msgstr ""
-"Zaawansowane archiwum wpisów z Twojej witryny pozwalające na całkowitą "
-"kontrolę nad wyświetlaniem."
+msgid "An advanced widget that gives you total control over the output of your archives."
+msgstr "Zaawansowane archiwum wpisów z Twojej witryny pozwalające na całkowitą kontrolę nad wyświetlaniem."
 
-#: classes/widget-archives.php:44 classes/widget-archives.php:141
-#: functions/context.php:446
+#: classes/widget-archives.php:44
+#: classes/widget-archives.php:141
 msgid "Archives"
-msgstr "Archiwa"
+msgstr "Archiwum"
 
 #: classes/widget-archives.php:79
 msgid "Select Year"
@@ -140,7 +133,7 @@ msgstr "Alfabetycznie"
 
 #: classes/widget-archives.php:154
 msgid "Daily"
-msgstr "Wg dni"
+msgstr "Wg daty"
 
 #: classes/widget-archives.php:154
 msgid "Monthly"
@@ -170,38 +163,44 @@ msgstr "HTML"
 msgid "Option"
 msgstr "Opcja"
 
-#: classes/widget-archives.php:162 classes/widget-authors.php:143
-#: classes/widget-bookmarks.php:187 classes/widget-calendar.php:108
-#: classes/widget-categories.php:170 classes/widget-nav-menu.php:133
-#: classes/widget-pages.php:157 classes/widget-search.php:143
-#: classes/widget-tags.php:181
+#: classes/widget-archives.php:162
+#: classes/widget-authors.php:143
+#: classes/widget-bookmarks.php:187
+#: classes/widget-calendar.php:108
+#: classes/widget-categories.php:170
+#: classes/widget-nav-menu.php:133
+#: classes/widget-pages.php:157
+#: classes/widget-search.php:143
 msgid "Title:"
 msgstr "Nazwa:"
 
-#: classes/widget-archives.php:198 classes/widget-authors.php:191
+#: classes/widget-archives.php:198
+#: classes/widget-authors.php:191
 msgid "Show post count?"
-msgstr "Pokazuj liczbę wpisów?"
+msgstr "Pokazać ilość wpisów?"
 
 #: classes/widget-authors.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"author lists."
-msgstr ""
-"Zaawansowany widget pozwalający na pełną kontrolę wyświetlania listy autorów."
+msgid "An advanced widget that gives you total control over the output of your author lists."
+msgstr "Zaawansowany widget pozwalający na pełną kontrolę wyświetlania listy autorów"
 
-#: classes/widget-authors.php:44 classes/widget-authors.php:119
+#: classes/widget-authors.php:44
+#: classes/widget-authors.php:119
 msgid "Authors"
 msgstr "Autorzy"
 
-#: classes/widget-authors.php:136 classes/widget-bookmarks.php:178
-#: classes/widget-bookmarks.php:180 classes/widget-categories.php:162
-#: classes/widget-pages.php:148 classes/widget-tags.php:173
+#: classes/widget-authors.php:136
+#: classes/widget-bookmarks.php:178
+#: classes/widget-bookmarks.php:180
+#: classes/widget-categories.php:162
+#: classes/widget-pages.php:148
 msgid "Ascending"
 msgstr "Rosnąco"
 
-#: classes/widget-authors.php:136 classes/widget-bookmarks.php:178
-#: classes/widget-bookmarks.php:180 classes/widget-categories.php:162
-#: classes/widget-pages.php:148 classes/widget-tags.php:173
+#: classes/widget-authors.php:136
+#: classes/widget-bookmarks.php:178
+#: classes/widget-bookmarks.php:180
+#: classes/widget-categories.php:162
+#: classes/widget-pages.php:148
 msgid "Descending"
 msgstr "Malejąco"
 
@@ -209,12 +208,14 @@ msgstr "Malejąco"
 msgid "Display Name"
 msgstr "Nazwa"
 
-#: classes/widget-authors.php:137 functions/comments.php:188
+#: classes/widget-authors.php:137
 msgid "Email"
 msgstr "E-mail"
 
-#: classes/widget-authors.php:137 classes/widget-bookmarks.php:179
-#: classes/widget-bookmarks.php:181 classes/widget-categories.php:163
+#: classes/widget-authors.php:137
+#: classes/widget-bookmarks.php:179
+#: classes/widget-bookmarks.php:181
+#: classes/widget-categories.php:163
 #: classes/widget-pages.php:149
 msgid "ID"
 msgstr "ID"
@@ -229,9 +230,10 @@ msgstr "Liczba wpisów"
 
 #: classes/widget-authors.php:137
 msgid "Registered"
-msgstr "Zarejestrowanie"
+msgstr "Zarejestrowany"
 
-#: classes/widget-authors.php:137 classes/widget-bookmarks.php:181
+#: classes/widget-authors.php:137
+#: classes/widget-bookmarks.php:181
 msgid "URL"
 msgstr "URL"
 
@@ -239,12 +241,13 @@ msgstr "URL"
 msgid "Login"
 msgstr "Login"
 
-#: classes/widget-authors.php:169 classes/widget-categories.php:161
-#: classes/widget-tags.php:172
+#: classes/widget-authors.php:169
+#: classes/widget-categories.php:161
 msgid "List"
 msgstr "Lista"
 
-#: classes/widget-authors.php:169 classes/widget-categories.php:161
+#: classes/widget-authors.php:169
+#: classes/widget-categories.php:161
 msgid "None"
 msgstr "Brak"
 
@@ -254,45 +257,43 @@ msgstr "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
 
 #: classes/widget-authors.php:195
 msgid "Exclude admin?"
-msgstr "Pomijać admina?"
+msgstr "Pokazać admina?"
 
 #: classes/widget-authors.php:199
 msgid "Show full name?"
 msgstr "Wyświetlać pełną nazwę?"
 
-#: classes/widget-authors.php:203 classes/widget-categories.php:273
-#: classes/widget-tags.php:292
+#: classes/widget-authors.php:203
+#: classes/widget-categories.php:273
 msgid "Hide empty?"
 msgstr "Ukryć puste?"
 
 #: classes/widget-bookmarks.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"bookmarks (links)."
-msgstr ""
-"Zaawansowany widget pozwalający na pełnąkontrolę nad wyświetlaniem zakładek "
-"(odnośników)."
+msgid "An advanced widget that gives you total control over the output of your bookmarks (links)."
+msgstr "Zaawansowany widget pozwalający na pełnąkontrolę nad wyświetlaniem zakładek (odnośników)."
 
-#: classes/widget-bookmarks.php:44 classes/widget-bookmarks.php:85
+#: classes/widget-bookmarks.php:44
+#: classes/widget-bookmarks.php:85
 #: classes/widget-bookmarks.php:148
 msgid "Bookmarks"
 msgstr "Zakładki"
 
-#: classes/widget-bookmarks.php:179 classes/widget-categories.php:163
-#: classes/widget-tags.php:174
+#: classes/widget-bookmarks.php:179
+#: classes/widget-categories.php:163
 msgid "Count"
-msgstr "Licznik"
+msgstr "Ilość"
 
-#: classes/widget-bookmarks.php:179 classes/widget-bookmarks.php:181
-#: classes/widget-categories.php:163 classes/widget-tags.php:174
-#: functions/comments.php:187
+#: classes/widget-bookmarks.php:179
+#: classes/widget-bookmarks.php:181
+#: classes/widget-categories.php:163
 msgid "Name"
 msgstr "Nazwa"
 
-#: classes/widget-bookmarks.php:179 classes/widget-categories.php:163
+#: classes/widget-bookmarks.php:179
+#: classes/widget-categories.php:163
 #: classes/widget-pages.php:149
 msgid "Slug"
-msgstr "Uproszczona nazwa"
+msgstr "Slug"
 
 #: classes/widget-bookmarks.php:181
 msgid "Description"
@@ -310,7 +311,7 @@ msgstr "Uwagi"
 msgid "Owner"
 msgstr "Właściciel"
 
-#: classes/widget-bookmarks.php:181 classes/widget-tags.php:173
+#: classes/widget-bookmarks.php:181
 msgid "Random"
 msgstr "Losowo"
 
@@ -322,7 +323,8 @@ msgstr "Ocena"
 msgid "Rel"
 msgstr "Rel"
 
-#: classes/widget-bookmarks.php:181 classes/widget-categories.php:164
+#: classes/widget-bookmarks.php:181
+#: classes/widget-categories.php:164
 msgid "RSS"
 msgstr "RSS"
 
@@ -336,43 +338,42 @@ msgstr "Data aktualizacji"
 
 #: classes/widget-bookmarks.php:289
 msgid "Categorize?"
-msgstr "Wg kategorii?"
+msgstr "Kategoryzować?"
 
 #: classes/widget-bookmarks.php:293
 msgid "Show description?"
-msgstr "Pokazuj opis?"
+msgstr "Pokazać opis?"
 
 #: classes/widget-bookmarks.php:297
 msgid "Hide invisible?"
-msgstr "Ukryj niewidoczne?"
+msgstr "Ukryć niewidoczne?"
 
 #: classes/widget-bookmarks.php:301
 msgid "Show rating?"
-msgstr "Pokazuj oceny?"
+msgstr "Pokaż oceny?"
 
 #: classes/widget-bookmarks.php:305
 msgid "Show updated?"
-msgstr "Pokazuj aktualizację?"
+msgstr "Pokaż aktualizację?"
 
 #: classes/widget-bookmarks.php:309
 msgid "Show images?"
-msgstr "Pokazuj obrazki?"
+msgstr "Pokaż obrazki?"
 
 #: classes/widget-bookmarks.php:313
 msgid "Show name?"
-msgstr "Pokazuj nazwę?"
+msgstr "Pokaż nazwę?"
 
 #: classes/widget-bookmarks.php:317
 msgid "Show private?"
-msgstr "Pokazuj prywatne?"
+msgstr "Pokaż prywatne?"
 
 #: classes/widget-calendar.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"calendar."
+msgid "An advanced widget that gives you total control over the output of your calendar."
 msgstr "Zaawansowany widget pozwalający na pełną kontrolę nad kalendarzem."
 
-#: classes/widget-calendar.php:44 classes/widget-calendar.php:99
+#: classes/widget-calendar.php:44
+#: classes/widget-calendar.php:99
 msgid "Calendar"
 msgstr "Kalendarz"
 
@@ -381,14 +382,11 @@ msgid "One-letter abbreviation?"
 msgstr "Skrót jednoliterowy?"
 
 #: classes/widget-categories.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"category links."
-msgstr ""
-"Zaawansowany widget pozwlający na pełną kontrolę wyświetlania linków "
-"kategorii."
+msgid "An advanced widget that gives you total control over the output of your category links."
+msgstr "Zaawansowany widget pozwlający na pełną kontrolę wyświetlania linków kategorii."
 
-#: classes/widget-categories.php:44 classes/widget-categories.php:133
+#: classes/widget-categories.php:44
+#: classes/widget-categories.php:133
 msgid "Categories"
 msgstr "Kategorie"
 
@@ -408,9 +406,10 @@ msgstr "RDF"
 msgid "RSS 2.0"
 msgstr "RSS 2.0"
 
-#: classes/widget-categories.php:261 classes/widget-pages.php:256
+#: classes/widget-categories.php:261
+#: classes/widget-pages.php:256
 msgid "Hierarchical?"
-msgstr "Hierarchicznie?"
+msgstr "Hierarhicznie?"
 
 #: classes/widget-categories.php:265
 msgid "Use description?"
@@ -418,14 +417,11 @@ msgstr "Użyj opisu?"
 
 #: classes/widget-categories.php:269
 msgid "Show count?"
-msgstr "Pokazuj licznik?"
+msgstr "Pokaż licznik?"
 
 #: classes/widget-nav-menu.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"menus."
-msgstr ""
-"Zaawansowany widget pozwalający na pełną kontrolę nad wyświetlaniem menu."
+msgid "An advanced widget that gives you total control over the output of your menus."
+msgstr "Zaawansowany widget pozwalający na pełną kontrolę nad wyświetlaniem menu."
 
 #: classes/widget-nav-menu.php:44
 msgid "Navigation Menu"
@@ -436,14 +432,11 @@ msgid "Navigation"
 msgstr "Nawigacja"
 
 #: classes/widget-pages.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your page "
-"links."
-msgstr ""
-"Zaawansowany widget pozwalający na pełną kontrolę wyświetlania linków do "
-"stron."
+msgid "An advanced widget that gives you total control over the output of your page links."
+msgstr "Zaawansowany widget pozwalający na pełną kontrolę wyświetlania linków do stron."
 
-#: classes/widget-pages.php:44 classes/widget-pages.php:123
+#: classes/widget-pages.php:44
+#: classes/widget-pages.php:123
 msgid "Pages"
 msgstr "Strony"
 
@@ -457,11 +450,12 @@ msgstr "Data"
 
 #: classes/widget-pages.php:149
 msgid "Menu Order"
-msgstr "Kolejność w menu"
+msgstr "Kolejność menu"
 
-#: classes/widget-pages.php:149 classes/widget-pages.php:150
+#: classes/widget-pages.php:149
+#: classes/widget-pages.php:150
 msgid "Modified"
-msgstr "Data modyfikacji"
+msgstr "Data aktualizacji"
 
 #: classes/widget-pages.php:149
 msgid "Title"
@@ -469,15 +463,14 @@ msgstr "Tytuł"
 
 #: classes/widget-pages.php:150
 msgid "Created"
-msgstr "Data utworzenia"
+msgstr "Data stworzenia"
 
 #: classes/widget-search.php:33
-msgid ""
-"An advanced widget that gives you total control over the output of your "
-"search form."
+msgid "An advanced widget that gives you total control over the output of your search form."
 msgstr "Formularz szukania w serwisie"
 
-#: classes/widget-search.php:45 classes/widget-search.php:131
+#: classes/widget-search.php:45
+#: classes/widget-search.php:131
 msgid "Search"
 msgstr "Szukaj"
 
@@ -495,15 +488,14 @@ msgstr "Tekst przycisku:"
 
 #: classes/widget-search.php:163
 msgid "Use theme's <code>searchform.php</code>?"
-msgstr "Użyć z motywu <code>searchform.php</code>?"
+msgstr "Użyć <code>searchform.php</code>?"
 
 #: classes/widget-tags.php:32
-msgid ""
-"An advanced widget that gives you total control over the output of your tags."
-msgstr ""
-"Zaawansowany widget pozwalający na pełną kontrolę nad wyświetlaniem tagów."
+msgid "An advanced widget that gives you total control over the output of your tags."
+msgstr "Zaawansowany widget pozwalający na pełną kontrolę nad wyświetlaniem tagów."
 
-#: classes/widget-tags.php:44 classes/widget-tags.php:143
+#: classes/widget-tags.php:44
+#: classes/widget-tags.php:143
 msgid "Tags"
 msgstr "Tagi"
 
@@ -511,10 +503,11 @@ msgstr "Tagi"
 msgid "View"
 msgstr "Widok"
 
-#: classes/widget-tags.php:171 extensions/breadcrumb-trail.php:389
-#: extensions/breadcrumb-trail.php:422 extensions/breadcrumb-trail.php:437
-#: extensions/breadcrumb-trail.php:465 functions/shortcodes.php:204
-#: functions/shortcodes.php:443
+#: classes/widget-tags.php:171
+#: extensions/breadcrumb-trail.php:389
+#: extensions/breadcrumb-trail.php:422
+#: extensions/breadcrumb-trail.php:437
+#: extensions/breadcrumb-trail.php:465
 msgid "Edit"
 msgstr "Edytuj"
 
@@ -534,7 +527,8 @@ msgstr "Start:"
 msgid "Home"
 msgstr "Start"
 
-#: extensions/breadcrumb-trail.php:301 functions/context.php:423
+#: extensions/breadcrumb-trail.php:301
+#: functions/context.php:423
 msgid "g:i a"
 msgstr "g:i a"
 
@@ -543,28 +537,35 @@ msgstr "g:i a"
 msgid "Minute %1$s"
 msgstr "Minuta %1$s"
 
-#: extensions/breadcrumb-trail.php:304 functions/context.php:426
+#: extensions/breadcrumb-trail.php:304
+#: functions/context.php:426
 msgid "i"
 msgstr "i"
 
-#: extensions/breadcrumb-trail.php:307 functions/context.php:429
+#: extensions/breadcrumb-trail.php:307
+#: functions/context.php:429
 msgid "g a"
 msgstr "g a"
 
-#: extensions/breadcrumb-trail.php:318 extensions/breadcrumb-trail.php:324
-#: extensions/breadcrumb-trail.php:329 extensions/breadcrumb-trail.php:334
-#: extensions/breadcrumb-trail.php:521 functions/context.php:435
-#: functions/context.php:441 functions/core-seo.php:90
-#: functions/shortcodes.php:70
+#: extensions/breadcrumb-trail.php:318
+#: extensions/breadcrumb-trail.php:324
+#: extensions/breadcrumb-trail.php:329
+#: extensions/breadcrumb-trail.php:334
+#: extensions/breadcrumb-trail.php:521
+#: functions/context.php:435
+#: functions/context.php:441
+#: functions/core-seo.php:90
 msgid "Y"
 msgstr "Y"
 
-#: extensions/breadcrumb-trail.php:319 extensions/breadcrumb-trail.php:330
+#: extensions/breadcrumb-trail.php:319
+#: extensions/breadcrumb-trail.php:330
 #: extensions/breadcrumb-trail.php:525
 msgid "F"
 msgstr "F"
 
-#: extensions/breadcrumb-trail.php:320 extensions/breadcrumb-trail.php:529
+#: extensions/breadcrumb-trail.php:320
+#: extensions/breadcrumb-trail.php:529
 msgid "d"
 msgstr "d"
 
@@ -573,16 +574,19 @@ msgstr "d"
 msgid "Week %1$s"
 msgstr "Tydzień %1$s"
 
-#: extensions/breadcrumb-trail.php:325 functions/context.php:435
+#: extensions/breadcrumb-trail.php:325
+#: functions/context.php:435
 msgid "W"
 msgstr "W"
 
-#: extensions/breadcrumb-trail.php:341 functions/context.php:452
+#: extensions/breadcrumb-trail.php:341
+#: functions/context.php:452
 #, php-format
 msgid "Search results for &quot;%1$s&quot;"
-msgstr "Wyniki wyszukiwania dla zapytania &quot;%1$s&quot;"
+msgstr "Wyniki wyszukiwania dla hasła &quot;%1$s&quot;"
 
-#: extensions/breadcrumb-trail.php:345 functions/context.php:456
+#: extensions/breadcrumb-trail.php:345
+#: functions/context.php:456
 msgid "404 Not Found"
 msgstr "404 Nie znaleziono"
 
@@ -594,7 +598,8 @@ msgstr "Podziel"
 msgid "Merge"
 msgstr "Połącz"
 
-#: extensions/breadcrumb-trail.php:525 functions/core-seo.php:86
+#: extensions/breadcrumb-trail.php:525
+#: functions/core-seo.php:86
 msgid "F Y"
 msgstr "F Y"
 
@@ -642,13 +647,14 @@ msgstr "Trzy Kolumny, Prawa"
 msgid "Three Columns, Center"
 msgstr "Trzy Kolumny, Środek"
 
-#: extensions/theme-layouts.php:377 extensions/theme-layouts.php:485
+#: extensions/theme-layouts.php:377
+#: extensions/theme-layouts.php:485
 msgid "Layout"
-msgstr "Układ"
+msgstr "Układ strony"
 
 #: extensions/theme-layouts.php:404
 msgid "Layout is a theme-specific structure for the single view of the post."
-msgstr "Układ jest to specyficzna struktura dla jednego widoku postu."
+msgstr "Układ strony jest to specyficzna struktura dla jednego widoku postu."
 
 #: functions/comments.php:182
 msgid "*"
@@ -656,7 +662,7 @@ msgstr "*"
 
 #: functions/comments.php:189
 msgid "Website"
-msgstr "Witryna internetowa"
+msgstr "Strona www"
 
 #: functions/comments.php:195
 msgid "Comment"
@@ -664,17 +670,13 @@ msgstr "Treść komentarza"
 
 #: functions/comments.php:196
 #, php-format
-msgid ""
-"You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a "
-"comment."
-msgstr ""
-"Musisz się <a href=\"%1$s\" title=\"Log in\">zalogować</a>, aby móc napisać "
-"komentarz."
+msgid "You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr "Musisz być <a href=\"%1$s\" title=\"Log in\">zalogowany</a>, aby napisać komentarz."
 
 #: functions/comments.php:197
 #, php-format
 msgid "Logged in as <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
-msgstr "Zalogowano się jako <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+msgstr "Zalogowany jako <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
 
 #: functions/comments.php:197
 msgid "Log out of this account"
@@ -682,16 +684,16 @@ msgstr "Wyloguj się z tego konta"
 
 #: functions/comments.php:197
 msgid "Log out &raquo;"
-msgstr "Wyloguj się &raquo;"
+msgstr "Wyloguj &raquo;"
 
 #: functions/comments.php:202
 msgid "Leave a Reply"
-msgstr "Dodaj komentarz"
+msgstr "Napisz odpowiedź"
 
 #: functions/comments.php:203
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Odpowiedz na %s"
+msgstr "Napisz odpowiedź do %s"
 
 #: functions/comments.php:204
 msgid "Click here to cancel reply."
@@ -699,10 +701,12 @@ msgstr "Kliknij, aby anulować odpowiedź."
 
 #: functions/comments.php:205
 msgid "Post Comment"
-msgstr "Opublikuj komentarz"
+msgstr "Wyślij odpowiedź"
 
-#: functions/context.php:423 functions/context.php:429
-#: functions/context.php:432 functions/context.php:438
+#: functions/context.php:423
+#: functions/context.php:429
+#: functions/context.php:432
+#: functions/context.php:438
 #: functions/context.php:441
 #, php-format
 msgid "Archive for %1$s"
@@ -720,7 +724,7 @@ msgstr "j F Y"
 #: functions/context.php:435
 #, php-format
 msgid "Archive for week %1$s of %2$s"
-msgstr "Archiwum tygodnia %1$s z %2$s"
+msgstr "Archive for week %1$s of %2$s"
 
 #: functions/context.php:460
 #, php-format
@@ -730,25 +734,21 @@ msgstr "%1$s Strona %2$s"
 #: functions/core-seo.php:93
 #, php-format
 msgid "Copyright (c) %1$s"
-msgstr "Copyright (c) %1$s"
+msgstr "Prawa autorskie (c) %1$s"
 
-#: functions/core-seo.php:112 functions/shortcodes.php:218
-#: functions/shortcodes.php:373
+#: functions/core-seo.php:112
 msgid "l, F jS, Y, g:i a"
 msgstr "l, j F Y, G:i"
 
-#: functions/customize.php:63 functions/customize.php:88
+#: functions/customize.php:63
+#: functions/customize.php:88
 msgid "Footer"
-msgstr "Stopka"
+msgstr ""
 
 #: functions/deprecated.php:572
 #, php-format
-msgid ""
-"<code>%1$s</code> &mdash; This function has been removed or replaced by "
-"another function."
-msgstr ""
-"<code>%1$s</code> &mdash; Ta funkcja została usunięta lub zastąpiona przez "
-"inną funkcję."
+msgid "<code>%1$s</code> &mdash; This function has been removed or replaced by another function."
+msgstr "<code>%1$s</code> &mdash; Ta funkcja została usunięta lub zastąpiona przez inną funkcję."
 
 #: functions/menus.php:38
 msgctxt "nav menu location"
@@ -765,21 +765,23 @@ msgctxt "nav menu location"
 msgid "Subsidiary"
 msgstr "Pomocniczy"
 
-#: functions/settings.php:76 functions/settings.php:80
+#: functions/settings.php:76
+#: functions/settings.php:80
 msgid "Copyright &#169; [the-year] [site-link]."
-msgstr "Copyright &#169; [the-year] [site-link]."
+msgstr "Prawa autorskie &#169; [the-year] [site-link]."
 
 #: functions/settings.php:76
 msgid "Powered by [wp-link], [theme-link], and [child-link]."
-msgstr "Oparte na [wp-link], [theme-link], oraz [child-link]."
+msgstr "Stworzone dzięki [wp-link], [theme-link], oraz [child-link]."
 
 #: functions/settings.php:80
 msgid "Powered by [wp-link] and [theme-link]."
-msgstr "Oparte na [wp-link] i [theme-link]."
+msgstr "Stworzone dzięki [wp-link] i [theme-link]."
 
 #: functions/shortcodes.php:93
+#, fuzzy
 msgid "State-of-the-art semantic personal publishing platform"
-msgstr "Nowoczesna, semantyczna, osobista platforma publikacyjna."
+msgstr "State-of-the-art semantic personal publishing platform"
 
 #: functions/shortcodes.php:93
 msgid "WordPress"
@@ -788,30 +790,30 @@ msgstr "WordPress"
 #: functions/shortcodes.php:106
 #, php-format
 msgid "%s WordPress Theme"
-msgstr "%s Motyw WordPress"
+msgstr "%s WordPress Theme"
 
 #: functions/shortcodes.php:134
 msgid "Log out"
-msgstr "Wyloguj się"
+msgstr "Wyloguj"
 
 #: functions/shortcodes.php:136
 msgid "Log in"
-msgstr "Zaloguj się"
+msgstr "Zaloguj"
 
 #: functions/shortcodes.php:151
 #, php-format
 msgid "This page loaded in %1$s seconds with %2$s database queries."
-msgstr ""
-"Strona załadowała się w ciągu %1$s sekund, %2$s zapytań do bazy danych."
+msgstr "Strona załadowała się w ciągu %1$s sekund, %2$s zapytań do bazy danych."
 
-#: functions/shortcodes.php:204 functions/shortcodes.php:443
+#: functions/shortcodes.php:204
+#: functions/shortcodes.php:443
 #, php-format
 msgid "Edit %1$s"
 msgstr "Edytuj %1$s"
 
 #: functions/shortcodes.php:234
 msgid "Leave a response"
-msgstr "Napisz odpowiedź"
+msgstr "Napisz komentarz"
 
 #: functions/shortcodes.php:234
 #, php-format
@@ -823,7 +825,8 @@ msgstr "%1$s odpowiedź"
 msgid "%1$s Responses"
 msgstr "%1$s odpowiedzi"
 
-#: functions/shortcodes.php:241 functions/shortcodes.php:243
+#: functions/shortcodes.php:241
+#: functions/shortcodes.php:243
 #: functions/shortcodes.php:245
 #, php-format
 msgid "Comment on %1$s"
@@ -835,11 +838,12 @@ msgstr "(Bez tytułu)"
 
 #: functions/shortcodes.php:321
 msgid "Shortlink"
-msgstr "Skrócony odnośnik"
+msgstr "Krótki link"
 
-#: functions/shortcodes.php:345 functions/shortcodes.php:422
+#: functions/shortcodes.php:345
+#: functions/shortcodes.php:422
 msgid "Permalink"
-msgstr "Bezpośredni odnośnik"
+msgstr "Permalink"
 
 #: functions/shortcodes.php:373
 #, php-format
@@ -849,7 +853,7 @@ msgstr "%1$s z %2$s"
 #: functions/shortcodes.php:422
 #, php-format
 msgid "Permalink to comment %1$s"
-msgstr "Bezpośredni odnośnik do komentarza %1$s"
+msgstr "Link do %1$s"
 
 #: functions/shortcodes.php:462
 msgid "Reply"
@@ -857,35 +861,30 @@ msgstr "Odpowiedz"
 
 #: functions/shortcodes.php:463
 msgid "Log in to reply."
-msgstr "Zaloguj się, aby móc odpowiedzieć."
+msgstr "Zaloguj się, aby odpowiedzieć."
 
 #: functions/sidebars.php:87
 msgctxt "sidebar"
 msgid "Primary"
-msgstr "Podstawowy"
+msgstr "Primary"
 
 #: functions/sidebars.php:88
 msgid "The main (primary) widget area, most often used as a sidebar."
-msgstr ""
-"Główny (pierwszy) obszar widgetów, najczęściej używany jako pasek boczny."
+msgstr "Główny (pierwszy) obszar widgetów, najczęściej używany jako pasek boczny."
 
 #: functions/sidebars.php:91
 msgctxt "sidebar"
 msgid "Secondary"
-msgstr "Drugi"
+msgstr "Secondary"
 
 #: functions/sidebars.php:92
-msgid ""
-"The second most important widget area, most often used as a secondary "
-"sidebar."
-msgstr ""
-"Drugi najważniejszy obszar widgetów,najczęściej używany jako drugi pasek "
-"boczny."
+msgid "The second most important widget area, most often used as a secondary sidebar."
+msgstr "Drugi najważniejszy obszar widgetów,najczęściej używany jako drugi pasek boczny."
 
 #: functions/sidebars.php:95
 msgctxt "sidebar"
 msgid "Subsidiary"
-msgstr "Pomocniczy"
+msgstr "Subsidiary"
 
 #: functions/sidebars.php:96
 msgid "A widget area loaded in the footer of the site."
@@ -921,18 +920,11 @@ msgstr "Ładowany po zawartości głównej witryny."
 #: functions/sidebars.php:111
 msgctxt "sidebar"
 msgid "After Singular"
-msgstr "Po pojedynczym wpisie"
+msgstr "Po wpisie"
 
 #: functions/sidebars.php:112
-msgid ""
-"Loaded on singular post (page, attachment, etc.) views before the comments "
-"area."
-msgstr ""
-"Ładowany dla wyświetlanago postu (strony, załącznika itp.) przed obdzarem "
-"komentarzy."
-
-#~ msgid "Submit"
-#~ msgstr "szukaj w serwisie..."
+msgid "Loaded on singular post (page, attachment, etc.) views before the comments area."
+msgstr "Ładowany dla wyświetlanago postu (strony, załącznika itp.) przed obdzarem komentarzy."
 
 #~ msgid "Title used for search engines and the browser title bar."
 #~ msgstr "Otsikko hakukoneille ja selaimen otsikolle."
