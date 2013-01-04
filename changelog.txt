@@ -1,4 +1,4 @@
-23.10.2012 - version 0.2
+4.1.2013 - version 0.2
 
 * Updated Hybrid Core to version 1.5.
 
