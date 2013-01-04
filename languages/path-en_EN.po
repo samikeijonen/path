@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-07 10:21+0200\n"
-"PO-Revision-Date: 2012-08-07 10:22+0200\n"
+"POT-Creation-Date: 2013-01-04 14:13+0200\n"
+"PO-Revision-Date: 2013-01-04 14:13+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "Language: en\n"
@@ -13,6 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;"
 "esc_html__;esc_html_e;_n;_x:1,2c\n"
 "X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:27
@@ -157,67 +158,59 @@ msgid ""
 "before=\"| Tagged \"]"
 msgstr ""
 
-#: functions.php:315
+#: functions.php:322
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr ""
 
-#: functions.php:315
+#: functions.php:322
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr ""
 
-#: functions.php:315
+#: functions.php:322
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:333
 msgid "Please comment with your real name using good manners."
 msgstr ""
 
-#: functions.php:337
+#: functions.php:344
 msgid "Read more &rarr;"
 msgstr ""
 
-#: functions.php:373
+#: functions.php:380
 msgid "Twitter Username"
 msgstr ""
 
-#: functions.php:392
+#: functions.php:399
 msgid "Author of the article"
 msgstr ""
 
-#: functions.php:392
+#: functions.php:399
 msgid "Authors of the article"
 msgstr ""
 
-#: functions.php:409 functions.php:430 functions.php:450
+#: functions.php:416 functions.php:437 functions.php:457
 #, php-format
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr ""
 
-#: functions.php:440
+#: functions.php:447
 msgid "Article written by [entry-author]"
 msgstr ""
 
-#: functions.php:470
+#: functions.php:477 functions.php:496
 msgid "and"
 msgstr ""
 
-#: functions.php:471
+#: functions.php:478
 msgid ""
 " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
 "before=\" | \"]"
 msgstr ""
 
-#: functions.php:518
-msgid "Customize"
-msgstr ""
-
-#: functions.php:539 admin/functions-admin.php:56
-msgid "Layout"
-msgstr ""
-
-#: functions.php:566 admin/functions-admin.php:118
-msgid "Global Layout:"
+#: functions.php:497
+msgid " [entry-published]"
 msgstr ""
 
 #: header.php:90
@@ -305,12 +298,8 @@ msgstr ""
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr ""
 
-#: loop-nav.php:24 loop-nav.php:27
+#: loop-nav.php:24 loop-nav.php:27 loop-nav.php:29
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: loop-nav.php:29
-msgid "Next &rarr;"
 msgstr ""
 
 #: menu-primary-mobile.php:24 menu-primary.php:20
@@ -341,6 +330,10 @@ msgstr ""
 msgid "Background"
 msgstr ""
 
+#: admin/functions-admin.php:56
+msgid "Layout"
+msgstr ""
+
 #: admin/functions-admin.php:74
 msgid "Custom logo:"
 msgstr ""
@@ -363,12 +356,63 @@ msgid ""
 "Appearance &gt;&gt; Background</a>. "
 msgstr ""
 
-#: admin/functions-admin.php:128
+#: admin/functions-admin.php:118
+msgid "Customize:"
+msgstr ""
+
+#: admin/functions-admin.php:121
+#, php-format
 msgid ""
-"Set the layout for the entire site. The default layout is 2 columns with "
-"content on the left. You can overwrite this value in individual post or "
-"page. Note! Three column layouts will only work if you use Primary and "
-"Secondary Widget areas and browser window is wide enough."
+"Want to set Global layout and set other features? <a href=\"%s\">Go to "
+"Appearance &gt;&gt; Customize</a>. "
+msgstr ""
+
+#: includes/widget-most-viewed.php:32
+msgid "Display top viewed posts."
+msgstr ""
+
+#: includes/widget-most-viewed.php:43 includes/widget-most-viewed.php:178
+msgid "Most Viewed"
+msgstr ""
+
+#: includes/widget-most-viewed.php:110
+msgid "[entry-author] [entry-published]"
+msgstr ""
+
+#: includes/widget-most-viewed.php:197
+msgid "Title:"
+msgstr ""
+
+#: includes/widget-most-viewed.php:202
+msgid "Post Type:"
+msgstr ""
+
+#: includes/widget-most-viewed.php:213
+msgid "Limit:"
+msgstr ""
+
+#: includes/widget-most-viewed.php:218
+msgid "Year:"
+msgstr ""
+
+#: includes/widget-most-viewed.php:223
+msgid "Month:"
+msgstr ""
+
+#: includes/widget-most-viewed.php:232
+msgid "Day:"
+msgstr ""
+
+#: includes/widget-most-viewed.php:242
+msgid "Display Thumbnail?"
+msgstr ""
+
+#: includes/widget-most-viewed.php:247
+msgid "Display Byline?"
+msgstr ""
+
+#: includes/widget-most-viewed.php:252
+msgid "Display Excerpt?"
 msgstr ""
 
 #: page-templates/archives.php:44

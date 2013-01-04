@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Path\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-07 10:22+0200\n"
-"PO-Revision-Date: 2012-09-02 10:43+0200\n"
+"POT-Creation-Date: 2013-01-04 14:09+0200\n"
+"PO-Revision-Date: 2013-01-04 14:12+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "Language: fi\n"
@@ -13,6 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;esc_attr__;esc_attr_e;"
 "esc_html__;esc_html_e;_n;_x:1,2c\n"
 "X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:27
@@ -181,52 +182,52 @@ msgstr ""
 "[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] "
 "[entry-terms before=\"| Avainsanat \"]"
 
-#: functions.php:315
+#: functions.php:322
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr "Copyright &#169; [the-year] [site-link]."
 
-#: functions.php:315
+#: functions.php:322
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr "Alustana [wp-link] ja [theme-link]."
 
-#: functions.php:315
+#: functions.php:322
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr " <a class=\"top\" href=\"#container\">Takaisin ylös</a>"
 
-#: functions.php:326
+#: functions.php:333
 msgid "Please comment with your real name using good manners."
 msgstr "Ole hyvä ja kommentoi omalla nimellä hyvien tapojen mukaisesti."
 
-#: functions.php:337
+#: functions.php:344
 msgid "Read more &rarr;"
 msgstr "Lue lisää &rarr;"
 
-#: functions.php:373
+#: functions.php:380
 msgid "Twitter Username"
 msgstr "Twitter käyttäjänimi"
 
-#: functions.php:392
+#: functions.php:399
 msgid "Author of the article"
 msgstr "Artikkelin kirjoittaja"
 
-#: functions.php:392
+#: functions.php:399
 msgid "Authors of the article"
 msgstr "Artikkelin kirjoittajat"
 
-#: functions.php:409 functions.php:430 functions.php:450
+#: functions.php:416 functions.php:437 functions.php:457
 #, php-format
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr "Seuraa %1$s %2$s &#64;%3$s Twitterissä."
 
-#: functions.php:440
+#: functions.php:447
 msgid "Article written by [entry-author]"
 msgstr "Artikkelin kirjoittaja [entry-author]"
 
-#: functions.php:470
+#: functions.php:477 functions.php:496
 msgid "and"
 msgstr "ja"
 
-#: functions.php:471
+#: functions.php:478
 msgid ""
 " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
 "before=\" | \"]"
@@ -234,17 +235,9 @@ msgstr ""
 " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
 "before=\" | \"]"
 
-#: functions.php:518
-msgid "Customize"
-msgstr "Kustomoi"
-
-#: functions.php:539 admin/functions-admin.php:56
-msgid "Layout"
-msgstr "Ulkoasu"
-
-#: functions.php:566 admin/functions-admin.php:118
-msgid "Global Layout:"
-msgstr "Sivuston ulkoasu:"
+#: functions.php:497
+msgid " [entry-published]"
+msgstr " [entry-published]"
 
 #: header.php:90
 msgid "You are here:"
@@ -331,13 +324,9 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Palaa takaisin"
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr "<span class=\"meta-nav\">&larr;</span> Edellinen"
 
-#: loop-nav.php:24 loop-nav.php:27
+#: loop-nav.php:24 loop-nav.php:27 loop-nav.php:29
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seuraava <span class=\"meta-nav\">&rarr;</span>"
-
-#: loop-nav.php:29
-msgid "Next &rarr;"
-msgstr "Seuraava &rarr;"
 
 #: menu-primary-mobile.php:24 menu-primary.php:20
 msgid "Primary Menu"
@@ -367,6 +356,10 @@ msgstr "Logon lataaminen"
 msgid "Background"
 msgstr "Taustakuva"
 
+#: admin/functions-admin.php:56
+msgid "Layout"
+msgstr "Ulkoasu"
+
 #: admin/functions-admin.php:74
 msgid "Custom logo:"
 msgstr "Logo:"
@@ -393,17 +386,66 @@ msgstr ""
 "Haluatko vaihtaa tai poistaa alkuperäisen taustankuvan? <a href=\"%s\">Mene "
 "kohtaan Ulkoasu &gt;&gt; Tausta</a>. "
 
-#: admin/functions-admin.php:128
+#: admin/functions-admin.php:118
+msgid "Customize:"
+msgstr "Kustomoi:"
+
+#: admin/functions-admin.php:121
+#, php-format
 msgid ""
-"Set the layout for the entire site. The default layout is 2 columns with "
-"content on the left. You can overwrite this value in individual post or "
-"page. Note! Three column layouts will only work if you use Primary and "
-"Secondary Widget areas and browser window is wide enough."
+"Want to set Global layout and set other features? <a href=\"%s\">Go to "
+"Appearance &gt;&gt; Customize</a>. "
 msgstr ""
-"Aseta sivuston ulkoasu. Oletus on kaksi saraketta, missä sisältö on "
-"vasemmalla. Yksittäisen artikkelin kohdalla voit muuttaa tätä asetusta. "
-"Huom! Kolmen sarakkeen ulkoasu toimii vain, jos käytössä on sekä ensi -että "
-"toissijainen vimpainalue ja näytön resoluutio on riittävän leveä."
+"Haluatko vaihtaa ulkoasun tai vaihtaa muita asetuksia? <a href=\"%s\">Mene "
+"kohtaan Ulkoasu &gt;&gt; Kustomoi</a>. "
+
+#: includes/widget-most-viewed.php:32
+msgid "Display top viewed posts."
+msgstr "Näytä luetuimmat artikkelit."
+
+#: includes/widget-most-viewed.php:43 includes/widget-most-viewed.php:178
+msgid "Most Viewed"
+msgstr "Luetuimmat"
+
+#: includes/widget-most-viewed.php:110
+msgid "[entry-author] [entry-published]"
+msgstr "[entry-author] [entry-published]"
+
+#: includes/widget-most-viewed.php:197
+msgid "Title:"
+msgstr "Otsikko:"
+
+#: includes/widget-most-viewed.php:202
+msgid "Post Type:"
+msgstr "Artikkelityyppi:"
+
+#: includes/widget-most-viewed.php:213
+msgid "Limit:"
+msgstr "Monta:"
+
+#: includes/widget-most-viewed.php:218
+msgid "Year:"
+msgstr "Vuosi:"
+
+#: includes/widget-most-viewed.php:223
+msgid "Month:"
+msgstr "Kuukausi:"
+
+#: includes/widget-most-viewed.php:232
+msgid "Day:"
+msgstr "Päivä:"
+
+#: includes/widget-most-viewed.php:242
+msgid "Display Thumbnail?"
+msgstr "Näytä artikkelikuva?"
+
+#: includes/widget-most-viewed.php:247
+msgid "Display Byline?"
+msgstr "Näytä byline?"
+
+#: includes/widget-most-viewed.php:252
+msgid "Display Excerpt?"
+msgstr "Näytä ote?"
 
 #: page-templates/archives.php:44
 #, php-format
@@ -437,6 +479,23 @@ msgstr ""
 #: page-templates/path-slider.php:85
 msgid "More Articles"
 msgstr "Lisää artikkeleita"
+
+#~ msgid "Global Layout:"
+#~ msgstr "Sivuston ulkoasu:"
+
+#~ msgid "Next &rarr;"
+#~ msgstr "Seuraava &rarr;"
+
+#~ msgid ""
+#~ "Set the layout for the entire site. The default layout is 2 columns with "
+#~ "content on the left. You can overwrite this value in individual post or "
+#~ "page. Note! Three column layouts will only work if you use Primary and "
+#~ "Secondary Widget areas and browser window is wide enough."
+#~ msgstr ""
+#~ "Aseta sivuston ulkoasu. Oletus on kaksi saraketta, missä sisältö on "
+#~ "vasemmalla. Yksittäisen artikkelin kohdalla voit muuttaa tätä asetusta. "
+#~ "Huom! Kolmen sarakkeen ulkoasu toimii vain, jos käytössä on sekä ensi -"
+#~ "että toissijainen vimpainalue ja näytön resoluutio on riittävän leveä."
 
 #~ msgid "Default"
 #~ msgstr "Oletus"
