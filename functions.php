@@ -30,10 +30,6 @@ function path_theme_setup() {
 
 	/* Get action/filter hook prefix. */
 	$prefix = hybrid_get_prefix();
-	
-	/* Add theme settings. */
-	if ( is_admin() )
-	    require_once( trailingslashit ( get_template_directory() ) . 'admin/functions-admin.php' );
 
 	/* Add theme support for core framework features. */
 	add_theme_support( 'hybrid-core-menus', array( 'primary', 'secondary', 'subsidiary' ) );
@@ -42,6 +38,7 @@ function path_theme_setup() {
 	add_theme_support( 'hybrid-core-shortcodes' );
 	add_theme_support( 'hybrid-core-theme-settings', array( 'about', 'footer' ) );
 	add_theme_support( 'hybrid-core-scripts', array( 'drop-downs' ) );
+	add_theme_support( 'hybrid-core-styles', array( 'style' ) );
 	add_theme_support( 'hybrid-core-seo' );
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 	
@@ -65,7 +62,7 @@ function path_theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	
 	/* Add support for post formats. */
-	add_theme_support( 'post-formats', array( 'aside', 'audio', 'image', 'gallery', 'link', 'quote', 'status', 'video' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' ) );
 	
 	/* Add custom background feature. */
 	add_theme_support( 'custom-background', array(
@@ -151,6 +148,9 @@ function path_theme_setup() {
 	
 	/* Register additional widgets. */
 	add_action( 'widgets_init', 'path_register_widgets' );
+	
+	/* Add menu-item-parent class to parent menu items.  */
+	add_filter( 'wp_nav_menu_objects', 'path_add_menu_parent_class' );
 	
 }
 
@@ -298,6 +298,7 @@ function path_google_fonts() {
  * format to easily find the link for the post. 
  *
  * @since 0.1.0
+ * @deprecated since 0.2.1. Use hybrid_get_the_post_format_url() insted.
  * @return string The link if found.  Otherwise, the permalink to the post.
  *
  * @note This is a modified version of the twentyeleven_url_grabber() function in the TwentyEleven theme. And this modified version is from MyLife (themehybrid.com) theme.
@@ -319,7 +320,7 @@ function path_url_grabber() {
  */
 function path_default_footer_settings( $settings ) {
     
-    $settings['footer_insert'] = '<p class="copyright">' . __( 'Copyright &#169; [the-year] [site-link].', 'path' ) . '</p>' . "\n\n" . '<p class="credit">' . __( 'Powered by [wp-link] and [theme-link].', 'path' ) . __( ' <a class="top" href="#container">Back to Top</a>', 'path' ) . '</p>';
+    $settings['footer_insert'] = '<p class="copyright">' . _x( 'Copyright &#169; [the-year] [site-link].', 'Filter footer info', 'path' ) . '</p>' . "\n\n" . '<p class="credit">' . _x( 'Powered by [wp-link] and [theme-link].', 'Filter footer info', 'path' ) . __( ' <a class="top" href="#container">Back to Top</a>', 'path' ) . '</p>';
     
     return $settings;
 }
@@ -586,6 +587,33 @@ function path_register_widgets() {
 	/* Load and register the most-viewed posts widget. */
 	require_once( trailingslashit( THEME_DIR ) . 'includes/widget-most-viewed.php' );
 	register_widget( 'Path_Widget_Most_Viewed' );
+
+}
+
+/**
+ * Add menu-item-parent class to parent menu items. Thanks to Chip Bennett.
+ *
+ * @since 0.2.1
+ */
+function path_add_menu_parent_class( $items ) {
+
+	$parents = array();
+
+	foreach ( $items as $item ) {
+
+		if ( $item->menu_item_parent && $item->menu_item_parent > 0 )
+			$parents[] = $item->menu_item_parent;
+		
+	}
+
+	foreach ( $items as $item ) {
+
+		if ( in_array( $item->ID, $parents ) )
+			$item->classes[] = 'menu-item-parent';
+
+	}
+
+	return $items;    
 
 }
 
