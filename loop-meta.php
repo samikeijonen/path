@@ -120,7 +120,7 @@
 
 		<div class="loop-meta">
 
-			<h1 class="loop-title"><?php _e( 'Archives', 'path' ); ?></h1>
+			<h1 class="loop-title"><?php _ex( 'Archives', 'For loop meta', 'path' ); ?></h1>
 
 			<div class="loop-description">
 				<p>

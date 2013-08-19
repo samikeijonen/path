@@ -194,7 +194,7 @@ class Path_Widget_Most_Viewed extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'path' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _ex( 'Title:', 'For most viewed widget', 'path' ); ?></label>
 			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
 		</p>
 
