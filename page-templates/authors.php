@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Authors
+ * Template Name: Authors Page
  *
  * Displays authors who have capability to edit or publish posts or pages.
  *

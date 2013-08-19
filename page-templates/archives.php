@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Archives
+ * Template Name: Archives Page
  *
  * Displays blog archives.
  *
@@ -51,7 +51,7 @@ get_header(); // Loads the header.php template. ?>
 	
 									<ul class="xoxo category-archives">
 									
-										<?php wp_list_categories( array( 'feed' => __( 'RSS', 'path' ), 'show_count' => true, 'use_desc_for_title' => false, 'title_li' => false ) ); ?>
+										<?php wp_list_categories( array( 'feed' => _x( 'RSS', 'For page template archives.php', 'path' ), 'show_count' => true, 'use_desc_for_title' => false, 'title_li' => false ) ); ?>
 									
 									</ul><!-- .xoxo .category-archives -->
 	
