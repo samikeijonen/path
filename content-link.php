@@ -38,7 +38,7 @@ do_atomic( 'before_entry' ); // path_before_entry ?>
 			<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'path-thumbnail' ) ); ?>
 
 			<header class="entry-header">
-				<h2 class="entry-title"><a href="<?php echo esc_url( path_url_grabber() ); ?>" title="<?php the_title_attribute(); ?>"><?php printf( '%s <span class="meta-nav">&rarr;</span>', the_title( '', '', false ) ); ?></a></h2>
+				<h2 class="entry-title"><a href="<?php echo esc_url( hybrid_get_the_post_format_url() ); ?>" title="<?php the_title_attribute(); ?>"><?php printf( '%s <span class="meta-nav">&rarr;</span>', the_title( '', '', false ) ); ?></a></h2>
 			</header><!-- .entry-header -->
 			
 		<?php } else { ?>
