@@ -1,3 +1,12 @@
+19.8.2013 - version 0.2.1
+
+* Updated Hybrid Core to version 1.6.
+* Menu + sign updated for sub menus. Not using image anymore.
+* Chat post format updated.
+* .pot file added.
+* Finnish translations added.
+* style.min.css added.
+
 4.1.2013 - version 0.2
 
 * Updated Hybrid Core to version 1.5.
