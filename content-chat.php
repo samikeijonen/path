@@ -36,8 +36,6 @@ do_atomic( 'before_entry' ); // path_before_entry ?>
 		<header class="entry-header">	
 			<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 		</header><!-- .entry-header -->
-		
-		<?php echo do_shortcode( '[gallery numberposts="3" orderby="rand"]' ); ?>
 
 		<div class="entry-content">
 			<?php the_content(); ?>
