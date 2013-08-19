@@ -21,9 +21,6 @@
 <!-- Mobile viewport optimized -->
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<!-- My styles -->
-<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
-
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -87,4 +84,4 @@
 
 			<?php do_atomic( 'open_main' ); // path_open_main ?>
 
-			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'before' => __( 'You are here:', 'path' ), 'separator'  => __( '&#8764;', 'path' ) ) ); ?>
+			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'before' => __( 'You are here:', 'path' ), 'show_browse' => false, 'separator'  => __( '&#8764;', 'path' ) ) ); ?>
