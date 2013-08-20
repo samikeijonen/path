@@ -955,6 +955,7 @@ input[type=password]:focus,
 #respond input[type="text"]:focus,
 #respond textarea:focus {
 	background: #fff;
+	border: 1px solid #e5e5e5;
 }
 
 /* Submit button. */
