@@ -52,6 +52,7 @@ function path_theme_setup() {
 	add_theme_support( 'entry-views' );
 	add_theme_support( 'cleaner-gallery' );
 	add_theme_support( 'cleaner-caption' );
+	add_theme_support( 'hybrid-core-media-grabber' );
 	
 	/* Add theme support for WordPress features. */
 	
