@@ -84,4 +84,4 @@
 
 			<?php do_atomic( 'open_main' ); // path_open_main ?>
 
-			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'before' => __( 'You are here:', 'path' ), 'show_browse' => false, 'separator'  => __( '&#8764;', 'path' ) ) ); ?>
+			<?php if ( current_theme_supports( 'breadcrumb-trail' ) ) breadcrumb_trail( array( 'container' => 'nav', 'labels' => array( 'browse' => __( 'You are here:', 'path' ) ), 'separator'  => __( '&#8764;', 'path' ) ) ); ?>
