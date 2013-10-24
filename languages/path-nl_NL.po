@@ -1,0 +1,1492 @@
+# Copyright (C) 2013 Sami Keijonen
+# This file is distributed under the GNU General Public License v2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Path 0.2.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/path\n"
+"POT-Creation-Date: 2013-08-19 19:01:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-09-03 23:11-0700\n"
+"Last-Translator: Ton van Uden <toooon66@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: 404.php:27
+msgid "What happened!?"
+msgstr "Wat is er gebeurd?"
+
+#: 404.php:33
+msgid ""
+"You tried going to %s, which doesn't exist. You can try navigate or search."
+msgstr ""
+"Je probeerde naar %2 te gaan, dat niet bestaat. Probeer te navigeren of "
+"gebruik Zoek."
+
+#: 404.php:39
+msgid "Or here are the latest posts, hope it helps."
+msgstr "Of hier zijn de laatste artikelen. Hopelijk helpt dit. "
+
+#: attachment-image.php:41 content-video.php:37 page-templates/archives.php:40
+#: page-templates/tag-cloud.php:40
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lees verder <span class=\"meta-nav\">&rarr;</span>"
+
+#: attachment-image.php:42 content-aside.php:27 content-aside.php:38
+#: content-audio.php:27 content-audio.php:38 content-chat.php:27
+#: content-chat.php:44 content-gallery.php:27 content-gallery.php:44
+#: content-image.php:27 content-image.php:38 content-link.php:27
+#: content-link.php:48 content-page.php:26 content-page.php:43
+#: content-quote.php:20 content-status.php:22 content-video.php:27
+#: content-video.php:38 content.php:27 content.php:45
+#: page-templates/archives.php:68
+#: page-templates/most-popular-by-comments.php:58
+#: page-templates/most-popular-by-month.php:61
+#: page-templates/most-popular-by-year.php:60
+#: page-templates/most-popular-last-30-days.php:62
+#: page-templates/most-popular.php:59 page-templates/path-slider.php:56
+#: page-templates/tag-cloud.php:46
+msgid "Pages:"
+msgstr "Paginas's:"
+
+#: attachment-image.php:47
+msgid "Published on [entry-published] [entry-edit-link before=\"| \"]"
+msgstr "Geplaatst op [entry-published] [entry-edit-link before=\"| \"]"
+
+#: attachment-image.php:62
+msgid "Gallery"
+msgstr "Fotogalerij"
+
+#: comment.php:31
+msgid "Your comment is awaiting moderation."
+msgstr "Je reactie wacht op controle."
+
+#: comments.php:26
+msgid "No Responses"
+msgstr "Geen reacties"
+
+#: comments.php:26
+msgid "One Response"
+msgstr "Één reactie"
+
+#: comments.php:26
+msgid "% Responses"
+msgstr "% reacties"
+
+#: comments.php:31
+msgid "Page %1$s of %2$s"
+msgstr "Pagina %1$s van %2$s"
+
+#: comments.php:49
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Je kunt geen reactie plaatsen, maar <a href=\"%s\" title=\"Trackback URL for "
+"this post\">trackbacks</a> en pingbacks zijn beschikbaar."
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr "Reacties zijn niet mogelijk."
+
+#: content-aside.php:22
+msgid ""
+"[post-format-link] published on [entry-published] [entry-edit-link before="
+"\"| \"]"
+msgstr ""
+"[post-format-link] geplaatst op [entry-published] [entry-edit-link before="
+"\"| \"]"
+
+#: content-aside.php:31 content-audio.php:31 content-chat.php:31
+#: content-gallery.php:31 content-image.php:31 content-link.php:31
+#: content-video.php:31 content.php:31
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"Tagged \"]"
+msgstr ""
+"[entry-terms taxonomy=\"category\" before=\"Geplaatst in \"] [entry-terms "
+"before=\"Tagged \"]"
+
+#: content-aside.php:42 content-audio.php:42 content-chat.php:48
+#: content-gallery.php:48 content-image.php:42 content-link.php:54
+#: content-quote.php:27 content-video.php:42
+msgid ""
+"[post-format-link] published on [entry-published] [entry-permalink before="
+"\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+"[post-format-link] geplaatst op [entry-published] [entry-permalink before="
+"\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+
+#: content-audio.php:22 content-chat.php:22 content-gallery.php:22
+#: content-image.php:22 content-link.php:22 content-video.php:22
+msgid ""
+"[post-format-link] published on [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+"[post-format-link] geplaatst op [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\" | \"]"
+
+#: content-quote.php:25
+msgid ""
+"[post-format-link] published on [entry-published] [entry-edit-link before="
+"\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] "
+"[entry-terms before=\"Tagged \"]"
+msgstr ""
+"[post-format-link] geplaatst op [entry-published] [entry-edit-link before="
+"\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"Geplaatst in \"] "
+"[entry-terms before=\"Tagged \"]"
+
+#: content-status.php:27
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-edit-link before=\"| "
+"\"]<br />[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-"
+"terms before=\"Tagged \"]"
+msgstr ""
+"[post-format-link] bijgewrkt op [entry-published] [entry-edit-link before="
+"\"| \"]<br />[entry-terms taxonomy=\"category\" before=\"geplaatst in \"] "
+"[entry-terms before=\"Tagged \"]"
+
+#: content-status.php:29
+msgid ""
+"[post-format-link] updated on [entry-published] [entry-permalink before=\"| "
+"\"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+msgstr ""
+"[post-format-link] bijgewerkt op [entry-published] [entry-permalink before="
+"\"| \"] [entry-comments-link before=\"| \"] [entry-edit-link before=\"| \"]"
+
+#: content.php:22 content.php:40
+#: page-templates/most-popular-by-comments.php:53
+#: page-templates/most-popular-by-month.php:56
+#: page-templates/most-popular-by-year.php:55
+#: page-templates/most-popular-last-30-days.php:57
+#: page-templates/most-popular.php:54 page-templates/path-slider.php:60
+#: page-templates/path-slider.php:110 sticky-slider.php:45
+msgid ""
+"Published by [entry-author] on [entry-published] [entry-comments-link before="
+"\" | \"] [entry-edit-link before=\" | \"]"
+msgstr ""
+"Geplaatst door [entry-author] op [entry-published] [entry-comments-link "
+"before=\" | \"] [entry-edit-link before=\" | \"]"
+
+#: content.php:49
+msgid ""
+"[entry-terms taxonomy=\"category\" before=\"Posted in \"] [entry-terms "
+"before=\"| Tagged \"]"
+msgstr ""
+"[entry-terms taxonomy=\"category\" before=\"Geplaatst in \"] [entry-terms "
+"before=\"| Tagged \"]"
+
+#: functions.php:323
+msgctxt "Filter footer info"
+msgid "Copyright &#169; [the-year] [site-link]."
+msgstr "Copyright &#169; [the-year] [site-link]."
+
+#: functions.php:323
+msgctxt "Filter footer info"
+msgid "Powered by [wp-link] and [theme-link]."
+msgstr "Draait op [wp-link] and [theme-link]."
+
+#: functions.php:323
+msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
+msgstr " <a class=\"top\" href=\"#container\">Terug naar boven</a>"
+
+#: functions.php:334
+msgid "Please comment with your real name using good manners."
+msgstr "Reageer alsjeblieft met je echte naam en goede manieren."
+
+#: functions.php:345
+msgid "Read more &rarr;"
+msgstr "Lees verder &rarr;"
+
+#: functions.php:381
+msgid "Twitter Username"
+msgstr "Twitter gebruikersnaam"
+
+#: functions.php:400
+msgid "Author of the article"
+msgstr "Auteur van het artikel"
+
+#: functions.php:400
+msgid "Authors of the article"
+msgstr "Auteurs van het artikel"
+
+#: functions.php:417 functions.php:438 functions.php:458
+msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
+msgstr "Volg %1$s %2$s &#64;%3$s op Twitter."
+
+#: functions.php:448
+msgid "Article written by [entry-author]"
+msgstr "Artikel geschreven door [entry-author]"
+
+#: functions.php:478 functions.php:497
+msgid "and"
+msgstr "en"
+
+#: functions.php:479
+msgid ""
+" [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
+"before=\" | \"]"
+msgstr ""
+" [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
+"before=\" | \"]"
+
+#: functions.php:498
+msgid " [entry-published]"
+msgstr " [entry-published]"
+
+#: header.php:87
+msgid "You are here:"
+msgstr "Je bent hier:"
+
+#: header.php:87
+msgid "&#8764;"
+msgstr "&#8764;"
+
+#: includes/widget-most-viewed.php:32
+msgid "Display top viewed posts."
+msgstr "Laat meest bekeken artikelen zien."
+
+#: includes/widget-most-viewed.php:43 includes/widget-most-viewed.php:178
+msgid "Most Viewed"
+msgstr "Meest bekeken"
+
+#: includes/widget-most-viewed.php:110
+msgid "[entry-author] [entry-published]"
+msgstr "[entry-author] [entry-published]"
+
+#: includes/widget-most-viewed.php:197
+msgctxt "For most viewed widget"
+msgid "Title:"
+msgstr "Titel:"
+
+#: includes/widget-most-viewed.php:202
+msgid "Post Type:"
+msgstr "Post Type:"
+
+#: includes/widget-most-viewed.php:213
+msgid "Limit:"
+msgstr "Limiet:"
+
+#: includes/widget-most-viewed.php:218
+msgid "Year:"
+msgstr "Jaar:"
+
+#: includes/widget-most-viewed.php:223
+msgid "Month:"
+msgstr "Maand:"
+
+#: includes/widget-most-viewed.php:232
+msgid "Day:"
+msgstr "Dag:"
+
+#: includes/widget-most-viewed.php:242
+msgid "Display Thumbnail?"
+msgstr "Thumbnail laten zien?"
+
+#: includes/widget-most-viewed.php:247
+msgid "Display Byline?"
+msgstr "Ondertitel laten zien?"
+
+#: includes/widget-most-viewed.php:252
+msgid "Display Excerpt?"
+msgstr "Verkorte tekst laten zien?"
+
+#: library/admin/meta-box-post-seo.php:39
+msgid "SEO"
+msgstr "SEO"
+
+#: library/admin/meta-box-post-seo.php:72
+msgid "Document Title:"
+msgstr "Document titel:"
+
+#: library/admin/meta-box-post-seo.php:78
+msgid "Meta Description:"
+msgstr "Meta beschrijving:"
+
+#: library/admin/meta-box-post-seo.php:84
+msgid "Meta Keywords:"
+msgstr "Meta Keywords:"
+
+#: library/admin/meta-box-post-template.php:45
+msgid "Template"
+msgstr "Template"
+
+#: library/admin/meta-box-theme-about.php:31
+#: library/admin/meta-box-theme-about.php:36
+msgid "About %s"
+msgstr "Over %s"
+
+#: library/admin/meta-box-theme-about.php:61
+msgid "Theme:"
+msgstr "Thema:"
+
+#: library/admin/meta-box-theme-about.php:69
+msgid "Version:"
+msgstr "Versie:"
+
+#: library/admin/meta-box-theme-about.php:77
+msgid "Author:"
+msgstr "Auteur:"
+
+#: library/admin/meta-box-theme-about.php:85
+msgid "Description:"
+msgstr "Beschrijving:"
+
+#: library/admin/meta-box-theme-footer.php:29
+msgid "Footer settings"
+msgstr "Footer instellingen"
+
+#: library/admin/meta-box-theme-footer.php:52
+msgid ""
+"You can add custom <acronym title=\"Hypertext Markup Language\">HTML</"
+"acronym> and/or shortcodes, which will be automatically inserted into your "
+"theme."
+msgstr ""
+"Je kan aangepaste/custom <acronym title=\"Hypertext Markup Language\">HTML</"
+"acronym> en/of shortcodes toevoegen, die automatisch in je theme worden "
+"geïntegreerd."
+
+#: library/admin/theme-settings.php:47 library/admin/theme-settings.php:171
+msgid "%s Theme Settings"
+msgstr "%s theme instellingen"
+
+#: library/admin/theme-settings.php:48
+msgid "Theme Settings"
+msgstr "Thema instellingen"
+
+#: library/admin/theme-settings.php:172
+msgid "Customize"
+msgstr "Pas aan"
+
+#: library/admin/theme-settings.php:205
+msgid "Update Settings"
+msgstr "Bijwerk instellingen"
+
+#: library/admin/theme-settings.php:262
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: library/admin/theme-settings.php:266
+msgid "Support"
+msgstr "Help"
+
+#: library/classes/widget-archives.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"archives."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je "
+"archieven."
+
+#: library/classes/widget-archives.php:44
+#: library/classes/widget-archives.php:142
+#: library/extensions/breadcrumb-trail.php:180
+#: library/functions/context.php:576
+msgid "Archives"
+msgstr "Archieven"
+
+#: library/classes/widget-archives.php:79
+msgid "Select Year"
+msgstr "Selecteer jaar"
+
+#: library/classes/widget-archives.php:82
+msgid "Select Month"
+msgstr "Selecteer maand"
+
+#: library/classes/widget-archives.php:85
+msgid "Select Week"
+msgstr "Selecteer week"
+
+#: library/classes/widget-archives.php:88
+msgid "Select Day"
+msgstr "Selecteer week"
+
+#: library/classes/widget-archives.php:91
+msgid "Select Post"
+msgstr "Selecteer artikel"
+
+#: library/classes/widget-archives.php:157
+msgid "Alphabetical"
+msgstr "Alfabetisch"
+
+#: library/classes/widget-archives.php:158
+msgid "Daily"
+msgstr "Dagelijks"
+
+#: library/classes/widget-archives.php:159
+msgid "Monthly"
+msgstr "Maandelijks"
+
+#: library/classes/widget-archives.php:160
+msgid "Post By Post"
+msgstr "Artikel bij artikel"
+
+#: library/classes/widget-archives.php:161
+msgid "Weekly"
+msgstr "Wekelijks"
+
+#: library/classes/widget-archives.php:162
+msgid "Yearly"
+msgstr "Jaarlijks"
+
+#: library/classes/widget-archives.php:167
+#: library/classes/widget-authors.php:141
+#: library/classes/widget-bookmarks.php:182
+#: library/classes/widget-bookmarks.php:194
+#: library/classes/widget-categories.php:171
+#: library/classes/widget-pages.php:152 library/classes/widget-tags.php:186
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: library/classes/widget-archives.php:168
+#: library/classes/widget-authors.php:142
+#: library/classes/widget-bookmarks.php:183
+#: library/classes/widget-bookmarks.php:195
+#: library/classes/widget-categories.php:172
+#: library/classes/widget-pages.php:153 library/classes/widget-tags.php:187
+msgid "Descending"
+msgstr "Aflopend"
+
+#: library/classes/widget-archives.php:173
+msgid "Custom"
+msgstr "Aangepast"
+
+#: library/classes/widget-archives.php:174
+msgid "HTML"
+msgstr "HTML"
+
+#: library/classes/widget-archives.php:175
+msgid "Option"
+msgstr "Keuze"
+
+#: library/classes/widget-archives.php:181
+#: library/classes/widget-authors.php:160
+#: library/classes/widget-bookmarks.php:217
+#: library/classes/widget-calendar.php:108
+#: library/classes/widget-categories.php:195
+#: library/classes/widget-nav-menu.php:131
+#: library/classes/widget-pages.php:178 library/classes/widget-search.php:144
+#: library/classes/widget-tags.php:207
+msgid "Title:"
+msgstr "Titel:"
+
+#: library/classes/widget-archives.php:225
+#: library/classes/widget-authors.php:208
+msgid "Show post count?"
+msgstr "Laat Artikel Teller zien"
+
+#: library/classes/widget-authors.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"author lists."
+msgstr ""
+"Een advanced widget die je totale controle geeft over de output van je "
+"auteurlijst"
+
+#: library/classes/widget-authors.php:44
+#: library/classes/widget-authors.php:123
+msgid "Authors"
+msgstr "Auteurs"
+
+#: library/classes/widget-authors.php:146
+msgid "Display Name"
+msgstr "Laat Naam zien"
+
+#: library/classes/widget-authors.php:147 library/functions/comments.php:188
+msgid "Email"
+msgstr "Email"
+
+#: library/classes/widget-authors.php:148
+#: library/classes/widget-bookmarks.php:188
+#: library/classes/widget-bookmarks.php:199
+#: library/classes/widget-categories.php:177
+#: library/classes/widget-pages.php:159
+msgid "ID"
+msgstr "ID"
+
+#: library/classes/widget-authors.php:149
+msgid "Nice Name"
+msgstr "Mooie naam"
+
+#: library/classes/widget-authors.php:150
+msgid "Post Count"
+msgstr "Artikel telling"
+
+#: library/classes/widget-authors.php:151
+msgid "Registered"
+msgstr "Geregistreerd"
+
+#: library/classes/widget-authors.php:152
+#: library/classes/widget-bookmarks.php:211
+msgid "URL"
+msgstr "URL"
+
+#: library/classes/widget-authors.php:153
+msgid "Login"
+msgstr "Login"
+
+#: library/classes/widget-authors.php:186
+#: library/classes/widget-categories.php:166
+#: library/classes/widget-tags.php:182
+msgid "List"
+msgstr "Lijst"
+
+#: library/classes/widget-authors.php:186
+#: library/classes/widget-categories.php:167
+msgid "None"
+msgstr "Geen"
+
+#: library/classes/widget-authors.php:204
+msgid "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+msgstr "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+
+#: library/classes/widget-authors.php:212
+msgid "Exclude admin?"
+msgstr "Admin uitsluiten?"
+
+#: library/classes/widget-authors.php:216
+msgid "Show full name?"
+msgstr "Laat volle naam zien?"
+
+#: library/classes/widget-authors.php:220
+#: library/classes/widget-categories.php:298
+#: library/classes/widget-tags.php:318
+msgid "Hide empty?"
+msgstr "Leeg verbergen?"
+
+#: library/classes/widget-bookmarks.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"bookmarks (links)."
+msgstr ""
+"Een advanced widget die je totale controle geeft over de output van je "
+"bladwijzers (links)."
+
+#: library/classes/widget-bookmarks.php:44
+#: library/classes/widget-bookmarks.php:86
+#: library/classes/widget-bookmarks.php:150
+msgid "Bookmarks"
+msgstr "Bladwijzers"
+
+#: library/classes/widget-bookmarks.php:187
+#: library/classes/widget-categories.php:176
+#: library/classes/widget-tags.php:192
+msgid "Count"
+msgstr "Telling"
+
+#: library/classes/widget-bookmarks.php:189
+#: library/classes/widget-bookmarks.php:202
+#: library/classes/widget-categories.php:178
+#: library/classes/widget-tags.php:193 library/functions/comments.php:187
+msgid "Name"
+msgstr "Naam"
+
+#: library/classes/widget-bookmarks.php:190
+#: library/classes/widget-categories.php:179
+#: library/classes/widget-pages.php:162
+msgid "Slug"
+msgstr "Slug"
+
+#: library/classes/widget-bookmarks.php:200
+msgid "Description"
+msgstr "Omschrijving"
+
+#: library/classes/widget-bookmarks.php:201
+msgid "Length"
+msgstr "Lengte"
+
+#: library/classes/widget-bookmarks.php:203
+msgid "Notes"
+msgstr "Opmerkingen"
+
+#: library/classes/widget-bookmarks.php:204
+msgid "Owner"
+msgstr "Eigenaar"
+
+#: library/classes/widget-bookmarks.php:205
+#: library/classes/widget-tags.php:188
+msgid "Random"
+msgstr "Willekeurig"
+
+#: library/classes/widget-bookmarks.php:206
+msgid "Rating"
+msgstr "Beoordeling"
+
+#: library/classes/widget-bookmarks.php:207
+msgid "Rel"
+msgstr "Rel"
+
+#: library/classes/widget-bookmarks.php:208
+#: library/classes/widget-categories.php:187
+msgid "RSS"
+msgstr "RSS"
+
+#: library/classes/widget-bookmarks.php:209
+msgid "Target"
+msgstr "Doel"
+
+#: library/classes/widget-bookmarks.php:210
+msgid "Updated"
+msgstr "Bijgewerkt"
+
+#: library/classes/widget-bookmarks.php:319
+msgid "Categorize?"
+msgstr "Categoriseren?"
+
+#: library/classes/widget-bookmarks.php:323
+msgid "Show description?"
+msgstr "Omschrijving laten zien?"
+
+#: library/classes/widget-bookmarks.php:327
+msgid "Hide invisible?"
+msgstr "Onzichtbaar verbergen?"
+
+#: library/classes/widget-bookmarks.php:331
+msgid "Show rating?"
+msgstr "Beoordeling laten zien?"
+
+#: library/classes/widget-bookmarks.php:335
+msgid "Show updated?"
+msgstr "Bijgwerkt laten zien?"
+
+#: library/classes/widget-bookmarks.php:339
+msgid "Show images?"
+msgstr "Afbeeldingen laten zien?"
+
+#: library/classes/widget-bookmarks.php:343
+msgid "Show name?"
+msgstr "Naam laten zien?"
+
+#: library/classes/widget-bookmarks.php:347
+msgid "Show private?"
+msgstr "Privaat laten zien?"
+
+#: library/classes/widget-calendar.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"calendar."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je "
+"kalender."
+
+#: library/classes/widget-calendar.php:44
+#: library/classes/widget-calendar.php:99
+msgid "Calendar"
+msgstr "Kalender"
+
+#: library/classes/widget-calendar.php:113
+msgid "One-letter abbreviation?"
+msgstr "Één-letter afkortingen?"
+
+#: library/classes/widget-categories.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"category links."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je "
+"category links."
+
+#: library/classes/widget-categories.php:44
+#: library/classes/widget-categories.php:136
+#, fuzzy
+msgid "Categories"
+msgstr "Categorieën"
+
+#: library/classes/widget-categories.php:180
+msgid "Term Group"
+msgstr "Term Groep"
+
+#: library/classes/widget-categories.php:185
+msgid "Atom"
+msgstr "Atom"
+
+#: library/classes/widget-categories.php:186
+msgid "RDF"
+msgstr "RDF"
+
+#: library/classes/widget-categories.php:188
+msgid "RSS 2.0"
+msgstr "RSS 2.0"
+
+#: library/classes/widget-categories.php:286
+#: library/classes/widget-pages.php:277
+msgid "Hierarchical?"
+msgstr "Hierarchisch"
+
+#: library/classes/widget-categories.php:290
+msgid "Use description?"
+msgstr "Omschrijving gebruiken?"
+
+#: library/classes/widget-categories.php:294
+msgid "Show count?"
+msgstr "Telling laten zien?"
+
+#: library/classes/widget-nav-menu.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"menus."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je "
+"menu's."
+
+#: library/classes/widget-nav-menu.php:44
+msgid "Navigation Menu"
+msgstr "Navigatie menu"
+
+#: library/classes/widget-nav-menu.php:108
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: library/classes/widget-pages.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your page "
+"links."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je "
+"pagina links."
+
+#: library/classes/widget-pages.php:44 library/classes/widget-pages.php:125
+msgid "Pages"
+msgstr "pagina's"
+
+#: library/classes/widget-pages.php:157
+msgid "Author"
+msgstr "Auteur"
+
+#: library/classes/widget-pages.php:158
+msgid "Date"
+msgstr "Datum"
+
+#: library/classes/widget-pages.php:160
+msgid "Menu Order"
+msgstr "Menu rankschikking"
+
+#: library/classes/widget-pages.php:161 library/classes/widget-pages.php:169
+msgid "Modified"
+msgstr "Aangepast"
+
+#: library/classes/widget-pages.php:163
+msgid "Title"
+msgstr "Titel"
+
+#: library/classes/widget-pages.php:168
+msgid "Created"
+msgstr "gecreëerd"
+
+#: library/classes/widget-search.php:33
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"search form."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je zoek "
+"formulier."
+
+#: library/classes/widget-search.php:45 library/classes/widget-search.php:132
+#: menu-primary.php:22 searchform.php:16 searchform.php:17
+msgid "Search"
+msgstr "Zoek"
+
+#: library/classes/widget-search.php:148
+msgid "Search Label:"
+msgstr "Zoek label:"
+
+#: library/classes/widget-search.php:152
+msgid "Search Text:"
+msgstr "Zoek tekst:"
+
+#: library/classes/widget-search.php:159
+msgid "Search Submit:"
+msgstr "Zoek voorstel:"
+
+#: library/classes/widget-search.php:164
+msgid "Use theme's <code>searchform.php</code>?"
+msgstr "Gebruik dit thema's <code>searchform.php</code>?"
+
+#: library/classes/widget-tags.php:32
+msgid ""
+"An advanced widget that gives you total control over the output of your tags."
+msgstr ""
+"Een advanced widget dat je totale controle geeft over de output van je tags"
+
+#: library/classes/widget-tags.php:44 library/classes/widget-tags.php:146
+msgid "Tags"
+msgstr "Tags"
+
+#: library/classes/widget-tags.php:176
+msgid "View"
+msgstr "Bekijk"
+
+#: library/classes/widget-tags.php:177
+#: library/extensions/breadcrumb-trail.php:1122
+#: library/extensions/breadcrumb-trail.php:1158
+#: library/extensions/breadcrumb-trail.php:1175
+#: library/extensions/breadcrumb-trail.php:1206
+#: library/functions/shortcodes.php:205 library/functions/shortcodes.php:527
+msgid "Edit"
+msgstr "Bewerk"
+
+#: library/classes/widget-tags.php:181
+msgid "Flat"
+msgstr "Plat"
+
+#: library/classes/widget-tags.php:314
+msgid "Pad counts?"
+msgstr "Aantal pads"
+
+#: library/extensions/breadcrumb-trail.php:175
+msgid "Browse:"
+msgstr "Browse:"
+
+#: library/extensions/breadcrumb-trail.php:176
+msgid "Home"
+msgstr "Thuis"
+
+#: library/extensions/breadcrumb-trail.php:177
+#: library/functions/context.php:582
+msgid "Search results for \"%s\""
+msgstr "Zoekresultaten voor \"%s\""
+
+#: library/extensions/breadcrumb-trail.php:178
+#: library/functions/context.php:586
+msgid "404 Not Found"
+msgstr "404 Niet gevonden"
+
+#: library/extensions/breadcrumb-trail.php:179
+msgid "Page %d"
+msgstr "Pagina %d"
+
+#: library/extensions/breadcrumb-trail.php:181
+#: library/functions/context.php:553
+msgid "g:i a"
+msgstr "g:i a"
+
+#: library/extensions/breadcrumb-trail.php:182
+msgid "Minute %d"
+msgstr "Minuut %d"
+
+#: library/extensions/breadcrumb-trail.php:183
+#: library/functions/context.php:559
+msgid "g a"
+msgstr "g a"
+
+#: library/extensions/breadcrumb-trail.php:184
+msgid "d"
+msgstr "d"
+
+#: library/extensions/breadcrumb-trail.php:185
+msgid "Week %d"
+msgstr "Week %d"
+
+#: library/extensions/breadcrumb-trail.php:186
+msgid "F"
+msgstr "F"
+
+#: library/extensions/breadcrumb-trail.php:187
+#: library/extensions/breadcrumb-trail.php:1027
+#: library/functions/context.php:565 library/functions/context.php:571
+#: library/functions/core-seo.php:94 library/functions/shortcodes.php:70
+msgid "Y"
+msgstr "Y"
+
+#: library/extensions/breadcrumb-trail.php:1031
+#: library/functions/core-seo.php:90
+msgid "F Y"
+msgstr "F Y"
+
+#: library/extensions/breadcrumb-trail.php:1035
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: library/extensions/breadcrumb-trail.php:1150
+msgid "Split"
+msgstr "Verdeel"
+
+#: library/extensions/breadcrumb-trail.php:1154
+msgid "Merge"
+msgstr "Voeg samen"
+
+#: library/extensions/custom-field-series.php:86
+msgid "Articles in this series"
+msgstr "Artikelen in deze serie"
+
+#: library/extensions/custom-field-series.php:212
+msgid "Series"
+msgstr "Serie"
+
+#: library/extensions/featured-header.php:202
+msgid "Featured Header"
+msgstr "Te tonen header"
+
+#: library/extensions/post-stylesheets.php:286
+msgid "Stylesheet"
+msgstr "Stylesheet"
+
+#: library/extensions/theme-fonts.php:401
+msgid "Fonts"
+msgstr "Lettertypen"
+
+#: library/extensions/theme-layouts.php:337
+msgid "Default"
+msgstr "Standaard"
+
+#: library/extensions/theme-layouts.php:338
+msgid "One Column"
+msgstr "Één kolom"
+
+#: library/extensions/theme-layouts.php:339
+msgid "Two Columns, Left"
+msgstr "Twee kolommen, links"
+
+#: library/extensions/theme-layouts.php:340
+msgid "Two Columns, Right"
+msgstr "Twee kolommen, rechts"
+
+#: library/extensions/theme-layouts.php:341
+msgid "Three Columns, Left"
+msgstr "Drie kolommen, links"
+
+#: library/extensions/theme-layouts.php:342
+msgid "Three Columns, Right"
+msgstr "Drie kolommen, rechts"
+
+#: library/extensions/theme-layouts.php:343
+msgid "Three Columns, Center"
+msgstr "Drie kolommen, gecentreerd"
+
+#: library/extensions/theme-layouts.php:428
+#: library/extensions/theme-layouts.php:538
+#: library/extensions/theme-layouts.php:623
+msgid "Layout"
+msgstr "Lay-out"
+
+#: library/extensions/theme-layouts.php:454
+msgid "Layout is a theme-specific structure for the single view of the post."
+msgstr ""
+"Lay-out is een thema-specifieke structuur voor de enkele view van het "
+"artikel."
+
+#: library/extensions/theme-layouts.php:656
+msgid "Global Layout"
+msgstr "Globale lay-out"
+
+#: library/functions/comments.php:182
+msgid "*"
+msgstr "*"
+
+#: library/functions/comments.php:189
+msgid "Website"
+msgstr "Website"
+
+#: library/functions/comments.php:195
+msgid "Comment"
+msgstr "Reactie"
+
+#: library/functions/comments.php:196
+msgid ""
+"You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a "
+"comment."
+msgstr ""
+"Je moet <a href=\"%1$s\" title=\"Log in\">ingelogd zijn</a> om een reactie "
+"te geven."
+
+#: library/functions/comments.php:197
+msgid "Logged in as <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+msgstr "Ingelogd als <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+
+#: library/functions/comments.php:197
+msgid "Log out of this account"
+msgstr "Log out uit dit account"
+
+#: library/functions/comments.php:197
+msgid "Log out &raquo;"
+msgstr "Log out &raquo;"
+
+#: library/functions/comments.php:202
+msgid "Leave a Reply"
+msgstr "Laat een reactie achter"
+
+#: library/functions/comments.php:203
+msgid "Leave a Reply to %s"
+msgstr "Laat een reactie achter aan %s"
+
+#: library/functions/comments.php:204
+msgid "Click here to cancel reply."
+msgstr "Klik hier om de reactie te annuleren."
+
+#: library/functions/comments.php:205
+msgid "Post Comment"
+msgstr "Plaats een reactie"
+
+#: library/functions/context.php:553 library/functions/context.php:559
+#: library/functions/context.php:562 library/functions/context.php:568
+#: library/functions/context.php:571
+msgid "Archive for %s"
+msgstr "Archief van %s"
+
+#: library/functions/context.php:556
+msgid "Archive for minute %s"
+msgstr "Maak archief voor minuut %s"
+
+#: library/functions/context.php:556
+msgid "i"
+msgstr "i"
+
+#: library/functions/context.php:562
+msgid "F jS, Y"
+msgstr "F jS, Y"
+
+#: library/functions/context.php:565
+msgid "Archive for week %s of %s"
+msgstr "Maak archief voor week %s of %s"
+
+#: library/functions/context.php:565
+msgid "W"
+msgstr "W"
+
+#: library/functions/context.php:590
+msgid "%1$s Page %2$s"
+msgstr "%1$s Pagina %2$s"
+
+#: library/functions/core-seo.php:97
+msgid "Copyright (c) %1$s"
+msgstr "Copyright © %1$s"
+
+#: library/functions/core-seo.php:116 library/functions/shortcodes.php:237
+#: library/functions/shortcodes.php:451 library/functions/shortcodes.php:455
+msgid "l, F jS, Y, g:i a"
+msgstr "l, F jS, Y, g:i a"
+
+#: library/functions/customize.php:63 library/functions/customize.php:88
+msgid "Footer"
+msgstr "Footer"
+
+#: library/functions/deprecated.php:684
+msgid ""
+"<code>%1$s</code> &mdash; This function has been removed or replaced by "
+"another function."
+msgstr ""
+"<code>%1$s</code> &mdash; Deze functie is verwijderd of vervangen door een "
+"andere functie."
+
+#: library/functions/menus.php:38
+msgctxt "nav menu location"
+msgid "Primary"
+msgstr "Primair"
+
+#: library/functions/menus.php:42
+msgctxt "nav menu location"
+msgid "Secondary"
+msgstr "Secondair"
+
+#: library/functions/menus.php:46
+msgctxt "nav menu location"
+msgid "Subsidiary"
+msgstr "Subsidiary"
+
+#: library/functions/post-formats.php:111
+msgid "Asides"
+msgstr "Asides"
+
+#: library/functions/post-formats.php:112
+msgid "Audio"
+msgstr "Audio"
+
+#: library/functions/post-formats.php:113
+msgid "Chats"
+msgstr "Chats"
+
+#: library/functions/post-formats.php:114
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: library/functions/post-formats.php:115
+msgid "Galleries"
+msgstr "Fotogalerijen"
+
+#: library/functions/post-formats.php:116
+msgid "Links"
+msgstr "Links"
+
+#: library/functions/post-formats.php:117
+msgid "Quotes"
+msgstr "Quotes"
+
+#: library/functions/post-formats.php:118
+msgid "Status Updates"
+msgstr "Bijgewerkte status"
+
+#: library/functions/post-formats.php:119
+msgid "Videos"
+msgstr "Videos"
+
+#: library/functions/settings.php:83 library/functions/settings.php:87
+msgid "Copyright &#169; [the-year] [site-link]."
+msgstr "Copyright &#169; [the-year] [site-link]."
+
+#: library/functions/settings.php:83
+msgid "Powered by [wp-link], [theme-link], and [child-link]."
+msgstr "Aangedreven door [wp-link], [theme-link], en [child-link]."
+
+#: library/functions/settings.php:87
+msgid "Powered by [wp-link] and [theme-link]."
+msgstr "Aangedreven door [wp-link] en [theme-link]."
+
+#: library/functions/shortcodes.php:93
+msgid "State-of-the-art semantic personal publishing platform"
+msgstr "State-of-the-art semantisch persoonlijk publicatie platform "
+
+#: library/functions/shortcodes.php:93
+msgid "WordPress"
+msgstr "WordPress"
+
+#: library/functions/shortcodes.php:106
+msgid "%s WordPress Theme"
+msgstr "%s WordPress Theme"
+
+#: library/functions/shortcodes.php:134
+msgid "Log out"
+msgstr "Log out"
+
+#: library/functions/shortcodes.php:136
+msgid "Log in"
+msgstr "Log in"
+
+#: library/functions/shortcodes.php:151
+msgid "This page loaded in %1$s seconds with %2$s database queries."
+msgstr "Dezze pagina laadde in %1$s seconden met %2$s database zoekopdrachten."
+
+#: library/functions/shortcodes.php:205 library/functions/shortcodes.php:527
+msgid "Edit %1$s"
+msgstr "Bewerk %1$s"
+
+#: library/functions/shortcodes.php:257
+msgid "Leave a response"
+msgstr "Laat een reactie achter"
+
+#: library/functions/shortcodes.php:258
+msgid "%1$s Response"
+msgstr "%1$s reactie"
+
+#: library/functions/shortcodes.php:259
+msgid "%1$s Responses"
+msgstr "%1$s reacties"
+
+#: library/functions/shortcodes.php:274 library/functions/shortcodes.php:276
+#: library/functions/shortcodes.php:278
+msgid "Comment on %1$s"
+msgstr "reageer op %1$s"
+
+#: library/functions/shortcodes.php:385
+msgid "Shortlink"
+msgstr "Shortlink"
+
+#: library/functions/shortcodes.php:410 library/functions/shortcodes.php:506
+msgid "Permalink"
+msgstr "Permalink"
+
+#: library/functions/shortcodes.php:455
+msgid "%1$s at %2$s"
+msgstr "%1$s at %2$s"
+
+#: library/functions/shortcodes.php:506
+msgid "Permalink to comment %1$s"
+msgstr "Permalink om te reagereren %1$s"
+
+#: library/functions/shortcodes.php:546
+msgid "Reply"
+msgstr "Beantwoord"
+
+#: library/functions/shortcodes.php:547
+msgid "Log in to reply."
+msgstr "Log in om te antwoorden"
+
+#: library/functions/sidebars.php:87
+msgctxt "sidebar"
+msgid "Primary"
+msgstr "primair"
+
+#: library/functions/sidebars.php:88
+msgid "The main (primary) widget area, most often used as a sidebar."
+msgstr "Het belangrijkste (primaire) widget gebied, vaak gebruikt als sidebar."
+
+#: library/functions/sidebars.php:91
+msgctxt "sidebar"
+msgid "Secondary"
+msgstr "Secundair"
+
+#: library/functions/sidebars.php:92
+msgid ""
+"The second most important widget area, most often used as a secondary "
+"sidebar."
+msgstr ""
+"Het tweede meest belangrijke widget gebied, vaak gebruikt als secondaire "
+"sidebar."
+
+#: library/functions/sidebars.php:95
+msgctxt "sidebar"
+msgid "Subsidiary"
+msgstr "Subsidiary"
+
+#: library/functions/sidebars.php:96
+msgid "A widget area loaded in the footer of the site."
+msgstr "Een widget gebied geladen in de footer van de site."
+
+#: library/functions/sidebars.php:99
+msgctxt "sidebar"
+msgid "Header"
+msgstr "Header"
+
+#: library/functions/sidebars.php:100
+msgid "Displayed within the site's header area."
+msgstr "Getoond in de site's header gebied."
+
+#: library/functions/sidebars.php:103
+msgctxt "sidebar"
+msgid "Before Content"
+msgstr "Voor Content"
+
+#: library/functions/sidebars.php:104
+msgid "Loaded before the page's main content area."
+msgstr "Geladen voor het belangrijkste content gebied van de pagina."
+
+#: library/functions/sidebars.php:107
+msgctxt "sidebar"
+msgid "After Content"
+msgstr "Na content"
+
+#: library/functions/sidebars.php:108
+msgid "Loaded after the page's main content area."
+msgstr "Geladen na het belangrijkste content gebied van de pagina"
+
+#: library/functions/sidebars.php:111
+msgctxt "sidebar"
+msgid "After Singular"
+msgstr "Na Singular"
+
+#: library/functions/sidebars.php:112
+msgid ""
+"Loaded on singular post (page, attachment, etc.) views before the comments "
+"area."
+msgstr ""
+"Geladen in singular post (page, attachment, etc.) views voor het comments "
+"gebied"
+
+#: library/functions/utility.php:197
+msgid "(Untitled)"
+msgstr "(Ongetiteld)"
+
+#: loop-error.php:16
+msgid "Apologies, but no entries were found."
+msgstr "Excuses, maar er is geen input gevonden"
+
+#: loop-meta.php:86
+msgid "You are browsing the search results for \"%s\""
+msgstr "Je bent de zoekresultaten aan het browsen voor \"%s\""
+
+#: loop-meta.php:95
+msgid "Archives by date"
+msgstr "Archieven op datum"
+
+#: loop-meta.php:99
+msgid "You are browsing the site archives by date."
+msgstr "Je bent de archieven van de site aan het browsen op datum."
+
+#: loop-meta.php:123
+msgctxt "For loop meta"
+msgid "Archives"
+msgstr "Archieven"
+
+#: loop-meta.php:127
+msgid "You are browsing the site archives."
+msgstr "Je bent aan browsen in de archieven van de site."
+
+#: loop-meta.php:137
+msgid "Most popular"
+msgstr "Meest populair"
+
+#: loop-meta.php:141
+msgid "You are browsing all time most viewed articles."
+msgstr "Je bent aan het browsen in alle meest bekeken artikelen."
+
+#: loop-meta.php:151
+msgid "Most popular by year"
+msgstr "Meest populair per jaar"
+
+#: loop-meta.php:155
+msgid "You are browsing most viewed articles in the current year %d."
+msgstr "Je bent aan het browsen in de meest bekeken artikelen van dit jaar %d."
+
+#: loop-meta.php:165
+msgid "Most popular by month"
+msgstr "Meest populair per maand"
+
+#: loop-meta.php:169
+msgid ""
+"You are browsing most viewed articles in current month (%1$s) and year "
+"(%2$s)."
+msgstr ""
+"Je bent aan het browsen in de meest bekeken artikelen van deze maand (%1$s) "
+"en jaar (%2$s)."
+
+#: loop-meta.php:179
+msgid "Most popular by comments"
+msgstr "Meest populair per aantal reacties"
+
+#: loop-meta.php:183
+msgid "You are browsing most viewed articles by comments."
+msgstr ""
+"Je bent aan het browsen in de meest bekeken artikelen per aantal reacties."
+
+#: loop-meta.php:193
+msgid "Most popular articles in the last 30 days"
+msgstr "Meest populaire reacties van de afgelopen 30 dagen"
+
+#: loop-meta.php:197
+msgid "You are browsing most viewed articles in the last 30 days."
+msgstr ""
+"Je bent aan het browsen in de meest bekeken artikelen van de laatste 30 "
+"dagen."
+
+#: loop-nav.php:17
+msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ga terug naar invoer"
+
+#: loop-nav.php:23 loop-nav.php:27 loop-nav.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Vorige"
+
+#: loop-nav.php:24 loop-nav.php:27 loop-nav.php:29
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Volgende <span class=\"meta-nav\">&rarr;</span>"
+
+#: menu-primary-mobile.php:24 menu-primary.php:20
+msgid "Primary Menu"
+msgstr "Primair menu"
+
+#: menu-primary.php:20
+msgid "Primary Mobile Menu"
+msgstr "Primair mobiel menu"
+
+#: menu-secondary-mobile.php:22 menu-secondary.php:20
+msgid "Secondary Menu"
+msgstr "Secondair menu"
+
+#: menu-secondary.php:20
+msgid "Secondary Mobile Menu"
+msgstr "Secondair mobiel menu"
+
+#: page-templates/archives.php:44
+msgid "There are %1$s posts published."
+msgstr "Er zijn  %1$s artikelen geplaatst."
+
+#: page-templates/archives.php:50
+msgid "Archives by category"
+msgstr "Archieven bij categorie"
+
+#: page-templates/archives.php:54
+msgctxt "For page template archives.php"
+msgid "RSS"
+msgstr "RSS"
+
+#: page-templates/archives.php:58
+msgid "Archives by month"
+msgstr "Archieven bij maand"
+
+#: page-templates/most-popular-by-comments.php:62
+#: page-templates/most-popular-by-month.php:65
+#: page-templates/most-popular-by-year.php:64
+#: page-templates/most-popular-last-30-days.php:66
+#: page-templates/most-popular.php:63
+msgid ""
+"Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Posted in "
+"\"] [entry-terms before=\"Tagged \"]"
+msgstr ""
+"Views [entry-views] [entry-terms taxonomy=\"category\" before=\"Gepubliceerd "
+"in \"] [entry-terms before=\"Tagged \"]"
+
+#: page-templates/path-slider.php:85
+msgid "More Articles"
+msgstr "Meer artikelen"
+
+#. Theme Name of the plugin/theme
+msgid "Path"
+msgstr "Pad"
+
+#. Theme URI of the plugin/theme
+msgid "http://themehybrid.com/themes/path"
+msgstr "http://themehybrid.com/themes/path"
+
+#. Description of the plugin/theme
+msgid ""
+"Path is designed for multiauthor blogs and magazine style websites. But who "
+"am I to tell you what to do with the theme. Feel free to use it for whatever "
+"you like. It supports plenty of plugins like Gravity Forms, Co-Authors Plus, "
+"Smart Archives Reloaded and Social Path. It's responsive, it supports post "
+"formats, it's translation-ready and so much more. You can set global layout "
+"in theme settings: one column, two columns or three columns. You can have "
+"the content on the left, right or center. You can also set logo, background "
+"and footer text in theme settings. There are 5 widget areas, 3 menu "
+"locations and 9 page templates (most popular articles by comments or views "
+"in different time span, archives, authors, tag cloud and slider) in the "
+"theme. And guess what, sticky posts are in a cool FlexSlider. I hope you "
+"enjoy Path Theme as much I do. Cheers!"
+msgstr ""
+"Path is ontworpen voor multi-auteur blogs en websites met een tijdschrift "
+"stijl. Maar wie ben ik om je te vertellen wat je moet doen met het thema. "
+"Gebruik het voor waar je het ook voor wilt gebruiken. Het ondersteund veel "
+"plugins zoals 'Gravity Forms', 'Co-Authors Plus', 'Smart Archives Reloaded' "
+"en 'Social Path'. Het is 'responsive', het onderseund 'post-formats, het is "
+"vertaling-gereed en zoveel meer. Je kan 'global' lay-out instellen in de "
+"'theme' instellingen: één kolom, twee kolommen of drie kolommen. Je kan de "
+"inhoud aan de linkerkant plaatsen. Of aan de rechterkant of het midden. Je "
+"kan ook het logo, achtergrond en 'footer' tekst plaatsen in de 'theme' "
+"instellingen\". Er zijn 5 'widget' gebieden, 3 menu locaties and 9 pagina "
+"'templates' (meest populaire artikelen op reacties of 'views' in een "
+"verschillende tijds eenheid, archieven, auteurs, 'tag clous' en 'slider') in "
+"het thema. En raadt eens, 'sticky posts' zin in een mooie 'Flexslider'. Ik "
+"hoop dat je net zo van het 'Path theme' geniet als ik doe. Succes!"
+
+#. Author of the plugin/theme
+msgid "Sami Keijonen"
+msgstr "Sami Keijonen"
+
+#. Author URI of the plugin/theme
+msgid "http://foxnet.fi/en"
+msgstr "http://foxnet.fi/en"
+
+#. Template Name of the plugin/theme
+msgid "Archives Page"
+msgstr "Archief pagina"
+
+#. Template Name of the plugin/theme
+msgid "Authors Page"
+msgstr "Auteurs pagina"
+
+#. Template Name of the plugin/theme
+msgid "Most Popular by comments"
+msgstr "Meest populair gebaseerd op reacties"
+
+#. Template Name of the plugin/theme
+msgid "Most Popular by month"
+msgstr "Meest populair per maand"
+
+#. Template Name of the plugin/theme
+msgid "Most Popular by year"
+msgstr "Meest populair per jaar"
+
+#. Template Name of the plugin/theme
+msgid "Most Popular last 30 days"
+msgstr "Meest populair de laatste 30 dagen"
+
+#. Template Name of the plugin/theme
+msgid "Most Popular"
+msgstr "Meest populair"
+
+#. Template Name of the plugin/theme
+msgid "Slider"
+msgstr "Slider"
+
+#. Template Name of the plugin/theme
+msgid "Tag Cloud"
+msgstr "Tag Cloud"
