@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Trunk package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hybrid Core in Finnish\n"
+"Project-Id-Version: Path Theme in Finnish\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/path\n"
-"POT-Creation-Date: 2013-08-19 19:01:54+00:00\n"
-"PO-Revision-Date: 2013-08-19 22:07+0200\n"
+"POT-Creation-Date: 2013-10-30 17:55:56+00:00\n"
+"PO-Revision-Date: 2013-10-30 19:57+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "Language: fi_FI\n"
@@ -40,7 +40,7 @@ msgstr "Lue lisää <span class=\"meta-nav\">&rarr;</span>"
 
 #: attachment-image.php:42 content-aside.php:27 content-aside.php:38
 #: content-audio.php:27 content-audio.php:38 content-chat.php:27
-#: content-chat.php:44 content-gallery.php:27 content-gallery.php:44
+#: content-chat.php:42 content-gallery.php:27 content-gallery.php:44
 #: content-image.php:27 content-image.php:38 content-link.php:27
 #: content-link.php:48 content-page.php:26 content-page.php:43
 #: content-quote.php:20 content-status.php:22 content-video.php:27
@@ -113,7 +113,7 @@ msgstr ""
 "[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] "
 "[entry-terms before=\"Avainsanat \"]"
 
-#: content-aside.php:42 content-audio.php:42 content-chat.php:48
+#: content-aside.php:42 content-audio.php:42 content-chat.php:46
 #: content-gallery.php:48 content-image.php:42 content-link.php:54
 #: content-quote.php:27 content-video.php:42
 msgid ""
@@ -166,7 +166,7 @@ msgstr ""
 #: page-templates/most-popular-by-year.php:55
 #: page-templates/most-popular-last-30-days.php:57
 #: page-templates/most-popular.php:54 page-templates/path-slider.php:60
-#: page-templates/path-slider.php:110 sticky-slider.php:45
+#: page-templates/path-slider.php:110 sticky-slider.php:49
 msgid ""
 "Published by [entry-author] on [entry-published] [entry-comments-link before="
 "\" | \"] [entry-edit-link before=\" | \"]"
@@ -182,53 +182,53 @@ msgstr ""
 "[entry-terms taxonomy=\"category\" before=\"Artikkeli kategoriassa \"] "
 "[entry-terms before=\"| Avainsanat \"]"
 
-#: functions.php:323
+#: functions.php:324
 msgctxt "Filter footer info"
 msgid "Copyright &#169; [the-year] [site-link]."
 msgstr "Copyright &#169; [the-year] [site-link]."
 
-#: functions.php:323
+#: functions.php:324
 msgctxt "Filter footer info"
 msgid "Powered by [wp-link] and [theme-link]."
 msgstr "Alustana [wp-link] ja [theme-link]."
 
-#: functions.php:323
+#: functions.php:324
 msgid " <a class=\"top\" href=\"#container\">Back to Top</a>"
 msgstr " <a class=\"top\" href=\"#container\">Takaisin ylös</a>"
 
-#: functions.php:334
+#: functions.php:335
 msgid "Please comment with your real name using good manners."
 msgstr "Ole hyvä ja kommentoi omalla nimellä hyvien tapojen mukaisesti."
 
-#: functions.php:345
+#: functions.php:346
 msgid "Read more &rarr;"
 msgstr "Lue lisää &rarr;"
 
-#: functions.php:381
+#: functions.php:382
 msgid "Twitter Username"
 msgstr "Twitter käyttäjänimi"
 
-#: functions.php:400
+#: functions.php:401
 msgid "Author of the article"
 msgstr "Artikkelin kirjoittaja"
 
-#: functions.php:400
+#: functions.php:401
 msgid "Authors of the article"
 msgstr "Artikkelin kirjoittajat"
 
-#: functions.php:417 functions.php:438 functions.php:458
+#: functions.php:418 functions.php:439 functions.php:459
 msgid "Follow %1$s %2$s &#64;%3$s on Twitter."
 msgstr "Seuraa %1$s %2$s &#64;%3$s Twitterissä."
 
-#: functions.php:448
+#: functions.php:449
 msgid "Article written by [entry-author]"
 msgstr "Artikkelin kirjoittaja [entry-author]"
 
-#: functions.php:478 functions.php:497
+#: functions.php:479 functions.php:498
 msgid "and"
 msgstr "ja"
 
-#: functions.php:479
+#: functions.php:480
 msgid ""
 " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
 "before=\" | \"]"
@@ -236,7 +236,7 @@ msgstr ""
 " [entry-published] [entry-comments-link before=\" | \"] [entry-edit-link "
 "before=\" | \"]"
 
-#: functions.php:498
+#: functions.php:499
 msgid " [entry-published]"
 msgstr " [entry-published]"
 
@@ -1267,62 +1267,72 @@ msgstr "Pahoittelut mutta yhtään artikkelia tai sivua ei löytynyt."
 msgid "You are browsing the search results for \"%s\""
 msgstr "Hakutulokset haulla  \"%s\""
 
-#: loop-meta.php:95
+#: loop-meta.php:96
+msgctxt "daily archives date format"
+msgid "F d, Y"
+msgstr "m.d.Y"
+
+#: loop-meta.php:100
+msgctxt "year archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: loop-meta.php:104
 msgid "Archives by date"
 msgstr "Arkisto ajan mukaan"
 
-#: loop-meta.php:99
-msgid "You are browsing the site archives by date."
-msgstr "Selaat päiväkohtaista arkistoa."
+#: loop-meta.php:108
+msgid "You are browsing the site archives for %s."
+msgstr "Selaat arkistoa ajankohdalle %s."
 
-#: loop-meta.php:123
+#: loop-meta.php:132
 msgctxt "For loop meta"
 msgid "Archives"
 msgstr "Arkistot"
 
-#: loop-meta.php:127
+#: loop-meta.php:136
 msgid "You are browsing the site archives."
 msgstr "Selaat arkistoa."
 
-#: loop-meta.php:137
+#: loop-meta.php:146
 msgid "Most popular"
 msgstr "Luetuimmat"
 
-#: loop-meta.php:141
+#: loop-meta.php:150
 msgid "You are browsing all time most viewed articles."
 msgstr "Luetuimmat artikkelit."
 
-#: loop-meta.php:151
+#: loop-meta.php:160
 msgid "Most popular by year"
 msgstr "Luetuimmat artikkelit tänä vuonna"
 
-#: loop-meta.php:155
+#: loop-meta.php:164
 msgid "You are browsing most viewed articles in the current year %d."
 msgstr "Luetuimmat artikkelit vuonna %d."
 
-#: loop-meta.php:165
+#: loop-meta.php:174
 msgid "Most popular by month"
 msgstr "Kuukauden luetuimmat"
 
-#: loop-meta.php:169
+#: loop-meta.php:178
 msgid ""
 "You are browsing most viewed articles in current month (%1$s) and year "
 "(%2$s)."
 msgstr "Luetuimmat artikkelit tässä kuussa (%1$s) ja tänä vuonna (%2$s)."
 
-#: loop-meta.php:179
+#: loop-meta.php:188
 msgid "Most popular by comments"
 msgstr "Kommentoiduimmat"
 
-#: loop-meta.php:183
+#: loop-meta.php:192
 msgid "You are browsing most viewed articles by comments."
 msgstr "Kommentoiduimmat artikkelit."
 
-#: loop-meta.php:193
+#: loop-meta.php:202
 msgid "Most popular articles in the last 30 days"
 msgstr "Luetuimmat artikkelit viimeisen 30 päivän ajalta"
 
-#: loop-meta.php:197
+#: loop-meta.php:206
 msgid "You are browsing most viewed articles in the last 30 days."
 msgstr "Luetuimmat artikkelit viimeisen 30 päivän ajalta."
 
@@ -1456,6 +1466,9 @@ msgstr "Slider-sivu"
 #. Template Name of the plugin/theme
 msgid "Tag Cloud"
 msgstr "Avainsanat"
+
+#~ msgid "You are browsing the site archives by date."
+#~ msgstr "Selaat päiväkohtaista arkistoa."
 
 #~ msgid "No templates exist for this post type."
 #~ msgstr "Tälle artikkelityypille ei löytynyt sivupohjaa."

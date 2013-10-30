@@ -89,14 +89,23 @@
 
 		</div><!-- .loop-meta -->
 
-	<?php elseif ( is_date() ) : ?>
+	<?php elseif ( is_day() || is_month() || is_year() ) : ?>
+	
+		<?php
+		if ( is_day() )
+			$date = get_the_time( _x( 'F d, Y', 'daily archives date format', 'path' ) );
+		elseif ( is_month() )
+			$date = single_month_title( ' ', false );
+		elseif ( is_year() )
+			$date = get_the_time( _x( 'Y', 'year archives date format', 'path' ) );
+                ?>
 
 		<div class="loop-meta">
 			<h1 class="loop-title"><?php _e( 'Archives by date', 'path' ); ?></h1>
 
 			<div class="loop-description">
 				<p>
-				<?php _e( 'You are browsing the site archives by date.', 'path' ); ?>
+				<?php echo wpautop( sprintf( __( 'You are browsing the site archives for %s.', 'path' ), $date ) ); ?>
 				</p>
 			</div><!-- .loop-description -->
 
