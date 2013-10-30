@@ -98,15 +98,13 @@
 			$date = single_month_title( ' ', false );
 		elseif ( is_year() )
 			$date = get_the_time( _x( 'Y', 'year archives date format', 'path' ) );
-                ?>
+		?>
 
 		<div class="loop-meta">
 			<h1 class="loop-title"><?php _e( 'Archives by date', 'path' ); ?></h1>
 
 			<div class="loop-description">
-				<p>
 				<?php echo wpautop( sprintf( __( 'You are browsing the site archives for %s.', 'path' ), $date ) ); ?>
-				</p>
 			</div><!-- .loop-description -->
 
 		</div><!-- .loop-meta -->
