@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Path Theme in Finnish\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/path\n"
 "POT-Creation-Date: 2013-10-30 17:55:56+00:00\n"
-"PO-Revision-Date: 2013-10-30 19:57+0200\n"
+"PO-Revision-Date: 2013-10-30 20:03+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Foxnet <sami.keijonen@foxnet.fi>\n"
 "Language: fi_FI\n"
@@ -1270,7 +1270,7 @@ msgstr "Hakutulokset haulla  \"%s\""
 #: loop-meta.php:96
 msgctxt "daily archives date format"
 msgid "F d, Y"
-msgstr "m.d.Y"
+msgstr "j.n.Y"
 
 #: loop-meta.php:100
 msgctxt "year archives date format"
